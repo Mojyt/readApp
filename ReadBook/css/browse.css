@@ -109,7 +109,9 @@ body {
 
 .inner {
   width: 95%;
-  background: rgba(207, 70, 20, 0.5); }
+  background: rgba(214, 76, 72, 0.5);
+  display: flex;
+  flex-direction: column; }
   @media screen and (min-width: 320px) {
     .inner {
       height: 569.17333px; } }
@@ -143,8 +145,7 @@ body {
 
 /*状态栏*/
 .statusBar {
-  flex: 0 0 1;
-  background: rgba(77, 86, 70, 0.3); }
+  background: rgba(112, 4, 55, 0.3); }
   @media screen and (min-width: 320px) {
     .statusBar {
       height: 17.06667px; } }
@@ -175,3 +176,76 @@ body {
   @media screen and (min-width: 750px) {
     .statusBar {
       height: 40px; } }
+
+/*书名*/
+.bookName {
+  background: rgba(219, 62, 69, 0.4); }
+  @media screen and (min-width: 320px) {
+    .bookName {
+      height: 12.37333px; } }
+  @media screen and (min-width: 360px) {
+    .bookName {
+      height: 13.92px; } }
+  @media screen and (min-width: 375px) {
+    .bookName {
+      height: 14.5px; } }
+  @media screen and (min-width: 384px) {
+    .bookName {
+      height: 14.848px; } }
+  @media screen and (min-width: 412px) {
+    .bookName {
+      height: 15.93067px; } }
+  @media screen and (min-width: 414px) {
+    .bookName {
+      height: 16.008px; } }
+  @media screen and (min-width: 571px) {
+    .bookName {
+      height: 22.07867px; } }
+  @media screen and (min-width: 600px) {
+    .bookName {
+      height: 23.2px; } }
+  @media screen and (min-width: 640px) {
+    .bookName {
+      height: 24.74667px; } }
+  @media screen and (min-width: 750px) {
+    .bookName {
+      height: 29px; } }
+
+/*正文*/
+.mainBody {
+  flex: 1;
+  background: rgba(204, 58, 77, 0.3); }
+
+/*脚标*/
+.cornerMark {
+  background: rgba(182, 5, 34, 0.3); }
+  @media screen and (min-width: 320px) {
+    .cornerMark {
+      height: 23.89333px; } }
+  @media screen and (min-width: 360px) {
+    .cornerMark {
+      height: 26.88px; } }
+  @media screen and (min-width: 375px) {
+    .cornerMark {
+      height: 28px; } }
+  @media screen and (min-width: 384px) {
+    .cornerMark {
+      height: 28.672px; } }
+  @media screen and (min-width: 412px) {
+    .cornerMark {
+      height: 30.76267px; } }
+  @media screen and (min-width: 414px) {
+    .cornerMark {
+      height: 30.912px; } }
+  @media screen and (min-width: 571px) {
+    .cornerMark {
+      height: 42.63467px; } }
+  @media screen and (min-width: 600px) {
+    .cornerMark {
+      height: 44.8px; } }
+  @media screen and (min-width: 640px) {
+    .cornerMark {
+      height: 47.78667px; } }
+  @media screen and (min-width: 750px) {
+    .cornerMark {
+      height: 56px; } }

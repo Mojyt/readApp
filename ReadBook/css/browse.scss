@@ -2,27 +2,58 @@
 @import "adapter";
 @import "base";
 
-$inner:95%;
+$inner: 95%;
 
-.bg{
+.bg {
   display: flex;
   justify-content: center;
   width: 100%;
-  background: url("../images/browse_bg_03.png")no-repeat center center;
+  background: url("../images/browse_bg_03.png") no-repeat center center;
 }
 
-.inner{
+.inner {
   width: 95%;
   @include height(1334);
   @include bg;
+  display: flex;
+  flex-direction: column;
 }
 
 //////////////////////////////////////////////////////////////////////////
 
 /*状态栏*/
 
-.statusBar{
-  flex: 0 0 1;
+.statusBar {
   @include height(40);
   @include bg;
 }
+
+/////////////////////////////////////////////////////////////////////////
+
+/*书名*/
+
+.bookName{
+  @include height(29);
+  @include bg;
+}
+
+/////////////////////////////////////////////////////////////////////////
+
+/*正文*/
+
+.mainBody{
+  flex: 1;
+  @include bg;
+}
+
+//////////////////////////////////////////////////////////////////////
+
+/*脚标*/
+
+.cornerMark{
+  @include height(56);
+  @include bg;
+}
+
+
+
