@@ -92,6 +92,7 @@ body{
   }
 
 }
+
 .info{
   @include cfx(100%,4.2rem);
   background:#fff;
@@ -137,6 +138,7 @@ body{
     }
   }
 }
+
 .content{
   @include cfx(100%,6.77rem);
   padding:1.6% 2.5%;
@@ -174,7 +176,7 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     //align-items: center;
-    flex-basis:88%;
+    flex-basis:85%;
     .one{
       @include font(0.26rem,#333,400);
       font-family:'苹方',sans-serif;
@@ -186,10 +188,10 @@ body{
 
   }
   .box .note .content_note{
-    flex-basis: 77%;
+    flex-basis: 74%;
   }
   .box .check .content_note{
-    flex-basis: 86%;
+    flex-basis: 82%;
   }
   .box .V{
     @include font(0.28rem,#3a3a3a,400);
@@ -204,6 +206,7 @@ body{
   }
 
 }
+
 .kind{
   @include cfx(100%,1rem);
   background:#151C2B;
@@ -213,8 +216,39 @@ body{
     flex:1;
     height:100%;
     border-right:1px solid #717171;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
   }
   li:nth-child(3){
     border-right:none;
+    .tu{
+      color:#fff;
+      &::before{
+        content:'\e600';
+      }
+    }
+    .zi{
+      color:#fff;
+    }
+  }
+  li:nth-child(2){
+    .tu{
+      &::before{
+        content:'\e611';
+      }
+    }
+  }
+  .tu{
+    @include font(0.44rem,#6c6c6d,400);
+    font-family: mine,sans-serif;
+    &::before{
+      content:'\e68e';
+    }
+  }
+  .zi{
+    @include font(0.24rem,#6c6c6d,400);
+    font-family: '苹方',sans-serif;
   }
 };

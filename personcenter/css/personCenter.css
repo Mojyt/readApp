@@ -16,6 +16,10 @@
   font-family: more;
   src: url("../font/font_oqd2042muqnf80k9/iconfont.woff"); }
 
+@font-face {
+  font-family: mine;
+  src: url("../font/font_ln3hc2faieapp66r/iconfont.woff"); }
+
 * {
   padding: 0;
   margin: 0;
@@ -210,7 +214,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    flex-basis: 88%; }
+    flex-basis: 85%; }
     .content .box .content_note .one {
       font-size: 0.26rem;
       color: #333;
@@ -222,9 +226,9 @@ body {
       font-weight: 400;
       font-family: 'sanfranciscodisplay',sans-serif; }
   .content .box .note .content_note {
-    flex-basis: 77%; }
+    flex-basis: 74%; }
   .content .box .check .content_note {
-    flex-basis: 86%; }
+    flex-basis: 82%; }
   .content .box .V {
     font-size: 0.28rem;
     color: #3a3a3a;
@@ -247,6 +251,30 @@ body {
   .kind li {
     flex: 1;
     height: 100%;
-    border-right: 1px solid #717171; }
+    border-right: 1px solid #717171;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .kind li:nth-child(3) {
     border-right: none; }
+    .kind li:nth-child(3) .tu {
+      color: #fff; }
+      .kind li:nth-child(3) .tu::before {
+        content: '\e600'; }
+    .kind li:nth-child(3) .zi {
+      color: #fff; }
+  .kind li:nth-child(2) .tu::before {
+    content: '\e611'; }
+  .kind .tu {
+    font-size: 0.44rem;
+    color: #6c6c6d;
+    font-weight: 400;
+    font-family: mine,sans-serif; }
+    .kind .tu::before {
+      content: '\e68e'; }
+  .kind .zi {
+    font-size: 0.24rem;
+    color: #6c6c6d;
+    font-weight: 400;
+    font-family: '苹方',sans-serif; }
