@@ -1,0 +1,9 @@
+@import "mixin";
+*{
+  @include base;
+}
+.row::after, .clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}

@@ -1,0 +1,274 @@
+/*各种分辨率手机适配方案*/
+$device-list: 320px, 360px, 375px, 384px, 412px, 414px, 571px, 600px, 640px, 750px;
+
+/*高度适配*/
+
+@mixin height {
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      font-size: 100*($device/750);
+    }
+  }
+}
+
+/*宽度适配*/
+
+@mixin width($num) {
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      width: $device * ($num/750);
+    }
+  }
+}
+
+/*各种margin值适配*/
+
+@mixin margin4($top,$right,$bottom,$left) {
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      margin-top: 100* $top*($device/750);
+    }
+  }
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      margin-right: 100*$right*($device/750);
+    }
+  }
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      margin-bottom: 100* $bottom*($device/750);
+    }
+  }
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      margin-left: 100*$left*($device/750);
+    }
+  }
+}
+
+@mixin margin3($top,$right,$bottom) {
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      margin-top: 100* $top*($device/750);
+    }
+  }
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      margin-right: 100*$right*($device/750);
+    }
+  }
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      margin-bottom: 100* $bottom*($device/750);
+    }
+  }
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      margin-left: 100*$right*($device/750);
+    }
+  }
+}
+
+@mixin margin2($top,$right) {
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      margin-top: 100* $top*($device/750);
+    }
+  }
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      margin-right: 100*$right*($device/750);
+    }
+  }
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      margin-bottom: 100* $top*($device/750);
+    }
+  }
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      margin-left: 100*$right*($device/750);
+    }
+  }
+}
+
+@mixin margin($top) {
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      margin-top: 100*$top*($device/750);
+    }
+  }
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      margin-right: 100*$top*($device/750);
+    }
+  }
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      margin-bottom: 100*$top*($device/750);
+    }
+  }
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      margin-left: 100*$top*($device/750);
+    }
+  }
+}
+
+@mixin margin-top($top) {
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      margin-top: 100* $top*($device/750);
+    }
+  }
+}
+
+@mixin margin-bottom($bottom) {
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      margin-bottom: 100* $bottom*($device/750);
+    }
+  }
+}
+
+@mixin margin-right($right) {
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      margin-right: 100*$right*($device/750);
+    }
+  }
+}
+
+@mixin margin-left($left) {
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      margin-left: 100*$left*($device/750);
+    }
+  }
+}
+
+/*各种padding值适配*/
+
+@mixin padding4($top,$right,$bottom,$left) {
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      padding-top: 100* $top*($device/750);
+    }
+  }
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      padding-right: 100*$right*($device/750);
+    }
+  }
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      padding-bottom: 100* $bottom*($device/750);
+    }
+  }
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      padding-left: 100*$left*($device/750);
+    }
+  }
+}
+
+@mixin padding3($top,$right,$bottom) {
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      padding-top: 100* $top*($device/750);
+    }
+  }
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      padding-right: 100*$right*($device/750);
+    }
+  }
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      padding-bottom: 100* $bottom*($device/750);
+    }
+  }
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      padding-left: 100*$right*($device/750);
+    }
+  }
+}
+
+@mixin padding2($top,$right) {
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      padding-top: 100* $top*($device/750);
+    }
+  }
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      padding-right: 100*$right*($device/750);
+    }
+  }
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      padding-bottom: 100* $top*($device/750);
+    }
+  }
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      padding-left: 100*$right*($device/750);
+    }
+  }
+}
+
+@mixin padding($top) {
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      padding-top: 100* $top*($device/750);
+    }
+  }
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      padding-right: 100*$top*($device/750);
+    }
+  }
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      padding-bottom: 100*$top*($device/750);
+    }
+  }
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      padding-left: 100*$top*($device/750);
+    }
+  }
+}
+
+@mixin padding-top($top) {
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      padding-top: 100* $top*($device/750);
+    }
+  }
+}
+
+@mixin padding-right($right) {
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      padding-right: 100*$right*($device/750);
+    }
+  }
+}
+
+@mixin padding-bottom($bottom) {
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      padding-bottom: 100* $bottom*($device/750);
+    }
+  }
+}
+
+@mixin padding-left($left) {
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      padding-left: 100*$left*($device/750);
+    }
+  }
+}
