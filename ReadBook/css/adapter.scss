@@ -3,10 +3,10 @@ $device-list: 320px, 360px, 375px, 384px, 412px, 414px, 571px, 600px, 640px, 750
 
 /*高度适配*/
 
-@mixin height {
+@mixin height($num) {
   @each $device in $device-list {
     @media screen and (min-width: #{$device}) {
-      font-size: 100*($device/750);
+      height: $device * ($num/750);
     }
   }
 }
@@ -26,7 +26,7 @@ $device-list: 320px, 360px, 375px, 384px, 412px, 414px, 571px, 600px, 640px, 750
 @mixin margin4($top,$right,$bottom,$left) {
   @each $device in $device-list {
     @media screen and (min-width: #{$device}) {
-      margin-top: 100* $top*($device/750);
+      margin-top: $device*($top/750);
     }
   }
   @each $device in $device-list {

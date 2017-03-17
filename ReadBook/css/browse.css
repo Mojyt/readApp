@@ -102,6 +102,76 @@ body {
   font-size: 16px; }
 
 .bg {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  height: 13.34rem;
   background: url("../images/browse_bg_03.png") no-repeat center center; }
+
+.inner {
+  width: 95%;
+  background: rgba(207, 70, 20, 0.5); }
+  @media screen and (min-width: 320px) {
+    .inner {
+      height: 569.17333px; } }
+  @media screen and (min-width: 360px) {
+    .inner {
+      height: 640.32px; } }
+  @media screen and (min-width: 375px) {
+    .inner {
+      height: 667px; } }
+  @media screen and (min-width: 384px) {
+    .inner {
+      height: 683.008px; } }
+  @media screen and (min-width: 412px) {
+    .inner {
+      height: 732.81067px; } }
+  @media screen and (min-width: 414px) {
+    .inner {
+      height: 736.368px; } }
+  @media screen and (min-width: 571px) {
+    .inner {
+      height: 1015.61867px; } }
+  @media screen and (min-width: 600px) {
+    .inner {
+      height: 1067.2px; } }
+  @media screen and (min-width: 640px) {
+    .inner {
+      height: 1138.34667px; } }
+  @media screen and (min-width: 750px) {
+    .inner {
+      height: 1334px; } }
+
+/*状态栏*/
+.statusBar {
+  flex: 0 0 1;
+  background: rgba(77, 86, 70, 0.3); }
+  @media screen and (min-width: 320px) {
+    .statusBar {
+      height: 17.06667px; } }
+  @media screen and (min-width: 360px) {
+    .statusBar {
+      height: 19.2px; } }
+  @media screen and (min-width: 375px) {
+    .statusBar {
+      height: 20px; } }
+  @media screen and (min-width: 384px) {
+    .statusBar {
+      height: 20.48px; } }
+  @media screen and (min-width: 412px) {
+    .statusBar {
+      height: 21.97333px; } }
+  @media screen and (min-width: 414px) {
+    .statusBar {
+      height: 22.08px; } }
+  @media screen and (min-width: 571px) {
+    .statusBar {
+      height: 30.45333px; } }
+  @media screen and (min-width: 600px) {
+    .statusBar {
+      height: 32px; } }
+  @media screen and (min-width: 640px) {
+    .statusBar {
+      height: 34.13333px; } }
+  @media screen and (min-width: 750px) {
+    .statusBar {
+      height: 40px; } }
