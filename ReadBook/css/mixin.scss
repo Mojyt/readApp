@@ -1,4 +1,6 @@
 /*初始化*/
+@import "font";
+
 @mixin base() {
   margin: 0;
   padding: 0;
@@ -6,8 +8,8 @@
   text-decoration: none;
   color: black;
   border: 0;
-  font-family: '微软雅黑', sans-serif;
   font-style: normal;
+  font-family: Medium,sans-serif;
 }
 
 /*垂直居中*/

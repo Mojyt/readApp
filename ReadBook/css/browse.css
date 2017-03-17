@@ -1,5 +1,35 @@
 @charset "UTF-8";
 /*初始化*/
+@font-face {
+  /*粗体*/
+  font-family: Bold;
+  src: url("../fonts/PingFangBold.ttf"); }
+
+@font-face {
+  /*特细*/
+  font-family: ExtraLight;
+  src: url("../fonts/PingFangExtraLight.ttf"); }
+
+@font-face {
+  /*特粗*/
+  font-family: Heavy;
+  src: url("../fonts/PingFangHeavy.ttf"); }
+
+@font-face {
+  /*细体*/
+  font-family: Light;
+  src: url("../fonts/PingFangLight.ttf"); }
+
+@font-face {
+  /*中等*/
+  font-family: Medium;
+  src: url("../fonts/PingFangMedium.ttf"); }
+
+@font-face {
+  /*常规*/
+  font-family: Regular;
+  src: url("../fonts/PingFangRegular.ttf"); }
+
 /*垂直居中*/
 /*水平居中*/
 /*居中*/
@@ -13,6 +43,36 @@
 /*各种margin值适配*/
 /*各种padding值适配*/
 /*初始化*/
+@font-face {
+  /*粗体*/
+  font-family: Bold;
+  src: url("../fonts/PingFangBold.ttf"); }
+
+@font-face {
+  /*特细*/
+  font-family: ExtraLight;
+  src: url("../fonts/PingFangExtraLight.ttf"); }
+
+@font-face {
+  /*特粗*/
+  font-family: Heavy;
+  src: url("../fonts/PingFangHeavy.ttf"); }
+
+@font-face {
+  /*细体*/
+  font-family: Light;
+  src: url("../fonts/PingFangLight.ttf"); }
+
+@font-face {
+  /*中等*/
+  font-family: Medium;
+  src: url("../fonts/PingFangMedium.ttf"); }
+
+@font-face {
+  /*常规*/
+  font-family: Regular;
+  src: url("../fonts/PingFangRegular.ttf"); }
+
 /*垂直居中*/
 /*水平居中*/
 /*居中*/
@@ -27,8 +87,8 @@
   text-decoration: none;
   color: black;
   border: 0;
-  font-family: '微软雅黑', sans-serif;
-  font-style: normal; }
+  font-style: normal;
+  font-family: Medium,sans-serif; }
 
 .row::after, .clearfix::after {
   content: '';
@@ -40,3 +100,8 @@ html {
 
 body {
   font-size: 16px; }
+
+.bg {
+  width: 100%;
+  height: 13.34rem;
+  background: url("../images/browse_bg_03.png") no-repeat center center; }
