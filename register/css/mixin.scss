@@ -1,0 +1,93 @@
+@mixin center($h,$b){
+  position: absolute;
+  left:0;
+  right:0;
+  margin: auto;
+  width: 100%;
+  height: $h;
+  background: $b;
+}
+@mixin cent(){
+  position: absolute;
+  left:0;
+  right:0;
+  margin: auto;
+}
+@mixin cents(){
+  position: absolute;
+  top:0;
+  bottom:0;
+  margin: auto;
+}
+
+@mixin wh($w,$h){
+  width:$w;
+  height:$h;
+}
+@mixin font($font,$size,$bold,$color){
+  font-family:$font;
+  font-size: $size;
+  font-weight: $bold;
+  color:$color;
+}
+
+@mixin pos(){
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+@mixin bg(){
+  $r:floor(random()*256);
+  $g:floor(random()*256);
+  $b:floor(random()*256);
+  $a:floor(random()*3+6)/10;
+  $color:rgba($r,$g,$b,$a);
+  background: $color;
+}
+@mixin centers($left,$top){
+  position: absolute;
+  margin:auto;
+  left: $left;
+  top:$top;
+}
+@mixin middle($top,$bottom){
+  position: absolute;
+  margin:auto;
+  top: $top;
+  bottom:$bottom;
+}
+@mixin whb($w,$h,$bg){
+  width:$w;
+  height:$h;
+  background: $bg;
+}
+
+//@mixin bg($clo){
+//  background-color:$clo;
+//}
+//@mixin bg($reat){
+//  background-repeat:$reat;
+//}
+@mixin flt($dir){
+  float:$dir;
+}
+@mixin ft($size,$color,$line,$middle){
+  font-family: 'microsoft yahei';
+  font-size: $size;
+  color: $color;
+  line-height: $line;
+  text-align: $middle;
+}
+
+@mixin  border($l,$r,$t,$b){
+  border-left:$l;
+  border-right:$r;
+  border-top:$t;
+  border-bottom:$b;
+}
+@mixin display($b){
+  display: $b
+}

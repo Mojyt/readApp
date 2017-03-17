@@ -1,0 +1,104 @@
+@import url(base.css);
+@import "mixin";
+
+html{
+  $map:320px,360px,375px,412px,414px,750px;
+  @each $list in $map{
+    @media screen and (min-width: #{$list}) {
+      font-size: 100 * ($list / 750);
+    }
+  }
+}
+body{
+  background: #F2F2F2;
+  font-size: 16px;
+}
+.logo{
+  background: #29A6DC;
+  .title1{
+    @include wh(100%,7.5rem*(40/750));
+    background: url("../img/tit.png") center/cover no-repeat;
+  }
+  .title2{
+    //@include wh(100%,7.5rem*(106/750));
+    //background: red;
+    //padding:  0;
+    @include ft(7.5rem*(32/750),#fff,7.5rem*(106/750),center);
+    font-weight: 400;
+    position: relative;
+    p{
+      @include whb(7.5rem*(40/750),7.5rem*(40/750),#fff);
+      border-radius: 7.5rem*(40/750);
+      border: 7.5rem*(2/750) solid #076CBE;
+      @include ft(7.5rem*(32/750),#29A6DC,7.5rem*(36/750),center);
+      @include cents;
+      left: 7.5rem*(25/750);
+    }
+  }
+  .title3{
+    @include ft(34px,#fff,7.5rem*(330/750),center);
+    font-weight: 400;
+  }
+}
+
+.word{
+  padding: 7.5rem*(134/750) 7.5rem*(77/750);
+  position: relative;
+  //background: red;
+  h6{
+    @include ft(7.5rem*(24/750),#0A196B,7.5rem*(40/750),center);
+    font-weight: 400;
+  }
+  h6:nth-child(2){
+    position: absolute;
+    right: 0;
+    padding: 0 7.5rem*(77/750);
+  }
+}
+
+.input{
+  background: red;
+  padding: 0 7.5rem*(67/750);
+  div{
+    @include whb(7.5rem*(616/750),7.5rem*(88/750),#fff);
+    border: 1px solid #3A91FD;
+    border-radius: 7.5rem*(88/750);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .input2{
+    margin-top: 7.5rem*(38/750);
+  }
+  p{
+    @include wh(7.5rem*(44/750),7.5rem*(44/750));
+    border: 1px solid #3FC1FD;
+    border-radius: 7.5rem*(44/750);
+  }
+  input{
+    border: 0;
+    @include wh(80%,7.5rem*(44/750));
+    @include ft(7.5rem*(26/750),#999,7.5rem*(44/750),left);
+    font-weight: 300;
+  }
+  .input1 p{
+    background: url("../img/person.png") center/cover no-repeat;
+  }
+  .input2 p{
+    background: url("../img/password.png") center/cover no-repeat;
+  }
+}
+
+.zhaohui{
+  @include wh(100%,7.5rem*(97/750));
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  .row{
+    @include wh(16.7%,100%);
+  }
+
+}
