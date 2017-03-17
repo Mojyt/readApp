@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*初始化*/
+/*垂直居中*/
+/*水平居中*/
+/*居中*/
+/*长方形*/
+/*正方形*/
+/*圆形*/
+/*随机颜色*/
+/*各种分辨率手机适配方案*/
+/*高度适配*/
+/*宽度适配*/
+/*各种margin值适配*/
+/*各种padding值适配*/
+/*初始化*/
+/*垂直居中*/
+/*水平居中*/
+/*居中*/
+/*长方形*/
+/*正方形*/
+/*圆形*/
+/*随机颜色*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  border: 0;
+  font-family: '微软雅黑', sans-serif;
+  font-style: normal; }
+
+.row::after, .clearfix::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 16px; }
