@@ -1,0 +1,50 @@
+/*函数*/
+/*正方形*/
+@mixin cube($w){
+	width:$w;
+	height:$w;
+}
+@mixin cfx($w,$h){
+	width: $w;
+	height: $h;
+}
+
+@mixin center(){
+	position: absolute;
+	left: 0;top:0;right:0;bottom:0;
+	margin:auto;
+}
+
+@mixin lr(){
+	position: absolute;
+	left: 0;right:0;
+	margin:auto;
+}
+
+@mixin tb(){
+	position: absolute;
+	top:0;bottom:0;
+	margin:auto;
+}
+/*圆*/
+@mixin circle($w){
+	@include cube($w);
+	border-radius: 50%;
+}
+/*背景颜色*/
+@mixin bg(){
+	$r:floor(random()*256);
+	$g:floor(random()*256);
+	$b:floor(random()*256);
+	$a:floor(random()*3+3)/10;
+	$color:rgba($r,$g,$b,$a);
+	background: $color;
+}
+
+@mixin font($f,$c,$s){
+	font-size: $f;
+	color:$c;
+	font-weight: $s;
+}
+/*循环*/
+
