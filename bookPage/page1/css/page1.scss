@@ -1,0 +1,192 @@
+@import "../../mixin";
+@import "font";
+$device-list:320px,360px,365px,375px,384px,412px,414px,750px;
+
+html{
+  @each $device in $device-list{
+    @media screen and (min-width:$device){
+      font-size:100 * ($device/750);
+    }
+  }
+}
+body{
+  font-size: 16px;
+}
+.inner{
+  @include cube(95%,100%);
+  margin:0 auto;
+}
+.header{
+  @include cube(100%,1.28rem);
+  background: #29A6DC;
+  .state{
+    @include cube(100%,31.25%)
+  }
+  .nav{
+    @include cube(100%,68.75%);
+  }
+  .nav .inner{
+    a{
+      display: inline-block;
+      @include square(0.4rem);
+      background: #fff;
+      border-radius: 50%;
+      border: 2px solid #076CBE;
+      text-align: center;
+      line-height: 0.38rem;
+      font-size: 0.24rem;
+      color:#3DAEDF;
+      margin-top:0.26rem;
+      font-family: 'dump',sans-serif;
+    }
+    a::before{
+      content: '\e658';
+    }
+  }
+}
+
+.main{
+  @include cube(100%,auto);
+  .inner{
+    //display: flex;
+    //justify-content: space-around;
+  }
+  .inner .book{
+    //flex-basis: 100%;
+    //height:5.23rem;
+    margin:13px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 11px rgba(220,220,220,0.85);
+    background: #fff;
+    padding:0.15rem;
+    display: flex;
+    flex-wrap: wrap;
+    .top{
+      //height:3.11rem;
+      flex-basis: 100%;
+      //@include bg;
+      display: flex;
+      align-content: flex-start;
+    }
+    .top img{
+      @include cube(2.9rem,3.11rem);
+    }
+    .top .detailed{
+      margin-top: 0.6rem;
+      //@include bg;
+      flex:1;
+      display: flex;
+      align-content: flex-start;
+      flex-wrap: wrap;
+      .item{
+        flex-basis: 100%;
+        padding-left: 0.05rem;
+      }
+      h3.item{
+        //font-family: '苹方',sans-serif;
+        font-size: 0.3rem;
+      }
+      .subtitle.item{
+        display: flex;
+        //flex-wrap: nowrap;
+        //height: 0.24rem;
+        align-items: flex-end;
+        .fate{
+          font-family:'san',sans-serif ;
+          font-size: 0.20rem;
+        }
+        .books{
+          //font-family: 'PingFang',sans-serif;
+          font-size: 0.18rem;
+          color:#595959;
+          padding-left: 0.05rem;
+        }
+      }
+      .writer.item{
+        //font-family: '苹方',sans-serif;
+        font-size: 0.2rem;
+        color:#595959;
+      }
+      .year.item{
+        //font-family: '苹方',sans-serif;
+        font-size: 0.2rem;
+        color:#595959;
+      }
+      .intro.item{
+        //font-family: '苹方',sans-serif;
+        font-size: 0.18rem;
+        color:#C0C0C0;
+      }
+      .star.item{
+        display: flex;
+        //height: 0.18rem;
+        width:1.33rem;
+        //justify-content: space-between;
+        i{
+          font-family: 'star',sans-serif;
+          color:#FFD800;
+          font-size: 0.18rem;
+        }
+        i::before{
+          content: '\e659';
+        }
+
+      }
+      .classification.item{
+        //width:2.9rem;
+        //height:0.33rem;
+        display: flex;
+        justify-content: space-between;
+        //background: red;
+        flex-basis: auto;
+        padding:0;
+        .son{
+          height:100%;
+          width:0.88rem;
+          background: #67E479;
+          border-radius: 0.1rem;
+          text-align: center;
+          color:#fff;
+          line-height: 0.33rem;
+          margin-right: 0.15rem;
+        }
+        .son span{
+          @include cube(100%,100%);
+          font-size: 0.24rem;
+          line-height: 0.33rem;
+        }
+      }
+    }
+    .middle{
+      height:0.99rem;
+      flex-basis: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      //@include bg;
+      .middleE{
+        width:2.63rem;
+        box-shadow: 2px 1px 11px rgba(220, 220, 220, 0.85);
+        background: #fff;
+        border-radius: 80px;
+        height:73%;
+        display: flex;
+        //justify-content: space-around;
+        align-items: center;
+        justify-content: center;
+      }
+      .middleE img{
+        @include cube(0.5rem,0.57rem);
+        margin:0 0.15rem;
+      }
+      .middleE span{
+        font-size: 0.24rem;
+      }
+    }
+    .bottom{
+      height:0.84rem;
+      flex-basis: 100%;
+      @include bg;
+    }
+  }
+}
