@@ -13,12 +13,32 @@
   src: url("../font/sanfranciscodisplay-light-webfont.ttf"); }
 
 @font-face {
+  font-family: sanfranciscodisplaym;
+  src: url("../font/sanfranciscodisplay-medium-webfont.ttf"); }
+
+@font-face {
   font-family: more;
   src: url("../font/font_oqd2042muqnf80k9/iconfont.woff"); }
 
 @font-face {
   font-family: mine;
   src: url("../font/font_ln3hc2faieapp66r/iconfont.woff"); }
+
+@font-face {
+  font-family: left;
+  src: url("../font/font_2aarqayoawoh6w29/iconfont.woff"); }
+
+@font-face {
+  font-family: pingfangm;
+  src: url("../font/Pingfang/PingFang Medium.ttf"); }
+
+@font-face {
+  font-family: huancun;
+  src: url("../font/font_phfutfzj42ikke29/iconfont.woff"); }
+
+@font-face {
+  font-family: update;
+  src: url("../font/font_aayl7j3ndk1brzfr/iconfont.woff"); }
 
 * {
   padding: 0;
@@ -66,6 +86,13 @@
 
 body {
   font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%; }
+
+.bodybox {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -194,7 +221,10 @@ body {
     width: 100%;
     height: 3.58rem;
     border-radius: 5px;
-    box-shadow: 0 0 12px #eaeaea, 0 0 12px #eaeaea, 0 0 12px #eaeaea, 0 0 12px #eaeaea;
+    box-shadow: 0 0 12px #eaeaea,
+ 0 0 12px #eaeaea,
+ 0 0 12px #eaeaea,
+ 0 0 12px #eaeaea;
     border: 1px solid #eaeaea;
     background: #fff;
     display: flex;
@@ -206,15 +236,23 @@ body {
     padding: 0 3%;
     border-bottom: 2px dotted #959595;
     display: flex;
-    justify-content: space-between;
     align-items: center; }
   .content .box .feeddback {
     border-bottom: none; }
+  .content .box .item .item_l {
+    flex: 1;
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center; }
+  .content .box .item .item_l img {
+    width: 0.36rem;
+    height: 0.36rem;
+    margin-right: 3%; }
   .content .box .content_note {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    flex-basis: 85%; }
+    justify-content: flex-start; }
     .content .box .content_note .one {
       font-size: 0.26rem;
       color: #333;
@@ -225,11 +263,11 @@ body {
       color: #666;
       font-weight: 400;
       font-family: 'sanfranciscodisplay',sans-serif; }
-  .content .box .note .content_note {
-    flex-basis: 74%; }
-  .content .box .check .content_note {
-    flex-basis: 82%; }
   .content .box .V {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     font-size: 0.28rem;
     color: #3a3a3a;
     font-weight: 400;
@@ -278,3 +316,121 @@ body {
     color: #6c6c6d;
     font-weight: 400;
     font-family: '苹方',sans-serif; }
+
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(162, 162, 162, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .mask .update {
+    width: 4.78rem;
+    height: 2.69rem;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden; }
+    .mask .update .u_top {
+      width: 100%;
+      flex-basis: 27%;
+      background: rgba(77, 246, 245, 0.4);
+      border-bottom: none;
+      background: #29DCBC;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 7%;
+      position: relative; }
+      .mask .update .u_top .sr {
+        display: block;
+        width: 0.36rem;
+        height: 0.36rem;
+        border-radius: 50%;
+        background: #fff;
+        line-height: 0.36rem;
+        text-align: center;
+        font-size: 0.3rem;
+        color: #29dcbc;
+        font-weight: 400;
+        font-family: update,sans-serif;
+        margin-right: 2%;
+        box-shadow: 0 0 12px #26CEB0,
+ 0 0 12px #26CEB0,
+ 0 0 12px #26CEB0,
+ 0 0 12px #26CEB0; }
+        .mask .update .u_top .sr::before {
+          content: '\e601'; }
+      .mask .update .u_top .tilte_1 {
+        flex-basis: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; }
+        .mask .update .u_top .tilte_1 .r_one, .mask .update .u_top .tilte_1 .r_two {
+          display: block; }
+        .mask .update .u_top .tilte_1 .r_one {
+          font-size: 0.22rem;
+          color: #fff;
+          font-weight: 400;
+          font-family: 'pingfangm',sans-serif; }
+        .mask .update .u_top .tilte_1 .r_two {
+          font-size: 0.14rem;
+          color: #fff;
+          font-weight: 400;
+          font-family: 'sanfranciscodisplaym',sans-serif; }
+      .mask .update .u_top .tilte_C {
+        flex-basis: 65%; }
+      .mask .update .u_top .style {
+        position: absolute;
+        width: 100%;
+        height: 0.1rem;
+        left: 0;
+        bottom: -0.05rem;
+        display: flex;
+        justify-content: space-between; }
+        .mask .update .u_top .style .stylea {
+          width: 0.64rem;
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end; }
+          .mask .update .u_top .style .stylea .ra {
+            width: 0.06rem;
+            height: 100%;
+            background: #29dcbc;
+            border-radius: 50%;
+            border-bottom: none; }
+    .mask .update .u_bottom {
+      width: 100%;
+      flex-basis: 73%;
+      display: flex;
+      justify-content: center; }
+      .mask .update .u_bottom .con {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center; }
+      .mask .update .u_bottom .con .item_v {
+        display: block; }
+      .mask .update .u_bottom .con .Congratulations {
+        font-size: 0.28rem;
+        color: #333;
+        font-weight: 400;
+        font-family: pingfangm,sans-serif; }
+      .mask .update .u_bottom .con .en {
+        font-size: 0.16rem;
+        color: #999;
+        font-weight: 400;
+        font-family: sanfranciscodisplaym,sans-serif; }
+      .mask .update .u_bottom .con .now {
+        font-size: 0.22rem;
+        color: #737373;
+        font-weight: 400;
+        font-family: pingfangm,sans-serif; }
+      .mask .update .u_bottom .con img {
+        width: 0.8rem;
+        margin-top: 0.16rem; }
