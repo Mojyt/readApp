@@ -1,0 +1,71 @@
+/*初始化*/
+@import "font";
+
+@mixin base() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  border: 0;
+  font-style: normal;
+  font-family: Medium,sans-serif;
+}
+
+/*垂直居中*/
+@mixin cenH() {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/*水平居中*/
+@mixin cenW() {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/*居中*/
+@mixin Center() {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+/*长方形*/
+@mixin rectangle($width,$height) {
+  width: $width;
+  height: $height;
+}
+
+/*正方形*/
+@mixin square($num) {
+  width: $num;
+  height: $num;
+}
+
+/*圆形*/
+@mixin circle($num) {
+  width: $num;
+  height: $num;
+  border-radius: 50%;
+}
+
+/*随机颜色*/
+@mixin bg() {
+  $r: floor(random()*255);
+  $g: floor(random()*100);
+  $b: floor(random()*100);
+  $a: floor(random()*3+3)/10;
+  $color: rgba($r, $g, $b, $a);
+  //@debug $color;
+  //@return $color;
+  background: $color;
+}
+

@@ -1,0 +1,87 @@
+@import "mixin";
+@import "adapter";
+@import "base";
+
+$inner: 95%;
+
+.bg {
+  display: flex;
+  justify-content: center;
+  @include width(750);
+  background: url("../images/browse_bg_03.png") no-repeat center center;
+}
+
+.inner {
+  width: 95%;
+  @include height(1334);
+  @include bg;
+  display: flex;
+  flex-direction: column;
+}
+
+//////////////////////////////////////////////////////////////////////////
+
+/*状态栏*/
+
+.statusBar {
+  @include bg;
+  @include font-size(19);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  @include padding2(0, 9);
+  .system {
+    @include line-height(40);
+    @include margin-left(23);
+  }
+}
+
+.statusBar .time {
+  font-weight: bolder;
+}
+
+.statusBar .battery {
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  &::after {
+    content: '';
+    display: block;
+    @include width(49);
+    @include height(19);
+    top: 0;
+    bottom: 0;
+    background: url("../images/bg_03.png") no-repeat;
+    background-position: -772px -82px;
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////
+
+/*书名*/
+
+.bookName {
+  @include height(28);
+  @include bg;
+}
+
+/////////////////////////////////////////////////////////////////////////
+
+/*正文*/
+
+.mainBody {
+  flex: 1;
+  @include bg;
+}
+
+//////////////////////////////////////////////////////////////////////
+
+/*脚标*/
+
+.cornerMark {
+  @include height(56);
+  @include bg;
+}
+
+
+

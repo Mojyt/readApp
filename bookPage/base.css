@@ -1,0 +1,28 @@
+body,p,pre,ul,li,ol,dd,dl,dt,form,input,h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+}
+ul,li,ol,dl,dd,dt{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color:#333;
+}
+i{
+	font-style: normal;
+}
+img{
+	border:0;
+}
+
+*{
+	box-sizing:border-box;
+	font-size: 13px;
+	font-family: "Microsoft Yahei",SansSerif;
+}
+
+/**{
+	margin:0;
+	padding:0;
+}*/
