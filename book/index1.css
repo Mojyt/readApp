@@ -1,0 +1,175 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: "微软雅黑";
+  text-decoration: none; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+.book {
+  height: 9.00rem;
+  background: #F2F2F2; }
+  .book .top {
+    width: 100%;
+    height: 1.4rem;
+    background: #29A6DC; }
+    .book .top .statusbar {
+      width: 100%;
+      height: 0.4rem;
+      background: url(img/tit.png);
+      background-size: 100%; }
+    .book .top .shujia {
+      width: 94%;
+      height: 1rem;
+      margin: 0 auto;
+      background: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .book .top .shujia .shangyiceng {
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        border: 0.02rem solid #1175B6;
+        background: #fff url(img/z.png) center no-repeat;
+        background-size: 30%; }
+      .book .top .shujia #sousuo {
+        width: 5.45rem;
+        height: 0.55rem;
+        border: none;
+        font-size: 0.25rem;
+        color: #666666;
+        background: #F6F6F6 url(img/ggggg.png) 0.2rem no-repeat;
+        border-radius: 1rem;
+        padding-left: 0.80rem;
+        box-sizing: border-box; }
+      .book .top .shujia .luyin {
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        border: 0.02rem solid #1175B6;
+        background: #fff url(img/fdsfd.png) center no-repeat;
+        background-size: 50%; }
+  .book .shangjia {
+    width: 94%;
+    height: 1.05rem;
+    margin: 0 auto;
+    background: 0;
+    display: flex;
+    align-items: center; }
+    .book .shangjia .caidan {
+      width: 40%;
+      height: 55%;
+      display: flex;
+      justify-content: space-between; }
+      .book .shangjia .caidan .yuan {
+        width: 0.3rem;
+        height: 0.3rem;
+        border-radius: 50%;
+        background: #FFC63E url(img/dsdfdg.png) center no-repeat;
+        margin-top: 0.05rem; }
+      .book .shangjia .caidan .zi {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column; }
+        .book .shangjia .caidan .zi h3 {
+          color: #333;
+          font-size: 0.30rem;
+          font-weight: normal; }
+        .book .shangjia .caidan .zi p {
+          color: #dfdfdf;
+          font-size: 0.22rem; }
+  .book .remen {
+    width: 94%;
+    height: 1.68rem;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 0.05rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.15rem; }
+    .book .remen .tu {
+      width: 30%;
+      height: 94%;
+      background: url(img/dfdf.png);
+      background-size: 115%;
+      border-radius: 0.05rem; }
+    .book .remen .xuxian {
+      width: 0;
+      height: 94%;
+      border-left: 2px dotted #D2D2D2; }
+    .book .remen .souzi {
+      width: 65%;
+      height: 94%;
+      display: flex;
+      flex-wrap: wrap; }
+      .book .remen .souzi h3 {
+        width: 90%;
+        height: auto;
+        color: #393939;
+        font-size: 0.25rem;
+        font-weight: normal; }
+      .book .remen .souzi p {
+        width: 90%;
+        height: auto;
+        color: #686868;
+        font-size: 0.20rem; }
+      .book .remen .souzi .lianxi {
+        width: 90%;
+        height: 15%;
+        display: flex;
+        justify-content: space-between; }
+        .book .remen .souzi .lianxi .huazhong {
+          display: flex; }
+          .book .remen .souzi .lianxi .huazhong .keji {
+            width: 0.18rem;
+            height: 0.25rem;
+            background: url(img/hjhjh.png);
+            background-size: 100%;
+            margin-right: 0.10rem; }
+          .book .remen .souzi .lianxi .huazhong span {
+            width: auto;
+            height: auto;
+            display: block;
+            color: #ABABAB;
+            font-size: 0.16rem; }
+        .book .remen .souzi .lianxi .bei {
+          display: flex; }
+          .book .remen .souzi .lianxi .bei .dizhi {
+            width: 0.18rem;
+            height: 0.25rem;
+            background: url(img/gfgf1.png);
+            background-size: 100%;
+            margin-right: 0.10rem; }
+          .book .remen .souzi .lianxi .bei span {
+            width: auto;
+            height: auto;
+            display: block;
+            color: #ABABAB;
+            font-size: 0.16rem; }
