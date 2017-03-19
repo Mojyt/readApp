@@ -109,7 +109,7 @@ body{
     .pp{
       @include cfx(1.6rem,1.6rem);
       border-radius: 50%;
-      border:12px solid #EDEDED;
+      border:0.12rem solid #EDEDED;
       background:url(../images/timg.jpg) center/contain no-repeat;
     }
   }
