@@ -280,9 +280,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  bottom:0;
-  left:0;
   .send{
     @include cube(18.1%,41.4%);
     background: #F4F4F4;
