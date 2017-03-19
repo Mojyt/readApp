@@ -8,55 +8,55 @@
 }
 
 .header{
-  @include cube(100%,1.28rem);
-  background: #29A6DC;
-  .state{
-    @include cube(100%,31.25%)
-  }
-  .nav{
-    @include cube(100%,68.75%);
-  }
-  .nav .inner{
-    display: flex;
-    align-items: center;
-    a{
-      display: inline-block;
-      @include square(0.4rem);
-      background: #fff;
-      border-radius: 50%;
-      border: 2px solid #076CBE;
-      text-align: center;
-      line-height: 0.38rem;
-      font-size: 0.24rem;
-      color:#3DAEDF;
-      //margin-top:0.26rem;
-      font-family: 'dump',sans-serif;
-    }
-    a::before{
-      content: '\e658';
-    }
-  }
-  .nav .inner .all-review-title{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin:0 auto;
-    h2{
-      flex-basis: 100%;
-      font-size: 0.36rem;
-      font-family: '苹方',sans-serif;
-      color:#fff;
-      text-align: center;
-    }
-    span{
-      flex-basis: 100%;
-      font-size: 0.18rem;
-      font-family: 'san',sans-serif;
-      color:#A3E3FF;
-      text-align: center;
-    }
-  }
-}
+   @include cube(100%,1.28rem);
+   background: #29A6DC;
+   .state{
+     @include cube(100%,31.25%)
+   }
+   .nav{
+     @include cube(100%,68.75%);
+   }
+   .nav .inner{
+     display: flex;
+     align-items: center;
+     a{
+       display: inline-block;
+       @include square(0.4rem);
+       background: #fff;
+       border-radius: 50%;
+       border: 2px solid #076CBE;
+       text-align: center;
+       line-height: 0.38rem;
+       font-size: 0.24rem;
+       color:#3DAEDF;
+       //margin-top:0.26rem;
+       font-family: 'dump',sans-serif;
+     }
+     a::before{
+       content: '\e658';
+     }
+   }
+   .nav .inner .all-review-title{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     margin:0 auto;
+     h2{
+       flex-basis: 100%;
+       font-size: 0.36rem;
+       font-family: '苹方',sans-serif;
+       color:#fff;
+       text-align: center;
+     }
+     span{
+       flex-basis: 100%;
+       font-size: 0.18rem;
+       font-family: 'san',sans-serif;
+       color:#A3E3FF;
+       text-align: center;
+     }
+   }
+ }
 
 .all-review{
   .inner{
