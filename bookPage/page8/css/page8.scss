@@ -1,0 +1,303 @@
+@import "../../mixin";
+@import "font";
+@import "../../jiangrong";
+
+.inner{
+  @include cube(95%,100%);
+  margin:0 auto;
+}
+
+.header{
+  @include cube(100%,1.28rem);
+  background: #29A6DC;
+  .state{
+    @include cube(100%,31.25%)
+  }
+  .nav{
+    @include cube(100%,68.75%);
+  }
+  .nav .inner{
+    display: flex;
+    align-items: center;
+    a{
+      display: inline-block;
+      @include square(0.4rem);
+      background: #fff;
+      border-radius: 50%;
+      border: 2px solid #076CBE;
+      text-align: center;
+      line-height: 0.38rem;
+      font-size: 0.24rem;
+      color:#3DAEDF;
+      //margin-top:0.26rem;
+      font-family: 'dump',sans-serif;
+    }
+    a::before{
+      content: '\e658';
+    }
+  }
+  .nav .inner .all-review-title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:0 auto;
+    h2{
+      flex-basis: 100%;
+      font-size: 0.36rem;
+      font-family: '苹方',sans-serif;
+      color:#fff;
+      text-align: center;
+    }
+    span{
+      flex-basis: 100%;
+      font-size: 0.18rem;
+      font-family: 'san',sans-serif;
+      color:#A3E3FF;
+      text-align: center;
+    }
+  }
+}
+
+.prompt{
+  @include cube(100%,0.5rem);
+  background: #E5E5E5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span{
+    font-size: 0.2rem;
+    font-family: '苹方',sans-serif;
+    color:#A8A8A8;
+    text-align: center;
+  }
+}
+
+.read-mark{
+  width:100%;
+  height:auto;
+  .inner ul{
+    display: flex;
+    flex-wrap: wrap;
+    @include cube(100%,auto);
+    li{
+      flex-basis: 100%;
+      display: flex;
+      border-bottom: 1px dotted #9C9C9C;
+    }
+    li img{
+      @include cube(0.6rem,0.62rem);
+      align-self: center;
+    }
+    li .list-r{
+      padding-left: 0.15rem;
+      padding-top: 0.1rem;
+      align-self: center;
+      display: flex;
+      align-content: space-around;
+      flex-wrap: wrap;
+      h4{
+        font-size: 0.24rem;
+        font-family: '苹方',sans-serif;
+        color:#151C2B;
+        font-weight: bold;
+        flex-basis: 100%;
+      }
+      p{
+        flex-basis: 100%;
+        font-size: 0.18rem;
+        font-family: '苹方',sans-serif;
+        color:#505050;
+      }
+      .comment{
+        @include cube(5.32rem,0.85rem);
+        border-radius: 0.1rem;
+        background: #9AE1FF;
+        display: flex;
+        justify-content: space-between;
+        padding:0.1rem;
+        .item1,.item3{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          span{
+            @include square(0.06rem);
+            border-radius: 50%;
+            background: #fff;
+          }
+        }
+        .item2{
+          display: flex;
+          justify-content: flex-start;
+          span.edit{
+            font-family: 'ed',sans-serif;
+            color:#E23C5F;
+            font-size: 0.24rem;
+            padding-top: 0.1rem;
+          }
+          span.edit::before{
+            content: '\e670';
+          }
+          span.explain{
+            color:#E23C5F;
+            font-size: 0.2rem;
+            font-family: '苹方',sans-serif;
+          }
+        }
+      }
+      .list-r-b{
+        flex-basis: 100%;
+        display: flex;
+        //justify-content: space-between;
+        padding-top: 0.1rem;
+        .list-r-b-l{
+          display: flex;
+          padding-left:0.1rem;
+          align-items: center;
+          justify-content: space-between;
+          span:nth-child(1){
+            font-family: 'icon',sans-serif;
+            font-size: 0.2rem;
+            color:#8FB2FF;
+            &::before{
+              content: '\e76f';
+            }
+          }
+          span:nth-child(2){
+            font-size: 0.16rem;
+            color:#7F7F7F;
+            font-family: 'san',sans-serif;
+            padding-left: 0.05rem;
+          }
+        }
+        .list-r-b-r{
+          display:flex;
+          padding-left:0.2rem;
+          align-items: center;
+          justify-content: space-between;
+          //align-items: center;
+          span:nth-child(1){
+            font-family: 'icon',sans-serif;
+            font-size: 0.25rem;
+            font-weight: 600;
+            color:#F54DDF;
+            &::before{
+              content: '\e627';
+            }
+          }
+          span:nth-child(2){
+            font-size: 0.16rem;
+            color:#7F7F7F;
+            font-family: 'san',sans-serif;
+            padding-left: 0.05rem;
+            line-height: 0.3rem;
+            padding-right: 0.15rem;
+          }
+        }
+      }
+    }
+    li.third .list-r .comment{
+      background: #fff;
+      //padding:0;
+      height:auto;
+      .item2 span.edit{
+        color:#BBBBBB;
+      }
+    }
+    li.third .list-r .list-r-b{
+      padding:0;
+    }
+    li.second{
+      display: flex;
+      border:1px solid #55E3CA;
+      .list-r{
+        background: #29DCBC;
+        width:87.6%;
+        padding-top: 0.1rem;
+        padding-left: 0.35rem;
+        h4{
+          color:#fff;
+        }
+        p{
+          color:#fff;
+        }
+        .comment{
+          @include cube(5.32rem,auto);
+          //border-radius: 0.1rem;
+          background: none;
+          display: flex;
+          justify-content: space-between;
+          padding:0.1rem;
+          .item2{
+            display: flex;
+            justify-content: flex-start;
+            span.edit{
+              font-family: 'ed',sans-serif;
+              color:#fff;
+              font-size: 0.2rem;
+            }
+            span.edit::before{
+              content: '\e670';
+            }
+            span.explain{
+              color:#17986B;
+              font-size: 0.2rem;
+              font-family: '苹方',sans-serif;
+            }
+          }
+        }
+        .list-r-b{
+          padding:0;
+        }
+        .list-r-b .list-r-b-l span{
+          color:#fff;
+        }
+        .list-r-b .list-r-b-r span{
+          color:#fff;
+        }
+      }
+      .error{
+        width:12.4%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+          font-family: 'error',sans-serif;
+          color:#29DCBC;
+          font-size: 0.28rem;
+          cursor: pointer;
+        }
+        span::before{
+          content: '\e635';
+        }
+      }
+    }
+  }
+}
+
+.footer{
+  @include cube(100%,1.28rem);
+  background: #151C2B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom:0;
+  left:0;
+  .send{
+    @include cube(18.1%,41.4%);
+    background: #F4F4F4;
+    border-radius: 0.8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .send span.circles{
+    @include square(0.08rem);
+    background: #C4C4C4;
+    border-radius: 50%;
+  }
+  .send span#font{
+    font-family: '苹方',sans-serif;
+    font-size: 0.2rem;
+  }
+}

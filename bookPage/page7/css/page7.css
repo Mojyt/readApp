@@ -1,0 +1,217 @@
+@charset "UTF-8";
+/*函数*/
+/*@function bg(){
+	$r:floor(random()*56+200);
+	$g:floor(random()*56);
+	$b:floor(random()*56);
+	$color:rgb($r,$g,$b);
+	@debug $color;  
+	@return $color;
+}*/
+@font-face {
+  font-family: 'dump';
+  src: url(../../fonts/font_c1dcn1zfwtu4bo6r/iconfont.woff); }
+
+@font-face {
+  font-family: 'san';
+  src: url(../../fonts/sanfranciscodisplay-regular-webfont.ttf); }
+
+@font-face {
+  font-family: 'star';
+  src: url(../../fonts/font_1ilk7mnsoh1714i/iconfont.woff); }
+
+@font-face {
+  font-family: 'icon';
+  src: url(../../fonts/font_g527vzq4b5oecdi/iconfont.woff); }
+
+@font-face {
+  font-family: 'error';
+  src: url(../../fonts/font_lmjxxkhodvtmlsor/iconfont.woff); }
+
+@font-face {
+  font-family: 'ed';
+  src: url(../../fonts/font_bvaqky6mifu8r529/iconfont.woff); }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 365px) {
+  html {
+    font-size: 48.66667px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+body {
+  font-size: 16px; }
+
+.inner {
+  width: 95%;
+  height: 100%;
+  margin: 0 auto; }
+
+.header {
+  width: 100%;
+  height: 1.28rem;
+  background: #29A6DC; }
+  .header .state {
+    width: 100%;
+    height: 31.25%; }
+  .header .nav {
+    width: 100%;
+    height: 68.75%; }
+  .header .nav .inner {
+    display: flex;
+    align-items: center; }
+    .header .nav .inner a {
+      display: inline-block;
+      width: 0.4rem;
+      height: 0.4rem;
+      background: #fff;
+      border-radius: 50%;
+      border: 2px solid #076CBE;
+      text-align: center;
+      line-height: 0.38rem;
+      font-size: 0.24rem;
+      color: #3DAEDF;
+      font-family: 'dump',sans-serif; }
+    .header .nav .inner a::before {
+      content: '\e658'; }
+  .header .nav .inner .all-review-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto; }
+    .header .nav .inner .all-review-title h2 {
+      flex-basis: 100%;
+      font-size: 0.36rem;
+      font-family: '苹方',sans-serif;
+      color: #fff;
+      text-align: center; }
+    .header .nav .inner .all-review-title span {
+      flex-basis: 100%;
+      font-size: 0.18rem;
+      font-family: 'san',sans-serif;
+      color: #A3E3FF;
+      text-align: center; }
+
+.last {
+  width: 100%;
+  height: auto; }
+  .last .list {
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 0.1rem;
+    flex-wrap: wrap; }
+    .last .list li {
+      flex-basis: 100%;
+      display: flex;
+      border-bottom: 1px dotted #A1A1A1; }
+    .last .list li:last-child {
+      border: 0; }
+    .last .list li img {
+      width: 0.7rem;
+      height: 0.7rem;
+      align-self: center; }
+    .last .list li .list-r {
+      padding-left: 0.15rem;
+      padding-top: 0.1rem;
+      align-self: center; }
+      .last .list li .list-r h4 {
+        font-size: 0.24rem;
+        font-family: '苹方',sans-serif;
+        color: #151C2B;
+        font-weight: bold; }
+      .last .list li .list-r p {
+        font-size: 0.18rem;
+        font-family: '苹方',sans-serif;
+        color: #505050; }
+      .last .list li .list-r .list-r-b {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 0.1rem; }
+        .last .list li .list-r .list-r-b .list-r-b-l {
+          display: flex;
+          padding-left: 0.1rem;
+          align-items: center;
+          justify-content: space-between; }
+          .last .list li .list-r .list-r-b .list-r-b-l span:nth-child(1) {
+            font-family: 'icon',sans-serif;
+            font-size: 0.2rem;
+            color: #8FB2FF; }
+            .last .list li .list-r .list-r-b .list-r-b-l span:nth-child(1)::before {
+              content: '\e76f'; }
+          .last .list li .list-r .list-r-b .list-r-b-l span:nth-child(2) {
+            font-size: 0.16rem;
+            color: #7F7F7F;
+            font-family: 'san',sans-serif;
+            padding-left: 0.05rem; }
+        .last .list li .list-r .list-r-b .list-r-b-r {
+          display: flex;
+          align-items: center;
+          justify-content: space-between; }
+          .last .list li .list-r .list-r-b .list-r-b-r span:nth-child(1) {
+            font-family: 'icon',sans-serif;
+            font-size: 0.25rem;
+            font-weight: 600;
+            color: #F54DDF; }
+            .last .list li .list-r .list-r-b .list-r-b-r span:nth-child(1)::before {
+              content: '\e627'; }
+          .last .list li .list-r .list-r-b .list-r-b-r span:nth-child(2) {
+            font-size: 0.16rem;
+            color: #7F7F7F;
+            font-family: 'san',sans-serif;
+            padding-left: 0.05rem;
+            line-height: 0.3rem;
+            padding-right: 0.15rem; }
+    .last .list li.delete {
+      display: flex;
+      border: 1px solid #55E3CA;
+      padding: 0; }
+      .last .list li.delete .list-r {
+        background: #29DCBC;
+        width: 87.6%;
+        padding-top: 0.1rem; }
+        .last .list li.delete .list-r h4 {
+          color: #fff; }
+        .last .list li.delete .list-r p {
+          color: #fff; }
+        .last .list li.delete .list-r .list-r-b .list-r-b-l span {
+          color: #fff; }
+        .last .list li.delete .list-r .list-r-b .list-r-b-r span {
+          color: #fff; }
+      .last .list li.delete .error {
+        width: 12.4%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .last .list li.delete .error span {
+          font-family: 'error',sans-serif;
+          color: #29DCBC;
+          font-size: 0.28rem;
+          cursor: pointer; }
+        .last .list li.delete .error span::before {
+          content: '\e635'; }
