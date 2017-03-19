@@ -1,0 +1,695 @@
+@import url(base.css);
+* {
+  box-sizing: border-box; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+.bao .top {
+  width: 100%;
+  height: 0.4rem;
+  background: #29a6dc; }
+  .bao .top .tops {
+    width: 100%;
+    height: 100%;
+    background: url(img/tit.png);
+    background-size: cover; }
+
+.bao .sousuo {
+  width: 100%;
+  height: 1rem;
+  background: #29a6dc;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .bao .sousuo .nk {
+    width: 94%;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+    .bao .sousuo .nk .xuan {
+      width: 5.7rem;
+      height: 0.84rem;
+      text-align: center;
+      background: #2A3441;
+      border-radius: 1rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      .bao .sousuo .nk .xuan .li {
+        width: 1.62rem;
+        height: 0.66rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .bao .sousuo .nk .xuan .li a {
+          font-size: 0.2rem;
+          color: #fff;
+          display: block;
+          width: 100%; }
+        .bao .sousuo .nk .xuan .li p {
+          font-size: 0.12rem;
+          color: #fff; }
+      .bao .sousuo .nk .xuan .lis {
+        background: #29a6dc;
+        border: 2px solid #fff;
+        border-radius: 1rem; }
+      .bao .sousuo .nk .xuan .xi {
+        width: 0.03rem;
+        height: 0.6rem;
+        background: url(img/xian.png) no-repeat;
+        background-size: cover; }
+    .bao .sousuo .nk .yq1 {
+      width: 0.46rem;
+      height: 0.46rem;
+      background: #fff;
+      border: 2px solid #076cbe;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      right: 0; }
+      .bao .sousuo .nk .yq1 a {
+        width: 0.21rem;
+        height: 0.18rem;
+        background: url(img/ss.png) no-repeat;
+        background-size: cover; }
+
+.bao .fl {
+  width: 100%;
+  height: 9.3rem; }
+  .bao .fl .fenlei {
+    width: 100%;
+    height: 0.6rem;
+    background: #ACE1F8;
+    display: flex;
+    justify-content: center; }
+    .bao .fl .fenlei .fenleis {
+      width: 94%;
+      height: 100%;
+      display: flex;
+      align-items: center; }
+      .bao .fl .fenlei .fenleis .shu {
+        width: 0.38rem;
+        height: 0.33rem;
+        background: url(img/cb.png) no-repeat; }
+      .bao .fl .fenlei .fenleis span {
+        font-size: 0.22rem;
+        color: #555; }
+  .bao .fl .nv {
+    width: 100%;
+    height: 3.3rem;
+    display: flex;
+    justify-content: center;
+    background: #f2f2f2; }
+    .bao .fl .nv .nvs {
+      width: 100%;
+      height: 100%; }
+      .bao .fl .nv .nvs .ns {
+        width: 100%;
+        height: 0.74rem;
+        display: flex;
+        align-items: center;
+        padding-left: 0.15rem; }
+        .bao .fl .nv .nvs .ns h2 {
+          font-size: 0.3rem;
+          color: #29A6DC; }
+      .bao .fl .nv .nvs .nve {
+        width: 6.12rem;
+        height: 0;
+        border-bottom: 2px dashed #dfdfdf;
+        margin-left: 0.5rem; }
+      .bao .fl .nv .nvs .xx {
+        width: 100%;
+        height: 1.17rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end; }
+        .bao .fl .nv .nvs .xx .xxs:nth-child(1) {
+          width: 2.03rem;
+          height: 0.88rem;
+          background: url(img/n1.png) no-repeat; }
+        .bao .fl .nv .nvs .xx .xxs:nth-child(2) {
+          width: 2.03rem;
+          height: 0.88rem;
+          background: url(img/n2.png) no-repeat; }
+        .bao .fl .nv .nvs .xx .xxs:nth-child(3) {
+          width: 2.03rem;
+          height: 0.88rem;
+          background: url(img/n1.png) no-repeat; }
+        .bao .fl .nv .nvs .xx .xxs {
+          text-align: center;
+          line-height: 0.88rem;
+          position: relative; }
+          .bao .fl .nv .nvs .xx .xxs a {
+            color: #fff;
+            display: block;
+            font-size: 0.3rem; }
+          .bao .fl .nv .nvs .xx .xxs .jiao {
+            width: 0.16rem;
+            height: 0.16rem;
+            background: url(img/n11.png) no-repeat;
+            position: absolute;
+            right: 0;
+            top: 0; }
+          .bao .fl .nv .nvs .xx .xxs .jiao1 {
+            width: 0.16rem;
+            height: 0.16rem;
+            background: url(img/n22.png) no-repeat;
+            position: absolute;
+            right: 0;
+            top: 0; }
+          .bao .fl .nv .nvs .xx .xxs .quan {
+            width: 0.06rem;
+            height: 0.06rem;
+            background: url(img/n111.png) no-repeat;
+            position: absolute;
+            left: 0.04rem;
+            top: 0.04rem; }
+      .bao .fl .nv .nvs .xx1 {
+        width: 100%;
+        height: 1.36rem;
+        background: url(img/bj.png) no-repeat;
+        text-align: center;
+        line-height: 0.88rem;
+        display: flex;
+        align-items: flex-end; }
+        .bao .fl .nv .nvs .xx1 a {
+          color: #fff;
+          display: block;
+          font-size: 0.3rem; }
+        .bao .fl .nv .nvs .xx1 .xx11 {
+          width: 2.03rem;
+          height: 0.88rem;
+          background: url(img/n2.png) no-repeat;
+          position: relative;
+          margin-left: 0.25rem; }
+          .bao .fl .nv .nvs .xx1 .xx11 .jiao {
+            width: 0.16rem;
+            height: 0.16rem;
+            background: url(img/n22.png) no-repeat;
+            position: absolute;
+            right: 0;
+            top: 0; }
+          .bao .fl .nv .nvs .xx1 .xx11 .quan {
+            width: 0.06rem;
+            height: 0.06rem;
+            background: url(img/n111.png) no-repeat;
+            position: absolute;
+            left: 0.04rem;
+            top: 0.04rem; }
+  .bao .fl .nan {
+    width: 100%;
+    height: 5.4rem;
+    background: #f2f2f2; }
+    .bao .fl .nan .kk {
+      width: 100%;
+      height: 0.47rem;
+      background: url(img/bj.png) no-repeat; }
+    .bao .fl .nan .nans {
+      width: 100%;
+      height: 0.64rem;
+      display: flex;
+      align-items: center; }
+      .bao .fl .nan .nans h2 {
+        font-size: 0.3rem;
+        color: #29A6DC;
+        padding-left: 0.15rem; }
+    .bao .fl .nan .nane {
+      width: 6.12rem;
+      height: 0;
+      border-bottom: 2px dashed #dfdfdf;
+      margin-left: 0.5rem; }
+    .bao .fl .nan .xx {
+      width: 100%;
+      height: 1.17rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end; }
+      .bao .fl .nan .xx .xxs:nth-child(1) {
+        width: 2.03rem;
+        height: 0.88rem;
+        background: url(img/n1.png) no-repeat; }
+      .bao .fl .nan .xx .xxs:nth-child(2) {
+        width: 2.03rem;
+        height: 0.88rem;
+        background: url(img/n2.png) no-repeat; }
+      .bao .fl .nan .xx .xxs:nth-child(3) {
+        width: 2.03rem;
+        height: 0.88rem;
+        background: url(img/n1.png) no-repeat; }
+      .bao .fl .nan .xx .xxs {
+        text-align: center;
+        line-height: 0.88rem;
+        position: relative; }
+        .bao .fl .nan .xx .xxs a {
+          color: #fff;
+          display: block;
+          font-size: 0.3rem; }
+        .bao .fl .nan .xx .xxs .jiao {
+          width: 0.16rem;
+          height: 0.16rem;
+          background: url(img/n11.png) no-repeat;
+          position: absolute;
+          right: 0;
+          top: 0; }
+        .bao .fl .nan .xx .xxs .jiao1 {
+          width: 0.16rem;
+          height: 0.16rem;
+          background: url(img/n22.png) no-repeat;
+          position: absolute;
+          right: 0;
+          top: 0; }
+        .bao .fl .nan .xx .xxs .quan {
+          width: 0.06rem;
+          height: 0.06rem;
+          background: url(img/n111.png) no-repeat;
+          position: absolute;
+          left: 0.04rem;
+          top: 0.04rem; }
+    .bao .fl .nan .xx2 {
+      width: 100%;
+      height: 1.36rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+      background: url(img/bj.png) no-repeat; }
+      .bao .fl .nan .xx2 .xxs:nth-child(1) {
+        width: 2.03rem;
+        height: 0.88rem;
+        background: url(img/n1.png) no-repeat; }
+      .bao .fl .nan .xx2 .xxs:nth-child(2) {
+        width: 2.03rem;
+        height: 0.88rem;
+        background: url(img/n2.png) no-repeat; }
+      .bao .fl .nan .xx2 .xxs:nth-child(3) {
+        width: 2.03rem;
+        height: 0.88rem;
+        background: url(img/n1.png) no-repeat; }
+      .bao .fl .nan .xx2 .xxs {
+        text-align: center;
+        line-height: 0.88rem;
+        position: relative; }
+        .bao .fl .nan .xx2 .xxs a {
+          color: #fff;
+          display: block;
+          font-size: 0.3rem; }
+        .bao .fl .nan .xx2 .xxs .jiao {
+          width: 0.16rem;
+          height: 0.16rem;
+          background: url(img/n11.png) no-repeat;
+          position: absolute;
+          right: 0;
+          top: 0; }
+        .bao .fl .nan .xx2 .xxs .jiao1 {
+          width: 0.16rem;
+          height: 0.16rem;
+          background: url(img/n22.png) no-repeat;
+          position: absolute;
+          right: 0;
+          top: 0; }
+        .bao .fl .nan .xx2 .xxs .quan {
+          width: 0.06rem;
+          height: 0.06rem;
+          background: url(img/n111.png) no-repeat;
+          position: absolute;
+          left: 0.04rem;
+          top: 0.04rem; }
+    .bao .fl .nan .xx1 {
+      width: 100%;
+      height: 1.36rem;
+      background: url(img/bj.png) no-repeat;
+      text-align: center;
+      line-height: 0.88rem;
+      display: flex;
+      align-items: flex-end; }
+      .bao .fl .nan .xx1 a {
+        color: #fff;
+        display: block;
+        font-size: 0.3rem; }
+      .bao .fl .nan .xx1 .xx11 {
+        width: 2.03rem;
+        height: 0.88rem;
+        background: url(img/n2.png) no-repeat;
+        position: relative;
+        margin-left: 0.25rem; }
+        .bao .fl .nan .xx1 .xx11 .jiao {
+          width: 0.16rem;
+          height: 0.16rem;
+          background: url(img/n22.png) no-repeat;
+          position: absolute;
+          right: 0;
+          top: 0; }
+        .bao .fl .nan .xx1 .xx11 .quan {
+          width: 0.06rem;
+          height: 0.06rem;
+          background: url(img/n111.png) no-repeat;
+          position: absolute;
+          left: 0.04rem;
+          top: 0.04rem; }
+    .bao .fl .nan .xx3 {
+      width: 100%;
+      height: 0.37rem;
+      background: url(img/bj.png) no-repeat; }
+
+.bao .fl1 {
+  width: 100%;
+  height: 9.93rem; }
+  .bao .fl1 .fenlei {
+    width: 100%;
+    height: 0.6rem;
+    background: #ACE1F8;
+    display: flex;
+    justify-content: center; }
+    .bao .fl1 .fenlei .fenleis {
+      width: 94%;
+      height: 100%;
+      display: flex;
+      align-items: center; }
+      .bao .fl1 .fenlei .fenleis .shu {
+        width: 0.38rem;
+        height: 0.33rem;
+        background: url(img/cb.png) no-repeat; }
+      .bao .fl1 .fenlei .fenleis span {
+        font-size: 0.22rem;
+        color: #555; }
+  .bao .fl1 .nv {
+    width: 100%;
+    height: 3.3rem;
+    display: flex;
+    justify-content: center;
+    background: #f2f2f2; }
+    .bao .fl1 .nv .nvs {
+      width: 100%;
+      height: 100%; }
+      .bao .fl1 .nv .nvs .ns {
+        width: 100%;
+        height: 0.74rem;
+        display: flex;
+        align-items: center;
+        padding-left: 0.15rem; }
+        .bao .fl1 .nv .nvs .ns h2 {
+          font-size: 0.3rem;
+          color: #29A6DC; }
+      .bao .fl1 .nv .nvs .nve {
+        width: 6.12rem;
+        height: 0;
+        border-bottom: 2px dashed #dfdfdf;
+        margin-left: 0.5rem; }
+      .bao .fl1 .nv .nvs .xx {
+        width: 100%;
+        height: 1.17rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end; }
+        .bao .fl1 .nv .nvs .xx .xxs:nth-child(1) {
+          width: 2.03rem;
+          height: 0.88rem;
+          background: url(img/n1.png) no-repeat; }
+        .bao .fl1 .nv .nvs .xx .xxs:nth-child(2) {
+          width: 2.03rem;
+          height: 0.88rem;
+          background: url(img/n2.png) no-repeat; }
+        .bao .fl1 .nv .nvs .xx .xxs:nth-child(3) {
+          width: 2.03rem;
+          height: 0.88rem;
+          background: url(img/n1.png) no-repeat; }
+        .bao .fl1 .nv .nvs .xx .xxs {
+          text-align: center;
+          line-height: 0.88rem;
+          position: relative; }
+          .bao .fl1 .nv .nvs .xx .xxs a {
+            color: #fff;
+            display: block;
+            font-size: 0.3rem; }
+          .bao .fl1 .nv .nvs .xx .xxs .jiao {
+            width: 0.16rem;
+            height: 0.16rem;
+            background: url(img/n11.png) no-repeat;
+            position: absolute;
+            right: 0;
+            top: 0; }
+          .bao .fl1 .nv .nvs .xx .xxs .jiao1 {
+            width: 0.16rem;
+            height: 0.16rem;
+            background: url(img/n22.png) no-repeat;
+            position: absolute;
+            right: 0;
+            top: 0; }
+          .bao .fl1 .nv .nvs .xx .xxs .quan {
+            width: 0.06rem;
+            height: 0.06rem;
+            background: url(img/n111.png) no-repeat;
+            position: absolute;
+            left: 0.04rem;
+            top: 0.04rem; }
+      .bao .fl1 .nv .nvs .xx1 {
+        width: 100%;
+        height: 1.36rem;
+        background: url(img/bj.png) no-repeat;
+        text-align: center;
+        line-height: 0.88rem;
+        display: flex;
+        align-items: flex-end; }
+        .bao .fl1 .nv .nvs .xx1 a {
+          color: #fff;
+          display: block;
+          font-size: 0.3rem; }
+        .bao .fl1 .nv .nvs .xx1 .xx11 {
+          width: 2.03rem;
+          height: 0.88rem;
+          background: url(img/n2.png) no-repeat;
+          position: relative;
+          margin-left: 0.25rem; }
+          .bao .fl1 .nv .nvs .xx1 .xx11 .jiao {
+            width: 0.16rem;
+            height: 0.16rem;
+            background: url(img/n22.png) no-repeat;
+            position: absolute;
+            right: 0;
+            top: 0; }
+          .bao .fl1 .nv .nvs .xx1 .xx11 .quan {
+            width: 0.06rem;
+            height: 0.06rem;
+            background: url(img/n111.png) no-repeat;
+            position: absolute;
+            left: 0.04rem;
+            top: 0.04rem; }
+  .bao .fl1 .nan {
+    width: 100%;
+    height: 6.05rem;
+    background: #f2f2f2; }
+    .bao .fl1 .nan .kk {
+      width: 100%;
+      height: 0.47rem;
+      background: url(img/bj.png) no-repeat; }
+    .bao .fl1 .nan .nans {
+      width: 100%;
+      height: 0.64rem;
+      display: flex;
+      align-items: center; }
+      .bao .fl1 .nan .nans h2 {
+        font-size: 0.3rem;
+        color: #29A6DC;
+        padding-left: 0.15rem; }
+    .bao .fl1 .nan .nane {
+      width: 6.12rem;
+      height: 0;
+      border-bottom: 2px dashed #dfdfdf;
+      margin-left: 0.5rem; }
+    .bao .fl1 .nan .xx {
+      width: 100%;
+      height: 1.17rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end; }
+      .bao .fl1 .nan .xx .xxs:nth-child(1) {
+        width: 2.03rem;
+        height: 0.88rem;
+        background: url(img/n1.png) no-repeat; }
+      .bao .fl1 .nan .xx .xxs:nth-child(2) {
+        width: 2.03rem;
+        height: 0.88rem;
+        background: url(img/n2.png) no-repeat; }
+      .bao .fl1 .nan .xx .xxs:nth-child(3) {
+        width: 2.03rem;
+        height: 0.88rem;
+        background: url(img/n1.png) no-repeat; }
+      .bao .fl1 .nan .xx .xxs {
+        text-align: center;
+        line-height: 0.88rem;
+        position: relative; }
+        .bao .fl1 .nan .xx .xxs a {
+          color: #fff;
+          display: block;
+          font-size: 0.3rem; }
+        .bao .fl1 .nan .xx .xxs .jiao {
+          width: 0.16rem;
+          height: 0.16rem;
+          background: url(img/n11.png) no-repeat;
+          position: absolute;
+          right: 0;
+          top: 0; }
+        .bao .fl1 .nan .xx .xxs .jiao1 {
+          width: 0.16rem;
+          height: 0.16rem;
+          background: url(img/n22.png) no-repeat;
+          position: absolute;
+          right: 0;
+          top: 0; }
+        .bao .fl1 .nan .xx .xxs .quan {
+          width: 0.06rem;
+          height: 0.06rem;
+          background: url(img/n111.png) no-repeat;
+          position: absolute;
+          left: 0.04rem;
+          top: 0.04rem; }
+    .bao .fl1 .nan .xx2 {
+      width: 100%;
+      height: 1.36rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+      background: url(img/bj.png) no-repeat; }
+      .bao .fl1 .nan .xx2 .xxs:nth-child(1) {
+        width: 2.03rem;
+        height: 0.88rem;
+        background: url(img/n1.png) no-repeat; }
+      .bao .fl1 .nan .xx2 .xxs:nth-child(2) {
+        width: 2.03rem;
+        height: 0.88rem;
+        background: url(img/n2.png) no-repeat; }
+      .bao .fl1 .nan .xx2 .xxs:nth-child(3) {
+        width: 2.03rem;
+        height: 0.88rem;
+        background: url(img/n1.png) no-repeat; }
+      .bao .fl1 .nan .xx2 .xxs {
+        text-align: center;
+        line-height: 0.88rem;
+        position: relative; }
+        .bao .fl1 .nan .xx2 .xxs a {
+          color: #fff;
+          display: block;
+          font-size: 0.3rem; }
+        .bao .fl1 .nan .xx2 .xxs .jiao {
+          width: 0.16rem;
+          height: 0.16rem;
+          background: url(img/n11.png) no-repeat;
+          position: absolute;
+          right: 0;
+          top: 0; }
+        .bao .fl1 .nan .xx2 .xxs .jiao1 {
+          width: 0.16rem;
+          height: 0.16rem;
+          background: url(img/n22.png) no-repeat;
+          position: absolute;
+          right: 0;
+          top: 0; }
+        .bao .fl1 .nan .xx2 .xxs .quan {
+          width: 0.06rem;
+          height: 0.06rem;
+          background: url(img/n111.png) no-repeat;
+          position: absolute;
+          left: 0.04rem;
+          top: 0.04rem; }
+    .bao .fl1 .nan .xx1 {
+      width: 100%;
+      height: 1.36rem;
+      background: url(img/bj.png) no-repeat;
+      text-align: center;
+      line-height: 0.88rem;
+      display: flex;
+      align-items: flex-end; }
+      .bao .fl1 .nan .xx1 a {
+        color: #fff;
+        display: block;
+        font-size: 0.3rem; }
+      .bao .fl1 .nan .xx1 .xx11 {
+        width: 2.03rem;
+        height: 0.88rem;
+        background: url(img/n2.png) no-repeat;
+        position: relative;
+        margin-left: 0.25rem; }
+        .bao .fl1 .nan .xx1 .xx11 .jiao {
+          width: 0.16rem;
+          height: 0.16rem;
+          background: url(img/n22.png) no-repeat;
+          position: absolute;
+          right: 0;
+          top: 0; }
+        .bao .fl1 .nan .xx1 .xx11 .quan {
+          width: 0.06rem;
+          height: 0.06rem;
+          background: url(img/n111.png) no-repeat;
+          position: absolute;
+          left: 0.04rem;
+          top: 0.04rem; }
+    .bao .fl1 .nan .xx3 {
+      width: 100%;
+      height: 1rem;
+      background: url(img/bj.png) no-repeat; }
+
+.bao .jw {
+  width: 100%;
+  height: 1rem;
+  display: flex; }
+  .bao .jw .ull {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #151C2B; }
+    .bao .jw .ull li {
+      width: 33.33%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .bao .jw .ull li a {
+        display: block;
+        width: 0.5rem;
+        height: 0.5rem; }
+      .bao .jw .ull li .aa1 {
+        background: url(img/j.png);
+        background-size: cover; }
+      .bao .jw .ull li .aa2 {
+        background: url(img/s.png);
+        background-size: cover; }
+      .bao .jw .ull li .aa3 {
+        background: url(img/w.png);
+        background-size: cover; }
+      .bao .jw .ull li span {
+        font-size: 0.25rem; }
+      .bao .jw .ull li .yan {
+        color: #6d6e6e; }
+    .bao .jw .ull .lii {
+      background: #0D121C;
+      border-left: 1px solid #717171;
+      border-right: 1px solid #717171; }
+      .bao .jw .ull .lii span {
+        color: #fff; }

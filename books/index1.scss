@@ -1,0 +1,356 @@
+@import url(base.css);
+@import "mixin";
+*{
+	box-sizing: border-box;
+}
+html{
+	$name:320px,360px,375px,412px,414px,750px;
+		@each $i in $name{
+			@media screen and(min-width: #{$i}){
+				font-size:100*($i/750);
+			}
+		}
+}
+.bao{
+	.top{
+		width: 100%;
+		height: 0.4rem;
+		background: #29a6dc;
+		.tops{
+			width: 100%;
+			height: 100%;
+			background: url(img/tit.png);
+			background-size: cover;
+		}
+	}
+	.sousuo{
+		width: 100%;
+		height: 1rem;
+		background: #29a6dc;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.nk{
+			width: 94%;
+			height: 1rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			.xuan{
+				width: 5.7rem;
+				height: 0.84rem;
+				text-align: center;
+				background: #2A3441;
+				border-radius: 1rem;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				.li{
+					width: 1.62rem;
+					height: 0.66rem;
+					display: flex;
+				    flex-direction: column;
+				    justify-content: center;
+				    align-items: center;
+					a{
+						font-size: 0.2rem;
+						color: #fff;
+						display: block;
+						width: 100%;
+					}
+					p{
+						font-size: 0.12rem;
+						color: #fff;
+					}
+				}
+				.lis{
+					background: #29a6dc;
+					border: 2px solid #fff;
+					border-radius: 1rem;
+				}
+				.xi{
+					width: 0.03rem;
+				    height: 0.6rem;
+				    background: url(img/xian.png) no-repeat;
+				    background-size: cover;
+				}
+			}
+			.yq1{
+				width: 0.46rem;
+				height: 0.46rem;
+				background: #fff;
+				border: 2px solid #076cbe;
+				border-radius: 1rem;
+				display: flex;
+			    align-items: center;
+			    justify-content: center;
+			    position: absolute;
+			    right: 0;
+				a{
+					width: 0.21rem;
+					height: 0.18rem;
+					background: url(img/ss.png)no-repeat;
+					background-size: cover;
+				}
+			}
+		}
+			
+	}
+	.zi{
+		width: 100%;
+		height: 2.7rem;
+		background: url(img/5.png);
+		background-size: cover;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		.zis{
+			width: 100%;
+			height: 100%;
+			background: #747577;
+			opacity: 0.3;
+			position: absolute;
+		}
+		.zii{
+			width: 94%;
+			height: 100%;
+			display: flex;
+			text-align: center;
+			.zi1{
+				color: #fff;
+				display: flex;
+				flex-direction: column;
+			    justify-content: center;
+			    align-items: center;
+				p{
+					padding-top: 5px;
+				}
+				a{
+					display: block;
+					width: 0.25rem;
+					height: 0.26rem;
+					background: url(img/shu.png);
+					background-size: cover;
+				}
+				h2{
+					font-size: 0.3rem;
+				}
+				.p2{
+					font-size: 0.12rem;
+				}
+				.p3,.p4{
+					font-size: 0.14rem;
+				}
+			}
+			.zi2{
+				display: flex;
+				flex-direction: column;
+			    justify-content: center;
+			    width: 50%;
+				height: 100%;
+				li{
+					display: flex;
+					align-items:center;
+					font-size: 0.22rem;
+					margin: 0.1rem 0;
+					span{
+						font-size: 0.14rem;
+						color: #fff;
+					}
+				}
+				li div{
+					width: 0.79rem;
+					margin-right: 0.15rem;
+				}
+					li:nth-child(1){
+						div{
+						height: 0.25rem;
+						background: url(img/top2.png)right center/0.6rem  0.25rem no-repeat;
+						
+						}
+						
+					}
+					li:nth-child(2){
+						div{
+						height: 0.35rem;
+						background: url(img/top1.png)right center /0.8rem 0.35rem no-repeat;
+					
+						}
+						
+					}
+					li:nth-child(3){
+						div{
+						height: 0.2rem;
+						background: url(img/top3.png)right center/0.5rem 0.2rem no-repeat;
+						
+						}
+						
+					}
+					
+			}
+		}
+		.zii>div{
+			width: 50%;
+			height: 100%;
+			float: left;
+		}
+	}
+	.kong{
+		width: 100%;
+		height: 0.16rem;
+	}
+	.zi{
+		width: 100%;
+		height: 2.7rem;
+		background: url(img/5.png);
+		background-size: cover;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		.zis{
+			width: 100%;
+			height: 100%;
+			background: #747577;
+			opacity: 0.3;
+			position: absolute;
+		}
+		.zii{
+			width: 94%;
+			height: 100%;
+			display: flex;
+			text-align: center;
+			.zi1{
+				color: #fff;
+				display: flex;
+				flex-direction: column;
+			    justify-content: center;
+			    align-items: center;
+				p{
+					padding-top: 5px;
+				}
+				a{
+					display: block;
+					width: 0.25rem;
+					height: 0.26rem;
+					background: url(img/shu.png);
+					background-size: cover;
+				}
+				h2{
+					font-size: 0.3rem;
+				}
+				.p2{
+					font-size: 0.12rem;
+				}
+				.p3,.p4{
+					font-size: 0.14rem;
+				}
+			}
+			.zi2{
+				display: flex;
+				flex-direction: column;
+			    justify-content: center;
+			    width: 50%;
+				height: 100%;
+				li{
+					display: flex;
+					align-items:center;
+					font-size: 0.22rem;
+					margin: 0.1rem 0;
+					span{
+						font-size: 0.14rem;
+						color: #fff;
+					}
+				}
+				li div{
+					width: 0.79rem;
+					margin-right: 0.15rem;
+				}
+					li:nth-child(1){
+						div{
+						height: 0.25rem;
+						background: url(img/top2.png)right center/0.6rem  0.25rem no-repeat;
+						
+						}
+						
+					}
+					li:nth-child(2){
+						div{
+						height: 0.35rem;
+						background: url(img/top1.png)right center /0.8rem 0.35rem no-repeat;
+					
+						}
+						
+					}
+					li:nth-child(3){
+						div{
+						height: 0.2rem;
+						background: url(img/top3.png)right center/0.5rem 0.2rem no-repeat;
+						
+						}
+						
+					}
+					
+			}
+		}
+		.zii>div{
+			width: 50%;
+			height: 100%;
+			float: left;
+		}
+	}
+	.kong1{
+		width: 100%;
+		height: 0.32rem;
+	}
+	.jw{
+		width: 100%;
+		height: 1rem;
+		display: flex;
+		.ull{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			background: #151C2B;
+			li{
+				width: 33.33%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+			    justify-content: center;
+			    align-items: center;
+				a{
+					display: block;
+					width: 0.5rem;
+					height: 0.5rem;
+				}
+				.aa1{
+					background: url(img/j.png);
+					background-size: cover;
+				}
+				.aa2{
+					background: url(img/s.png);
+					background-size: cover;
+				}
+				.aa3{
+					background: url(img/w.png);
+					background-size: cover;
+				}
+				span{
+					font-size: 0.25rem;
+				}
+				.yan{
+					color: #6d6e6e;
+				}
+			}
+			.lii{
+				background: #0D121C;
+				border-left: 1px solid #717171;
+				border-right: 1px solid #717171;
+				span{
+					color: #fff;
+				}
+			}
+		}
+	}
+}

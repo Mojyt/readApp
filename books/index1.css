@@ -1,0 +1,289 @@
+@import url(base.css);
+* {
+  box-sizing: border-box; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+.bao .top {
+  width: 100%;
+  height: 0.4rem;
+  background: #29a6dc; }
+  .bao .top .tops {
+    width: 100%;
+    height: 100%;
+    background: url(img/tit.png);
+    background-size: cover; }
+
+.bao .sousuo {
+  width: 100%;
+  height: 1rem;
+  background: #29a6dc;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .bao .sousuo .nk {
+    width: 94%;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+    .bao .sousuo .nk .xuan {
+      width: 5.7rem;
+      height: 0.84rem;
+      text-align: center;
+      background: #2A3441;
+      border-radius: 1rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      .bao .sousuo .nk .xuan .li {
+        width: 1.62rem;
+        height: 0.66rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .bao .sousuo .nk .xuan .li a {
+          font-size: 0.2rem;
+          color: #fff;
+          display: block;
+          width: 100%; }
+        .bao .sousuo .nk .xuan .li p {
+          font-size: 0.12rem;
+          color: #fff; }
+      .bao .sousuo .nk .xuan .lis {
+        background: #29a6dc;
+        border: 2px solid #fff;
+        border-radius: 1rem; }
+      .bao .sousuo .nk .xuan .xi {
+        width: 0.03rem;
+        height: 0.6rem;
+        background: url(img/xian.png) no-repeat;
+        background-size: cover; }
+    .bao .sousuo .nk .yq1 {
+      width: 0.46rem;
+      height: 0.46rem;
+      background: #fff;
+      border: 2px solid #076cbe;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      right: 0; }
+      .bao .sousuo .nk .yq1 a {
+        width: 0.21rem;
+        height: 0.18rem;
+        background: url(img/ss.png) no-repeat;
+        background-size: cover; }
+
+.bao .zi {
+  width: 100%;
+  height: 2.7rem;
+  background: url(img/5.png);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center; }
+  .bao .zi .zis {
+    width: 100%;
+    height: 100%;
+    background: #747577;
+    opacity: 0.3;
+    position: absolute; }
+  .bao .zi .zii {
+    width: 94%;
+    height: 100%;
+    display: flex;
+    text-align: center; }
+    .bao .zi .zii .zi1 {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .bao .zi .zii .zi1 p {
+        padding-top: 5px; }
+      .bao .zi .zii .zi1 a {
+        display: block;
+        width: 0.25rem;
+        height: 0.26rem;
+        background: url(img/shu.png);
+        background-size: cover; }
+      .bao .zi .zii .zi1 h2 {
+        font-size: 0.3rem; }
+      .bao .zi .zii .zi1 .p2 {
+        font-size: 0.12rem; }
+      .bao .zi .zii .zi1 .p3, .bao .zi .zii .zi1 .p4 {
+        font-size: 0.14rem; }
+    .bao .zi .zii .zi2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      height: 100%; }
+      .bao .zi .zii .zi2 li {
+        display: flex;
+        align-items: center;
+        font-size: 0.22rem;
+        margin: 0.1rem 0; }
+        .bao .zi .zii .zi2 li span {
+          font-size: 0.14rem;
+          color: #fff; }
+      .bao .zi .zii .zi2 li div {
+        width: 0.79rem;
+        margin-right: 0.15rem; }
+      .bao .zi .zii .zi2 li:nth-child(1) div {
+        height: 0.25rem;
+        background: url(img/top2.png) right center/0.6rem 0.25rem no-repeat; }
+      .bao .zi .zii .zi2 li:nth-child(2) div {
+        height: 0.35rem;
+        background: url(img/top1.png) right center/0.8rem 0.35rem no-repeat; }
+      .bao .zi .zii .zi2 li:nth-child(3) div {
+        height: 0.2rem;
+        background: url(img/top3.png) right center/0.5rem 0.2rem no-repeat; }
+  .bao .zi .zii > div {
+    width: 50%;
+    height: 100%;
+    float: left; }
+
+.bao .kong {
+  width: 100%;
+  height: 0.16rem; }
+
+.bao .zi {
+  width: 100%;
+  height: 2.7rem;
+  background: url(img/5.png);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center; }
+  .bao .zi .zis {
+    width: 100%;
+    height: 100%;
+    background: #747577;
+    opacity: 0.3;
+    position: absolute; }
+  .bao .zi .zii {
+    width: 94%;
+    height: 100%;
+    display: flex;
+    text-align: center; }
+    .bao .zi .zii .zi1 {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .bao .zi .zii .zi1 p {
+        padding-top: 5px; }
+      .bao .zi .zii .zi1 a {
+        display: block;
+        width: 0.25rem;
+        height: 0.26rem;
+        background: url(img/shu.png);
+        background-size: cover; }
+      .bao .zi .zii .zi1 h2 {
+        font-size: 0.3rem; }
+      .bao .zi .zii .zi1 .p2 {
+        font-size: 0.12rem; }
+      .bao .zi .zii .zi1 .p3, .bao .zi .zii .zi1 .p4 {
+        font-size: 0.14rem; }
+    .bao .zi .zii .zi2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      height: 100%; }
+      .bao .zi .zii .zi2 li {
+        display: flex;
+        align-items: center;
+        font-size: 0.22rem;
+        margin: 0.1rem 0; }
+        .bao .zi .zii .zi2 li span {
+          font-size: 0.14rem;
+          color: #fff; }
+      .bao .zi .zii .zi2 li div {
+        width: 0.79rem;
+        margin-right: 0.15rem; }
+      .bao .zi .zii .zi2 li:nth-child(1) div {
+        height: 0.25rem;
+        background: url(img/top2.png) right center/0.6rem 0.25rem no-repeat; }
+      .bao .zi .zii .zi2 li:nth-child(2) div {
+        height: 0.35rem;
+        background: url(img/top1.png) right center/0.8rem 0.35rem no-repeat; }
+      .bao .zi .zii .zi2 li:nth-child(3) div {
+        height: 0.2rem;
+        background: url(img/top3.png) right center/0.5rem 0.2rem no-repeat; }
+  .bao .zi .zii > div {
+    width: 50%;
+    height: 100%;
+    float: left; }
+
+.bao .kong1 {
+  width: 100%;
+  height: 0.32rem; }
+
+.bao .jw {
+  width: 100%;
+  height: 1rem;
+  display: flex; }
+  .bao .jw .ull {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #151C2B; }
+    .bao .jw .ull li {
+      width: 33.33%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .bao .jw .ull li a {
+        display: block;
+        width: 0.5rem;
+        height: 0.5rem; }
+      .bao .jw .ull li .aa1 {
+        background: url(img/j.png);
+        background-size: cover; }
+      .bao .jw .ull li .aa2 {
+        background: url(img/s.png);
+        background-size: cover; }
+      .bao .jw .ull li .aa3 {
+        background: url(img/w.png);
+        background-size: cover; }
+      .bao .jw .ull li span {
+        font-size: 0.25rem; }
+      .bao .jw .ull li .yan {
+        color: #6d6e6e; }
+    .bao .jw .ull .lii {
+      background: #0D121C;
+      border-left: 1px solid #717171;
+      border-right: 1px solid #717171; }
+      .bao .jw .ull .lii span {
+        color: #fff; }
