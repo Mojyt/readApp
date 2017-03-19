@@ -103,7 +103,7 @@ body{
 }
 
 .content_box{
-  @include cfx(100%,11.97rem);
+  @include cfx(100%,auto);
   padding:1.6% 2.5%;
   position: relative;
   display: flex;
@@ -182,6 +182,7 @@ body{
 
   .feedback_box{
     @include cfx(100%,3.26rem);
+    padding-top:2%;
   }
   .feedback_box .item .item_l img{
     @include cfx(0.38rem,0.38rem);

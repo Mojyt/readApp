@@ -178,7 +178,7 @@ body {
 
 .content_box {
   width: 100%;
-  height: 11.97rem;
+  height: auto;
   padding: 1.6% 2.5%;
   position: relative;
   display: flex;

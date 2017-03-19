@@ -103,7 +103,7 @@ body{
 }
 
 .content_box{
-  @include cfx(100%,11.97rem);
+  @include cfx(100%,auto);
   padding:1.6% 2.5%;
   position: relative;
   display: flex;
