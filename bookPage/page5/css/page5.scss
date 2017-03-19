@@ -1,0 +1,226 @@
+@import "../../mixin";
+@import "font";
+@import "../../jiangrong";
+
+.inner{
+  @include cube(95%,100%);
+  margin:0 auto;
+}
+
+
+
+.header{
+  @include cube(100%,1.28rem);
+  background: #29A6DC;
+  .state{
+    @include cube(100%,31.25%)
+  }
+  .nav{
+    @include cube(100%,68.75%);
+  }
+  .nav .inner{
+    display: flex;
+    align-items: center;
+    a{
+      display: inline-block;
+      @include square(0.4rem);
+      background: #fff;
+      border-radius: 50%;
+      border: 2px solid #076CBE;
+      text-align: center;
+      line-height: 0.38rem;
+      font-size: 0.24rem;
+      color:#3DAEDF;
+      //margin-top:0.26rem;
+      font-family: 'dump',sans-serif;
+    }
+    a::before{
+      content: '\e658';
+    }
+  }
+  .nav .inner .all-review-title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:0 auto;
+    h2{
+      flex-basis: 100%;
+      font-size: 0.36rem;
+      font-family: '苹方',sans-serif;
+      color:#fff;
+      text-align: center;
+    }
+    span{
+      flex-basis: 100%;
+      font-size: 0.18rem;
+      font-family: 'san',sans-serif;
+      color:#A3E3FF;
+      text-align: center;
+    }
+  }
+}
+.mask{
+  @include cube(100%,100%);
+  background: #666;
+  opacity: 0.8;
+  position: absolute;
+  top:0;left:0;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .little{
+    @include cube(64.1%,2.96rem);
+    background: #fff;
+    border-radius: 0.15rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    overflow: hidden;
+  }
+  .little .top{
+    flex-basis: 100%;
+    height:24.7%;
+    background: #29DCBC;
+    display: flex;
+    padding-left: 0.5rem;
+    .top-l{
+      display: flex;
+      align-items: center;
+      margin-right: 0.1rem;
+    }
+    .top-l .wrap{
+      @include square(0.34rem);
+      background: #fff;
+      text-align: center;
+      border-radius: 50%;
+      span{
+        font-size: 0.2rem;
+        color:#29DCBC;
+        text-align: center;
+        font-family: 'edition',sans-serif;
+      }
+      span::before{
+        content: '\e627';
+      }
+    }
+    .top-r{
+      display: flex;
+      align-content: center;
+      flex-wrap: wrap;
+      //margin-right: 0.1rem;
+    }
+    .top-r span:nth-child(1){
+      flex-basis: 100%;
+      font-size: 0.22rem;
+      font-family: '苹方',sans-serif;
+      color:#fff;
+    }
+    .top-r span:nth-child(2){
+      flex-basis: 100%;
+      font-size: 0.16rem;
+      font-family: 'san',sans-serif;
+      color:#D1FEF6;
+    }
+  }
+  .little .middle{
+    flex-basis: 100%;
+    height:42%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .success h3{
+      text-align: center;
+      font-family: '苹方',sans-serif;
+      font-size: 0.26rem;
+    }
+    .success span{
+      text-align: center;
+      font-family: 'san',sans-serif;
+      font-size: 0.18rem;
+    }
+  }
+  .little .bottom{
+    flex-basis: 100%;
+    height:33.2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .btn{
+      display: flex;
+      justify-content: space-around;
+    }
+    .btn button{
+      @include cube(1.99rem,0.59rem);
+      border:1px solid #28DD8B;
+      outline: none;
+      display: flex;
+      justify-content: space-around;
+      border-radius: 0.8rem;
+      font-size: 0.28rem;
+      font-family: '苹方',sans-serif;
+      align-items: center;
+      margin:0 0.1rem;
+      span.cir{
+        @include square(0.08rem);
+        border-radius: 50%;
+      }
+    }
+    .btn button:nth-child(1){
+      background: #fff;
+      color:#28DD8B;
+      span.cir{
+        background: #28DD8B;
+      }
+    }
+    .btn button:nth-child(2){
+      background: #28DD8B;
+      color:#fff;
+      span.cir{
+        background: #fff;
+      }
+    }
+  }
+}
+
+.star{
+  display: flex;
+  @include cube(100%,1.6rem);
+  justify-content: center;
+  align-items: center;
+  border-bottom:2px solid #9F9F9F;
+  li{
+    font-family: 'star',sans-serif;
+    color:#FFD800;
+    font-size: 52px;
+  }
+  li::before{
+    content: '\e659';
+  }
+}
+
+.neirong{
+  width:100%;
+  margin-top: 0.44rem;
+  .inner #nr{
+    width:100%;
+    height:3.24rem;
+    box-shadow: 2px 1px 11px rgba(220, 220, 220, 0.85);
+    p{
+      font-family: '苹方',sans-serif;
+      font-size: 0.22rem;
+      color:#666666;
+      padding:0.1rem;
+    }
+  }
+}
+
+.neirong2{
+  height:2.4rem;
+}
+
+.footer{
+  img{
+    @include cube(100%,4.3rem);
+  }
+}

@@ -1,0 +1,256 @@
+@charset "UTF-8";
+/*函数*/
+/*@function bg(){
+	$r:floor(random()*56+200);
+	$g:floor(random()*56);
+	$b:floor(random()*56);
+	$color:rgb($r,$g,$b);
+	@debug $color;  
+	@return $color;
+}*/
+@font-face {
+  font-family: 'dump';
+  src: url(../../fonts/font_c1dcn1zfwtu4bo6r/iconfont.woff); }
+
+@font-face {
+  font-family: 'san';
+  src: url(../../fonts/sanfranciscodisplay-regular-webfont.ttf); }
+
+@font-face {
+  font-family: 'star';
+  src: url(../../fonts/font_1ilk7mnsoh1714i/iconfont.woff); }
+
+@font-face {
+  font-family: 'icon';
+  src: url(../../fonts/font_g527vzq4b5oecdi/iconfont.woff); }
+
+@font-face {
+  font-family: 'edition';
+  src: url(../../fonts/font_q2r7e5at5pn6zuxr/iconfont.woff); }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 365px) {
+  html {
+    font-size: 48.66667px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+body {
+  font-size: 16px; }
+
+.inner {
+  width: 95%;
+  height: 100%;
+  margin: 0 auto; }
+
+.header {
+  width: 100%;
+  height: 1.28rem;
+  background: #29A6DC; }
+  .header .state {
+    width: 100%;
+    height: 31.25%; }
+  .header .nav {
+    width: 100%;
+    height: 68.75%; }
+  .header .nav .inner {
+    display: flex;
+    align-items: center; }
+    .header .nav .inner a {
+      display: inline-block;
+      width: 0.4rem;
+      height: 0.4rem;
+      background: #fff;
+      border-radius: 50%;
+      border: 2px solid #076CBE;
+      text-align: center;
+      line-height: 0.38rem;
+      font-size: 0.24rem;
+      color: #3DAEDF;
+      font-family: 'dump',sans-serif; }
+    .header .nav .inner a::before {
+      content: '\e658'; }
+  .header .nav .inner .all-review-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto; }
+    .header .nav .inner .all-review-title h2 {
+      flex-basis: 100%;
+      font-size: 0.36rem;
+      font-family: '苹方',sans-serif;
+      color: #fff;
+      text-align: center; }
+    .header .nav .inner .all-review-title span {
+      flex-basis: 100%;
+      font-size: 0.18rem;
+      font-family: 'san',sans-serif;
+      color: #A3E3FF;
+      text-align: center; }
+
+.mask {
+  width: 100%;
+  height: 100%;
+  background: #666;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .mask .little {
+    width: 64.1%;
+    height: 2.96rem;
+    background: #fff;
+    border-radius: 0.15rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    overflow: hidden; }
+  .mask .little .top {
+    flex-basis: 100%;
+    height: 24.7%;
+    background: #29DCBC;
+    display: flex;
+    padding-left: 0.5rem; }
+    .mask .little .top .top-l {
+      display: flex;
+      align-items: center;
+      margin-right: 0.1rem; }
+    .mask .little .top .top-l .wrap {
+      width: 0.34rem;
+      height: 0.34rem;
+      background: #fff;
+      text-align: center;
+      border-radius: 50%; }
+      .mask .little .top .top-l .wrap span {
+        font-size: 0.2rem;
+        color: #29DCBC;
+        text-align: center;
+        font-family: 'edition',sans-serif; }
+      .mask .little .top .top-l .wrap span::before {
+        content: '\e627'; }
+    .mask .little .top .top-r {
+      display: flex;
+      align-content: center;
+      flex-wrap: wrap; }
+    .mask .little .top .top-r span:nth-child(1) {
+      flex-basis: 100%;
+      font-size: 0.22rem;
+      font-family: '苹方',sans-serif;
+      color: #fff; }
+    .mask .little .top .top-r span:nth-child(2) {
+      flex-basis: 100%;
+      font-size: 0.16rem;
+      font-family: 'san',sans-serif;
+      color: #D1FEF6; }
+  .mask .little .middle {
+    flex-basis: 100%;
+    height: 42%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .mask .little .middle .success h3 {
+      text-align: center;
+      font-family: '苹方',sans-serif;
+      font-size: 0.26rem; }
+    .mask .little .middle .success span {
+      text-align: center;
+      font-family: 'san',sans-serif;
+      font-size: 0.18rem; }
+  .mask .little .bottom {
+    flex-basis: 100%;
+    height: 33.2%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .mask .little .bottom .btn {
+      display: flex;
+      justify-content: space-around; }
+    .mask .little .bottom .btn button {
+      width: 1.99rem;
+      height: 0.59rem;
+      border: 1px solid #28DD8B;
+      outline: none;
+      display: flex;
+      justify-content: space-around;
+      border-radius: 0.8rem;
+      font-size: 0.28rem;
+      font-family: '苹方',sans-serif;
+      align-items: center;
+      margin: 0 0.1rem; }
+      .mask .little .bottom .btn button span.cir {
+        width: 0.08rem;
+        height: 0.08rem;
+        border-radius: 50%; }
+    .mask .little .bottom .btn button:nth-child(1) {
+      background: #fff;
+      color: #28DD8B; }
+      .mask .little .bottom .btn button:nth-child(1) span.cir {
+        background: #28DD8B; }
+    .mask .little .bottom .btn button:nth-child(2) {
+      background: #28DD8B;
+      color: #fff; }
+      .mask .little .bottom .btn button:nth-child(2) span.cir {
+        background: #fff; }
+
+.star {
+  display: flex;
+  width: 100%;
+  height: 1.6rem;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #9F9F9F; }
+  .star li {
+    font-family: 'star',sans-serif;
+    color: #FFD800;
+    font-size: 52px; }
+  .star li::before {
+    content: '\e659'; }
+
+.neirong {
+  width: 100%;
+  margin-top: 0.44rem; }
+  .neirong .inner #nr {
+    width: 100%;
+    height: 3.24rem;
+    box-shadow: 2px 1px 11px rgba(220, 220, 220, 0.85); }
+    .neirong .inner #nr p {
+      font-family: '苹方',sans-serif;
+      font-size: 0.22rem;
+      color: #666666;
+      padding: 0.1rem; }
+
+.neirong2 {
+  height: 2.4rem; }
+
+.footer img {
+  width: 100%;
+  height: 4.3rem; }
