@@ -10,19 +10,19 @@
 }*/
 @font-face {
   font-family: 'dump';
-  src: url(../fonts/font_c1dcn1zfwtu4bo6r/iconfont.woff); }
+  src: url(../../fonts/font_c1dcn1zfwtu4bo6r/iconfont.woff); }
 
 @font-face {
   font-family: 'san';
-  src: url(../fonts/sanfranciscodisplay-regular-webfont.ttf); }
+  src: url(../../fonts/sanfranciscodisplay-regular-webfont.ttf); }
 
 @font-face {
   font-family: 'star';
-  src: url(../fonts/font_1ilk7mnsoh1714i/iconfont.woff); }
+  src: url(../../fonts/font_1ilk7mnsoh1714i/iconfont.woff); }
 
 @font-face {
   font-family: 'icon';
-  src: url(../fonts/font_g527vzq4b5oecdi/iconfont.woff); }
+  src: url(../../fonts/font_g527vzq4b5oecdi/iconfont.woff); }
 
 @media screen and (min-width: 320px) {
   html {
