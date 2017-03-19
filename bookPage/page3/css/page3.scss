@@ -60,6 +60,7 @@
     .top img{
       @include cube(2.9rem,3.11rem);
       align-self: center;
+
     }
     .top .detailed{
       margin-top: 0.6rem;
@@ -238,10 +239,10 @@
     }
     .bookReview{
       flex-basis: 100%;
-      height:3.31rem;
+      //height:3.31rem;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      //justify-content: space-between;
       li{
         flex-basis: 100%;
         height:1.54rem;
@@ -324,137 +325,174 @@
     }
     .all{
       flex-basis: 100%;
-    }
-  }
-  .inner .latest{
-    height:1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .look-all{
-      @include cube(2.2rem,0.37rem);
-      background: #29A6DC;
-      border-radius: 0.15rem;
-      color:#fff;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
-    .look-all .check-all{
-      font-size: 0.24rem;
-      font-family: '苹方',sans-serif;
-    }
-    .look-all .circle{
-      width: 0.09rem;
-      height: 0.09rem;
-      border-radius: 50%;
-      background: #fff;
+      @include bg;
     }
   }
 }
 
-.last{
-  @include cube(100%,2.64rem);
+.middle{
+  margin-top:0.87rem;
+  width:100%;
   .inner{
     display: flex;
     flex-wrap: wrap;
-    align-content: space-around;
   }
-  .inner .bookmark{
+  .inner .middle-t{
     flex-basis: 100%;
-    padding:13px;
-    display: flex;
-    align-items: center;
-    img{
-      @include cube(0.52rem,0.55rem);
-      margin-left: 15px;
+    .bookmark{
+      flex-basis: 100%;
+      padding-left:13px;
+      display: flex;
+      align-items: center;
+      height:1.13rem;
+      img{
+        @include cube(0.52rem,0.55rem);
+        //margin-left: 15px;
+      }
+      .bookmark-r{
+        padding-left: 0.15rem;
+        h3{
+          font-size: 0.3rem;
+          font-family: '苹方',sans-serif;
+          color:#252525;
+        }
+        span{
+          font-size: 0.2rem;
+          font-family: 'san',sans-serif;
+          color:#252525;
+        }
+      }
     }
-    .bookmark-r{
-      padding-left: 0.15rem;
-      h3{
+  }
+  .inner .middle-b{
+    flex-basis: 100%;
+    .mine{
+      flex-basis: 100%;
+      height:1.13rem;
+      display: flex;
+      align-items: center;
+      padding-left: 13px;
+      img{
+        @include cube(0.6rem,0.62rem);
+      }
+      .my-note{
+        padding-left: 0.15rem;
+      }
+      .my-note h3{
         font-size: 0.3rem;
         font-family: '苹方',sans-serif;
-        color:#252525;
+        color:#000;
       }
-      span{
+      .my-note span{
         font-size: 0.2rem;
         font-family: 'san',sans-serif;
-        color:#252525;
       }
     }
   }
-  .inner .list{
+  .inner .m{
+    .add{
+      @include cube(100%,0.87rem);
+      box-shadow: 2px 1px 11px rgba(220, 220, 220, 0.85);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .add img{
+      @include cube(0.35rem,0.36rem);
+    }
+    .add span{
+      font-size: 0.24rem;
+      font-family: '苹方',sans-serif;
+      padding-left:0.1rem;
+    }
+  }
+}
+
+.seem{
+  width:100%;
+  margin-top:0.1rem;
+  .inner{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .inner .seem-book{
     flex-basis: 100%;
+    height:1.17rem;
     display: flex;
     align-items: center;
+    padding-left: 13px;
     img{
-      @include cube(0.7rem,0.7rem);
-      margin-left:34px;
+      @include cube(0.6rem,0.55rem);
     }
-    .list-r{
+    .smb{
       padding-left: 0.15rem;
-      h4{
-        font-size: 0.24rem;
-        font-family: '苹方',sans-serif;
-        color:#151C2B;
-        font-weight: bold;
-      }
-      p{
-        font-size: 0.18rem;
-        font-family: '苹方',sans-serif;
-        color:#505050;
-      }
-      .list-r-b{
+    }
+    .smb h3{
+      font-size: 0.3rem;
+      font-family: '苹方',sans-serif;
+      color: #000;
+    }
+    .smb span{
+      font-size: 0.2rem;
+      font-family: 'san',sans-serif;
+    }
+  }
+  .inner .recommend{
+    flex-basis: 100%;
+    height:3.46rem;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    .books{
+      flex-basis: 100%;
+      display: flex;
+      justify-content: space-between;
+      .d{
+        width:2.13rem;
+        box-shadow: 2px 1px 11px rgba(220, 220, 220, 0.85);
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height:3.09rem;
+      }
+      .d img{
+        @include cube(1.78rem,2.38rem);
+        margin-top: -0.1rem;
+      }
+      .d span:nth-child(2){
+        font-size: 0.2rem;
+        font-family: '苹方',sans-serif;
+        color:#333;
+      }
+      .d span:nth-child(3){
+        font-size: 0.15rem;
+        font-family: 'san',sans-serif;
+        color:#999999;
+        display: inline-block;
+        //height:0.17rem;
+      }
+    }
+    .dian{
+      flex-basis: 100%;
+      display: flex;
+      justify-content: center;
+      ul{
+        display: flex;
+        width:0.47rem;
         justify-content: space-between;
-        padding-top: 0.1rem;
-        .list-r-b-l{
-          display: flex;
-          padding-left:0.1rem;
-          align-items: center;
-          justify-content: space-between;
-          span:nth-child(1){
-            font-family: 'icon',sans-serif;
-            font-size: 0.2rem;
-            color:#8FB2FF;
-            &::before{
-              content: '\e76f';
-            }
-          }
-          span:nth-child(2){
-            font-size: 0.16rem;
-            color:#7F7F7F;
-            font-family: 'san',sans-serif;
-            padding-left: 0.05rem;
-          }
-        }
-        .list-r-b-r{
-          display:flex;
-          align-items: center;
-          justify-content: space-between;
-          //align-items: center;
-          span:nth-child(1){
-            font-family: 'icon',sans-serif;
-            font-size: 0.25rem;
-            font-weight: 600;
-            color:#F54DDF;
-            &::before{
-              content: '\e627';
-            }
-          }
-          span:nth-child(2){
-            font-size: 0.16rem;
-            color:#7F7F7F;
-            font-family: 'san',sans-serif;
-            padding-left: 0.05rem;
-            line-height: 0.3rem;
-          }
-        }
+      }
+      li{
+        @include square(0.08rem);
+        border-radius: 50%;
+        border:1px solid #0E96FF;
+      }
+      li:nth-child(1){
+        background: #0090FF;
       }
     }
   }
 }
 
 .footer{
-  @include cube(100%,0.8rem);
+  @include cube(100%,0.43rem);
 }

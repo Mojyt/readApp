@@ -1,17 +1,6 @@
 @import "../../mixin";
 @import "font";
-$device-list:320px,360px,365px,375px,384px,412px,414px,750px;
-
-html{
-  @each $device in $device-list{
-    @media screen and (min-width:$device){
-      font-size:100 * ($device/750);
-    }
-  }
-}
-body{
-  font-size: 16px;
-}
+@import "../../jiangrong";
 .inner{
   @include cube(95%,100%);
   margin:0 auto;
@@ -27,6 +16,8 @@ body{
     @include cube(100%,68.75%);
   }
   .nav .inner{
+    display: flex;
+    align-items: center;
     a{
       display: inline-block;
       @include square(0.4rem);
@@ -37,7 +28,7 @@ body{
       line-height: 0.38rem;
       font-size: 0.24rem;
       color:#3DAEDF;
-      margin-top:0.26rem;
+      //margin-top:0.26rem;
       font-family: 'dump',sans-serif;
     }
     a::before{
