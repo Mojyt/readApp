@@ -1,0 +1,249 @@
+@import 'mixin';
+@import "font";
+*{
+  padding:0;
+  margin:0;
+  list-style: none;
+  text-decoration: none;
+  border:none;
+  box-sizing:border-box;
+}
+
+$device-list:320px ,360px, 375px,384px,  412px, 414px , 600px, 640px,  750px;
+html{
+  @each $index in $device-list{
+    @media screen and (min-width:$index){
+      font-size:100 * ($index/750)
+    }
+  }
+}
+body{
+  font-size:16px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include cfx(100%,100%);
+}
+
+
+.bodybox{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include cfx(100%,100%);
+};
+
+.header{
+  @include cfx(100%,1.4rem);
+  background:#29A6DC;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+  align-content:space-between;
+  .power{
+    height:0.4rem;
+  }
+  .title{
+    height:1rem;
+    padding:1.6% 2.5%;
+    display:flex;
+    justify-content:space-between;
+  }
+  .title li{
+    flex:1;
+    position: relative;
+  }
+  li.set .setbox,li.letter .letterbox{
+    @include cfx(0.44rem,0.44rem);
+    border-radius: 50%;
+    border:2px solid #1074B5;
+    background:#fff;
+    @include center;
+    text-align: center;
+    line-height:0.38rem;
+    @include font(0.28rem,#29A6DC,400);
+    font-family: 'left',sans-serif;
+    &::before{
+      content:'\e603';
+    }
+  }
+  li.letter .letterbox{
+    &::before{
+      content:'\e630';
+    }
+  }
+  li.person{
+    flex-basis:70%;
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    .top{
+      @include font(0.36rem,#fff,400);
+      letter-spacing: 5px;
+      font-family: '苹方',sans-serif;
+    }
+    .middle{
+      display:block;
+      @include cfx(100%,0.06rem);
+      background:url(../images/line.jpg) center center no-repeat;
+    }
+    .bottom{
+      @include font(0.2rem,#90DCFF,400);
+      letter-spacing: 2px;
+      font-family: 'sanfranciscodisplay',sans-serif;
+    }
+  }
+
+}
+
+.content_box{
+  @include cfx(100%,11.97rem);
+  padding:1.6% 2.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:center;
+}
+
+
+.informationbtn{
+  @include cfx(5.7rem,.84rem);
+ background:#2A3441;
+  border-radius: 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  .system,.my{
+    @include cfx(2.4rem,0.68rem);
+    margin:0 2%;
+    background:url(../images/btn.png) center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    .f_one{
+      @include font(0.24rem,#fff,400);
+      font-family: pingfangm,sans-serif;
+    }
+    .f_two{
+      @include font(0.14rem,#fff,400);
+      font-family: sanfranciscodisplay,sans-serif;
+    }
+  }
+  .my{
+    background:none;
+  }
+  img{
+    @include cfx(0.06rem,0.62rem);
+  }
+}
+.content{
+  margin-top:3%;
+  width:100%;
+  display:flex;
+  justify-content: flex-start;
+  .box{
+    @include cfx(100%,3.58rem);
+    border-radius: 5px;
+    box-shadow:
+            0 0 12px #eaeaea,
+            0 0 12px #eaeaea,
+            0 0 12px #eaeaea,
+            0 0 12px #eaeaea;
+    border:1px solid #eaeaea;
+    background:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+  }
+  .box .item{
+    height:0.9rem;
+    width:100%;
+    padding:0 3%;
+    border-bottom:2px dotted #959595;
+    display:flex;
+    align-items: center;
+  }
+  .box .feeddback{
+    border-bottom:none;
+  }
+  .box .item .item_l{
+    flex: 1;
+    flex-basis: 80%;
+    display:flex;
+    height:100%;
+    justify-content: flex-start;
+    align-items:center;
+  }
+  .box .item .item_l img{
+    @include cfx(0.36rem,0.36rem);
+    margin-right:3%;
+  }
+  .box .content_note{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    .one{
+      @include font(0.26rem,#333,400);
+      font-family:'苹方',sans-serif;
+    }
+    .two{
+      @include font(0.16rem,#666,400);
+      font-family:'sanfranciscodisplay',sans-serif;
+    }
+    .three{
+      @include font(0.16rem,#959595,400);
+      font-family:'苹方',sans-serif;
+    }
+
+  }
+  .box .V{
+    flex: 1;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    @include font(0.24rem,#333,400);
+    font-family: pingfangm,sans-serif;
+    .more{
+      @include font(0.18rem,#6CC2E7,400);
+      font-family: more,sans-serif;
+      &::before{
+        content:'\e718';
+      }
+    }
+  }
+
+  .f_box{
+    @include cfx(100%,6.16rem);
+  }
+  .f_box .feeddback{
+    border-bottom:2px dotted #999;
+  }
+  .s_box{
+    @include cfx(100%,5.68rem);
+  }
+  .s_box .item{
+    height:1.14rem;
+  }
+  .s_box .item .item_l{
+    flex-basis: 60%;
+  }
+  .s_box .item .item_l img{
+    @include cfx(0.78rem,0.78rem);
+    margin-right:2%;
+  }
+  .s_box .m_v{
+    img{
+      @include cfx(0.2rem,0.2rem);
+    }
+    @include font(.16rem,#737373,400);
+    font-family:sanfranciscodisplay,sans-serif;
+  }
+
+}
+
+
+
+
+

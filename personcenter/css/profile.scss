@@ -105,6 +105,7 @@ body{
 .content_box{
   @include cfx(100%,11.97rem);
   padding:1.6% 2.5%;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -128,7 +129,7 @@ body{
     justify-content: flex-start;
   }
   .box .item{
-    flex:1;
+    height:0.9rem;
     width:100%;
     padding:0 3%;
     border-bottom:2px dotted #959595;
@@ -179,6 +180,55 @@ body{
     }
   }
 
+  .feedback_box{
+    @include cfx(100%,3.26rem);
+  }
+  .feedback_box .item .item_l img{
+    @include cfx(0.38rem,0.38rem);
+  }
+  .feedback_box .feeddback{
+    .one{
+      @include font(0.28rem,#333,400);
+    }
+  }
+
+  .verson_box{
+    z-index:1;
+    @include cfx(100%,7.48rem);
+    padding:5% 10%;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    margin-top:1%;
+    box-shadow:
+            0 0 12px #eaeaea,
+            0 0 12px #eaeaea,
+            0 0 0 #eaeaea,
+            0 0 12px #eaeaea;
+    .tilte_version{
+      display:flex;
+      flex-direction:column;
+      justify-content: flex-start;
+      align-items:center;
+      .v_one{
+        @include font(0.3rem,#333,400);
+        font-family: pingfangm,sans-serif;
+      }
+      .v_two{
+        @include font(0.16rem,#666,400);
+        font-family: sanfranciscodisplay,sans-serif;
+      }
+
+
+    }
+    p{
+      @include font(0.22rem,#666,400);
+      font-family: pingfangr,sans-serif;
+      margin-top:7%;
+    }
+  }
+
+
 }
 .contentb{
   margin-top:2%;
@@ -189,7 +239,51 @@ body{
   }
 }
 
+.submit{
+  @include cfx(100%,2.38rem);
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  .button{
+    @include cfx(75.2%,0.68rem);
+    background:#28DD8B;
+    border-radius: 0.34rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    li{
+      flex: 1;
+    }
+    li:nth-child(2){
+      flex-basis:80%;
+      text-align: center;
+      .exit_logo{
+        @include font(0.3rem,#fff,400);
+        font-family: 'pingfangm',sans-serif;
+      }
+    }
 
+    li:nth-child(1),li:nth-child(3){
+      display:flex;
+      justify-content: flex-end;
+      .circle{
+        @include cfx(0.06rem,0.06rem);
+        border-radius: 50%;
+        background:#fff;
+      }
+    }
+    li:nth-child(3){
+      justify-content: flex-start;
+    }
+  }
+
+};
+
+#img{
+  @include lr;
+  @include cfx(7.28rem,0.1rem);
+  top:1%;
+}
 
 .mask{
   @include cfx(100%,100%);

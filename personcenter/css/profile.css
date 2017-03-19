@@ -33,6 +33,10 @@
   src: url("../font/Pingfang/PingFang Medium.ttf"); }
 
 @font-face {
+  font-family: pingfangr;
+  src: url("../font/Pingfang/PingFang Regular.ttf"); }
+
+@font-face {
   font-family: huancun;
   src: url("../font/font_phfutfzj42ikke29/iconfont.woff"); }
 
@@ -176,6 +180,7 @@ body {
   width: 100%;
   height: 11.97rem;
   padding: 1.6% 2.5%;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start; }
@@ -194,7 +199,7 @@ body {
     flex-direction: column;
     justify-content: flex-start; }
   .content .box .item, .contentb .box .item {
-    flex: 1;
+    height: 0.9rem;
     width: 100%;
     padding: 0 3%;
     border-bottom: 2px dotted #959595;
@@ -242,6 +247,47 @@ body {
       font-family: more,sans-serif; }
       .content .box .V .more::before, .contentb .box .V .more::before {
         content: '\e718'; }
+  .content .feedback_box, .contentb .feedback_box {
+    width: 100%;
+    height: 3.26rem; }
+  .content .feedback_box .item .item_l img, .contentb .feedback_box .item .item_l img {
+    width: 0.38rem;
+    height: 0.38rem; }
+  .content .feedback_box .feeddback .one, .contentb .feedback_box .feeddback .one {
+    font-size: 0.28rem;
+    color: #333;
+    font-weight: 400; }
+  .content .verson_box, .contentb .verson_box {
+    z-index: 1;
+    width: 100%;
+    height: 7.48rem;
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 1%;
+    box-shadow: 0 0 12px #eaeaea, 0 0 12px #eaeaea, 0 0 0 #eaeaea, 0 0 12px #eaeaea; }
+    .content .verson_box .tilte_version, .contentb .verson_box .tilte_version {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center; }
+      .content .verson_box .tilte_version .v_one, .contentb .verson_box .tilte_version .v_one {
+        font-size: 0.3rem;
+        color: #333;
+        font-weight: 400;
+        font-family: pingfangm,sans-serif; }
+      .content .verson_box .tilte_version .v_two, .contentb .verson_box .tilte_version .v_two {
+        font-size: 0.16rem;
+        color: #666;
+        font-weight: 400;
+        font-family: sanfranciscodisplay,sans-serif; }
+    .content .verson_box p, .contentb .verson_box p {
+      font-size: 0.22rem;
+      color: #666;
+      font-weight: 400;
+      font-family: pingfangr,sans-serif;
+      margin-top: 7%; }
 
 .contentb {
   margin-top: 2%;
@@ -250,6 +296,50 @@ body {
   .contentb .box {
     width: 100%;
     height: 1.8rem; }
+
+.submit {
+  width: 100%;
+  height: 2.38rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .submit .button {
+    width: 75.2%;
+    height: 0.68rem;
+    background: #28DD8B;
+    border-radius: 0.34rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .submit .button li {
+      flex: 1; }
+    .submit .button li:nth-child(2) {
+      flex-basis: 80%;
+      text-align: center; }
+      .submit .button li:nth-child(2) .exit_logo {
+        font-size: 0.3rem;
+        color: #fff;
+        font-weight: 400;
+        font-family: 'pingfangm',sans-serif; }
+    .submit .button li:nth-child(1), .submit .button li:nth-child(3) {
+      display: flex;
+      justify-content: flex-end; }
+      .submit .button li:nth-child(1) .circle, .submit .button li:nth-child(3) .circle {
+        width: 0.06rem;
+        height: 0.06rem;
+        border-radius: 50%;
+        background: #fff; }
+    .submit .button li:nth-child(3) {
+      justify-content: flex-start; }
+
+#img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 7.28rem;
+  height: 0.1rem;
+  top: 1%; }
 
 .mask {
   width: 100%;
