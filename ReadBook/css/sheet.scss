@@ -1,0 +1,49 @@
+@import "mixin";
+@import "adapter";
+@import "base";
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+$inner: 95%;
+
+.bg {
+  display: flex;
+  flex-direction: column;
+  //@include width(750);
+  width: 100%;
+  max-width: 750px;
+  background: url("../images/browse_bg_03.png") no-repeat center center;
+  @include height(1334);
+}
+
+.inner {
+  width: 95%;
+  height: 100%;
+}
+
+/*导航栏*/
+
+.navigationBar{
+  @include height(140);
+  width: 100%;
+  background: url("../images/bg_03.png") -80px -142px no-repeat;
+  display: flex;
+  justify-content: center;
+}
+.mainBody{
+  width: 100%;
+  flex: 1;
+  @include bg;
+  display: flex;
+  justify-content: center;
+}
+.tabBar{
+  @include height(226);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #151c2b;
+}

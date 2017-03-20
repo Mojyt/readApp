@@ -1,0 +1,235 @@
+@charset "UTF-8";
+/*初始化*/
+@font-face {
+  /*粗体*/
+  font-family: Bold;
+  src: url("../fonts/PingFangBold.ttf"); }
+
+@font-face {
+  /*特细*/
+  font-family: ExtraLight;
+  src: url("../fonts/PingFangExtraLight.ttf"); }
+
+@font-face {
+  /*特粗*/
+  font-family: Heavy;
+  src: url("../fonts/PingFangHeavy.ttf"); }
+
+@font-face {
+  /*细体*/
+  font-family: Light;
+  src: url("../fonts/PingFangLight.ttf"); }
+
+@font-face {
+  /*中等*/
+  font-family: Medium;
+  src: url("../fonts/PingFangMedium.ttf"); }
+
+@font-face {
+  /*常规*/
+  font-family: Regular;
+  src: url("../fonts/PingFangRegular.ttf"); }
+
+/*垂直居中*/
+/*水平居中*/
+/*居中*/
+/*长方形*/
+/*正方形*/
+/*圆形*/
+/*随机颜色*/
+/*各种分辨率手机适配方案*/
+/*高度适配*/
+/*宽度适配*/
+/*字体*/
+/*border-width*/
+/*各种margin值适配*/
+/*各种padding值适配*/
+/*初始化*/
+@font-face {
+  /*粗体*/
+  font-family: Bold;
+  src: url("../fonts/PingFangBold.ttf"); }
+
+@font-face {
+  /*特细*/
+  font-family: ExtraLight;
+  src: url("../fonts/PingFangExtraLight.ttf"); }
+
+@font-face {
+  /*特粗*/
+  font-family: Heavy;
+  src: url("../fonts/PingFangHeavy.ttf"); }
+
+@font-face {
+  /*细体*/
+  font-family: Light;
+  src: url("../fonts/PingFangLight.ttf"); }
+
+@font-face {
+  /*中等*/
+  font-family: Medium;
+  src: url("../fonts/PingFangMedium.ttf"); }
+
+@font-face {
+  /*常规*/
+  font-family: Regular;
+  src: url("../fonts/PingFangRegular.ttf"); }
+
+/*垂直居中*/
+/*水平居中*/
+/*居中*/
+/*长方形*/
+/*正方形*/
+/*圆形*/
+/*随机颜色*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  border: 0;
+  font-style: normal;
+  font-family: Medium,sans-serif; }
+
+.row::after, .clearfix::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+img {
+  border: none; }
+
+body {
+  display: flex;
+  justify-content: center; }
+
+.bg {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 750px;
+  background: url("../images/browse_bg_03.png") no-repeat center center; }
+  @media screen and (min-width: 320px) {
+    .bg {
+      height: 569.17333px; } }
+  @media screen and (min-width: 360px) {
+    .bg {
+      height: 640.32px; } }
+  @media screen and (min-width: 375px) {
+    .bg {
+      height: 667px; } }
+  @media screen and (min-width: 384px) {
+    .bg {
+      height: 683.008px; } }
+  @media screen and (min-width: 412px) {
+    .bg {
+      height: 732.81067px; } }
+  @media screen and (min-width: 414px) {
+    .bg {
+      height: 736.368px; } }
+  @media screen and (min-width: 571px) {
+    .bg {
+      height: 1015.61867px; } }
+  @media screen and (min-width: 600px) {
+    .bg {
+      height: 1067.2px; } }
+  @media screen and (min-width: 640px) {
+    .bg {
+      height: 1138.34667px; } }
+  @media screen and (min-width: 750px) {
+    .bg {
+      height: 1334px; } }
+
+.inner {
+  width: 95%;
+  height: 100%; }
+
+/*导航栏*/
+.navigationBar {
+  width: 100%;
+  background: url("../images/bg_03.png") -80px -142px no-repeat;
+  display: flex;
+  justify-content: center; }
+  @media screen and (min-width: 320px) {
+    .navigationBar {
+      height: 59.73333px; } }
+  @media screen and (min-width: 360px) {
+    .navigationBar {
+      height: 67.2px; } }
+  @media screen and (min-width: 375px) {
+    .navigationBar {
+      height: 70px; } }
+  @media screen and (min-width: 384px) {
+    .navigationBar {
+      height: 71.68px; } }
+  @media screen and (min-width: 412px) {
+    .navigationBar {
+      height: 76.90667px; } }
+  @media screen and (min-width: 414px) {
+    .navigationBar {
+      height: 77.28px; } }
+  @media screen and (min-width: 571px) {
+    .navigationBar {
+      height: 106.58667px; } }
+  @media screen and (min-width: 600px) {
+    .navigationBar {
+      height: 112px; } }
+  @media screen and (min-width: 640px) {
+    .navigationBar {
+      height: 119.46667px; } }
+  @media screen and (min-width: 750px) {
+    .navigationBar {
+      height: 140px; } }
+
+.mainBody {
+  width: 100%;
+  flex: 1;
+  background: rgba(152, 82, 60, 0.5);
+  display: flex;
+  justify-content: center; }
+
+.tabBar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #151c2b; }
+  @media screen and (min-width: 320px) {
+    .tabBar {
+      height: 96.42667px; } }
+  @media screen and (min-width: 360px) {
+    .tabBar {
+      height: 108.48px; } }
+  @media screen and (min-width: 375px) {
+    .tabBar {
+      height: 113px; } }
+  @media screen and (min-width: 384px) {
+    .tabBar {
+      height: 115.712px; } }
+  @media screen and (min-width: 412px) {
+    .tabBar {
+      height: 124.14933px; } }
+  @media screen and (min-width: 414px) {
+    .tabBar {
+      height: 124.752px; } }
+  @media screen and (min-width: 571px) {
+    .tabBar {
+      height: 172.06133px; } }
+  @media screen and (min-width: 600px) {
+    .tabBar {
+      height: 180.8px; } }
+  @media screen and (min-width: 640px) {
+    .tabBar {
+      height: 192.85333px; } }
+  @media screen and (min-width: 750px) {
+    .tabBar {
+      height: 226px; } }
