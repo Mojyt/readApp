@@ -13,6 +13,7 @@ body{
   background: #F2F2F2;
   font-size: 16px;
 }
+
 .logo{
   background: #29A6DC;
   .title1{
@@ -20,9 +21,6 @@ body{
     background: url("../img/tit.png") center/cover no-repeat;
   }
   .title2{
-    //@include wh(100%,7.5rem*(106/750));
-    //background: red;
-    //padding:  0;
     @include ft(7.5rem*(32/750),#fff,7.5rem*(106/750),center);
     font-weight: 400;
     position: relative;
@@ -30,20 +28,19 @@ body{
       @include wh(7.5rem*(40/750),7.5rem*(40/750));
       border-radius: 7.5rem*(40/750);
       border: 7.5rem*(2/750) solid #076CBE;
-      //@include ft(7.5rem*(32/750),#29A6DC,7.5rem*(36/750),center);
       @include cents;
       left: 7.5rem*(25/750);
       background:#fff url("../img/fanhui.png") center/cover no-repeat;
     }
   }
   .title3{
-    @include ft(7.5rem*(34/750),#fff,7.5rem*(330/750),center);
+    @include ft(7.5rem*(34/750),#fff,7.5rem*(196/750),center);
     font-weight: 400;
   }
 }
 
 .word{
-  padding: 7.5rem*(134/750) 7.5rem*(77/750);
+  padding: 7.5rem*(104.5/750) 7.5rem*(77/750);
   position: relative;
   //background: red;
   h6{
@@ -57,102 +54,9 @@ body{
   }
 }
 
-//.input{
-//  padding: 0 7.5rem*(67/750);
-//  div{
-//    @include whb(7.5rem*(616/750),7.5rem*(88/750),#fff);
-//    border: 1px solid #3A91FD;
-//    border-radius: 7.5rem*(88/750);
-//    display: flex;
-//    flex-flow: row nowrap;
-//    align-items: center;
-//    justify-content: space-around;
-//    padding: 5%;
-//    box-sizing: border-box;
-//  }
-//  .input2{
-//    margin-top: 7.5rem*(38/750);
-//  }
-//  p{
-//    @include wh(7.5rem*(44/750),7.5rem*(44/750));
-//    border: 1px solid #3FC1FD;
-//    border-radius: 7.5rem*(44/750);
-//  }
-//  input{
-//    border: 0;
-//    @include wh(80%,7.5rem*(44/750));
-//    @include ft(7.5rem*(26/750),#999,7.5rem*(44/750),left);
-//    font-weight: 300;
-//  }
-//  .input1 p{
-//    background: url("../img/person.png") center/cover no-repeat;
-//  }
-//  .input2 p{
-//    background: url("../img/password.png") center/cover no-repeat;
-//  }
-//}
-//
-//.zhaohui{
-//
-//  @include wh(100%,7.5rem*(97/750));
-//  display: flex ;
-//  flex-flow: row;
-//  justify-content: space-around;
-//  .row{
-//    @include wh(18.7%,100%);
-//    //position: relative;
-//    display: flex;
-//    flex-flow: row nowrap;
-//    justify-content: space-between;
-//    align-items: center;
-//  }
-//  .row1 p{
-//    @include wh(7.5rem*(25/750),7.5rem*(25/750));
-//    background: url("../img/zhaomima.png") center/cover no-repeat;
-//    //display: flex;
-//    flex-shrink: 1;
-//
-//  }
-//  .row2 p{
-//    @include wh(7.5rem*(25/750),7.5rem*(25/750));
-//    background: url("../img/zhuce.png") center/cover no-repeat;
-//    //display: flex;
-//    flex-shrink: 1;
-//
-//  }
-//   a{
-//    @include ft(7.5rem*(22/750),#666,7.5rem*(97/750),left);
-//    //display: flex;
-//     flex-shrink: 1;
-//  }
-//}
-//
-//.bot{
-//  padding:7.5rem*(36/750) 7.5rem*(112/750) 7.5rem*(92/750);
-//  .denglu{
-//    @include whb(7.5rem*(505/750),auto,#3ABFFD);
-//    border-radius: 7.5rem*(68/750);
-//    @include ft(7.5rem*(26/750),#fff,7.5rem*(68/750),center);
-//    padding: 0 7.5rem*(30/750);
-//    display: flex;
-//    flex-flow: row;
-//    justify-content: space-between;
-//    align-items: center;
-//  }
-//
-//  p{
-//    display: inline-block;
-//    @include whb(7.5rem*(6/750),7.5rem*(6/750),#fff);
-//    border-radius: 7.5rem*(6/750) ;
-//  }
-//  .word{
-//    display: inline-block;
-//  }
-//}
-
 .input{
   //padding-top: 7.5rem*(59/750);
-  @include wh(100%,7.5rem*(214/750));
+  @include wh(100%,7.5rem*(468/750));
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -165,6 +69,41 @@ body{
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
+  }
+  .items{
+    //@include wh(7.5rem*(614/750),7.5rem*(32/750)86);
+    width: 7.5rem*(614/750);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  .item_small{
+    height: 7.5rem*(86/750);
+    border: 1px solid #3A91FD;
+    border-radius: 7.5rem*(86/750);
+  }
+  .item_small:nth-child(1){
+    @include whb(7.5rem*(382/750),7.5rem*(86/750),#fff);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    a:nth-child(1){
+      @include ft(7.5rem*(26/750),#3ABFFD,7.5rem*(26/750),left);
+    }
+    a:nth-child(2){
+      @include ft(7.5rem*(20/750),#D7D7D7,7.5rem*(26/750),left);
+    }
+  }
+  .item_small:nth-child(2){
+    @include whb(7.5rem*(206/750),7.5rem*(86/750),#fff);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    a{
+      @include ft(7.5rem*(26/750),#999,7.5rem*(26/750),left);
+    }
   }
   p{
     @include wh(7.5rem*(44/750),7.5rem*(44/750));
@@ -216,7 +155,7 @@ body{
 }
 
 .bot{
-  padding:7.5rem*(64/750) 0 7.5rem*(112/750);
+  padding:7.5rem*(41/750) 0 7.5rem*(73/750);
   display: flex;
   flex-flow: row;
   justify-content: center;
@@ -230,6 +169,7 @@ body{
     justify-content: space-between;
     align-items: center;
   }
+
   p{
     display: inline-block;
     @include whb(7.5rem*(6/750),7.5rem*(6/750),#fff);
