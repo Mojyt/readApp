@@ -336,7 +336,8 @@ body {
       align-items: center; }
     .main .inner .latest .look-all .check-all {
       font-size: 0.24rem;
-      font-family: '苹方',sans-serif; }
+      font-family: '苹方',sans-serif;
+      color: #fff; }
     .main .inner .latest .look-all .circle {
       width: 0.09rem;
       height: 0.09rem;

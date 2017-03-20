@@ -110,6 +110,12 @@ body {
       font-family: '苹方',sans-serif;
       color: #fff;
       text-align: center; }
+    .header .nav .inner .all-review-title .middleLine {
+      flex-basis: 100%;
+      background: url(../../img/line.png) center no-repeat;
+      display: inline-block;
+      width: 0.56rem;
+      height: 0.08rem; }
     .header .nav .inner .all-review-title span {
       flex-basis: 100%;
       font-size: 0.18rem;

@@ -196,6 +196,7 @@ body {
       align-items: center;
       align-self: flex-end; }
     .last .inner .latest .look-all .check-all {
+      color: #fff;
       font-size: 0.24rem;
       font-family: '苹方',sans-serif; }
     .last .inner .latest .look-all .circle {
@@ -294,6 +295,7 @@ body {
       align-items: center;
       align-self: flex-end; }
     .note .inner .latest .look-all .check-all {
+      color: #fff;
       font-size: 0.24rem;
       font-family: '苹方',sans-serif; }
     .note .inner .latest .look-all .circle {

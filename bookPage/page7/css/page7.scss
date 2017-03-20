@@ -48,6 +48,13 @@
       color:#fff;
       text-align: center;
     }
+    .middleLine{
+      flex-basis: 100%;
+      background: url(../../img/line.png) center no-repeat;
+      display: inline-block;
+      @include cube(0.56rem,0.08rem);
+
+    }
     span{
       flex-basis: 100%;
       font-size: 0.18rem;
