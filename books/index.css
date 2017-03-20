@@ -1,6 +1,8 @@
+@charset "UTF-8";
 @import url(base.css);
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "微软雅黑"; }
 
 @media screen and (min-width: 320px) {
   html {
@@ -126,7 +128,7 @@
       color: #797C87; }
       .bao .lunb .zi p a {
         color: #585B62;
-        font-weight: 500; }
+        font-weight: 600; }
   .bao .lunb .uls {
     position: absolute;
     width: 0.5rem;
@@ -168,7 +170,7 @@
       width: 2.4rem;
       height: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center; }
       .bao .zuix .tou .tous .i {
         width: 0.32rem;
@@ -189,7 +191,7 @@
         width: 1.7rem;
         display: flex;
         flex-direction: column;
-        align-items: center; }
+        align-items: flex-start; }
         .bao .zuix .tou .tous .ii h2 {
           font-size: 0.3rem;
           color: #000; }

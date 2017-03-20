@@ -2,6 +2,7 @@
 @import "mixin";
 *{
 	box-sizing: border-box;
+	font-family: "微软雅黑";
 }
 html{
 	$name:320px,360px,375px,412px,414px,750px;
@@ -125,7 +126,7 @@ html{
 				color: #797C87;
 				a{
 					color: #585B62;
-					font-weight: 500;
+					font-weight: 600;
 				}
 			}
 		}
@@ -175,7 +176,7 @@ html{
 				width: 2.4rem;
 				height: 100%;
 				display: flex;
-			    justify-content: center;
+			    justify-content: space-around;
 			    align-items: center;
 				.i{
 					width: 0.32rem;
@@ -198,7 +199,7 @@ html{
 					width: 1.7rem;
 					display: flex;
 				    flex-direction: column;
-				    align-items: center;
+				    align-items: flex-start;
 					h2{
 						font-size: 0.3rem;
 						color: #000;

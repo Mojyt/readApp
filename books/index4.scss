@@ -2,6 +2,7 @@
 @import "mixin";
 *{
 	box-sizing: border-box;
+	font-family: "微软雅黑";
 }
 html{
 	$name:320px,360px,375px,412px,414px,750px;
@@ -71,7 +72,7 @@ html{
 				    background-size: cover;
 				}
 				span{
-					font-size: 0.2rem;
+					font-size: 0.18rem;
 					color:#A3E3FF;
 				}
 			}
@@ -235,9 +236,11 @@ html{
 					    position: absolute;
 					    right: 0;
 						.ziti{
-							display: flex;
-							justify-content: center;
-							align-items: center;
+							width: 1.2rem;
+							height: 100%;
+						    display: flex;
+						    justify-content: space-around;
+						    align-items: center;
 							.jx{
 								width: 0.22rem;
 								height: 0.2rem;
