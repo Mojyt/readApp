@@ -42,6 +42,7 @@
 /*宽度适配*/
 /*字体*/
 /*border-width*/
+/*right*/
 /*各种margin值适配*/
 /*各种padding值适配*/
 /*初始化*/
@@ -152,13 +153,16 @@ body {
 
 .inner {
   width: 95%;
-  height: 100%; }
+  height: 100%;
+  background: rgba(249, 61, 7, 0.3);
+  overflow: hidden; }
 
 /*状态栏*/
 .statusBar {
   width: 100%;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  display: none; }
   @media screen and (min-width: 320px) {
     .statusBar {
       font-size: 8.10667px; } }
@@ -454,7 +458,8 @@ body {
 .bookName {
   width: 100%;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  display: none; }
   @media screen and (min-width: 320px) {
     .bookName {
       height: 11.94667px; } }
@@ -746,6 +751,185 @@ body {
     .bookName .Name {
       padding-left: 8px; } }
 
+/*导航栏*/
+.navigationBar {
+  width: 100%;
+  background: url("../images/bg_03.png") -80px -142px no-repeat;
+  display: flex;
+  justify-content: center; }
+  @media screen and (min-width: 320px) {
+    .navigationBar {
+      height: 59.73333px; } }
+  @media screen and (min-width: 360px) {
+    .navigationBar {
+      height: 67.2px; } }
+  @media screen and (min-width: 375px) {
+    .navigationBar {
+      height: 70px; } }
+  @media screen and (min-width: 384px) {
+    .navigationBar {
+      height: 71.68px; } }
+  @media screen and (min-width: 412px) {
+    .navigationBar {
+      height: 76.90667px; } }
+  @media screen and (min-width: 414px) {
+    .navigationBar {
+      height: 77.28px; } }
+  @media screen and (min-width: 571px) {
+    .navigationBar {
+      height: 106.58667px; } }
+  @media screen and (min-width: 600px) {
+    .navigationBar {
+      height: 112px; } }
+  @media screen and (min-width: 640px) {
+    .navigationBar {
+      height: 119.46667px; } }
+  @media screen and (min-width: 750px) {
+    .navigationBar {
+      height: 140px; } }
+
+.navigationBar .inner {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; }
+  @media screen and (min-width: 320px) {
+    .navigationBar .inner {
+      padding-top: 17.06667px; } }
+  @media screen and (min-width: 360px) {
+    .navigationBar .inner {
+      padding-top: 19.2px; } }
+  @media screen and (min-width: 375px) {
+    .navigationBar .inner {
+      padding-top: 20px; } }
+  @media screen and (min-width: 384px) {
+    .navigationBar .inner {
+      padding-top: 20.48px; } }
+  @media screen and (min-width: 412px) {
+    .navigationBar .inner {
+      padding-top: 21.97333px; } }
+  @media screen and (min-width: 414px) {
+    .navigationBar .inner {
+      padding-top: 22.08px; } }
+  @media screen and (min-width: 571px) {
+    .navigationBar .inner {
+      padding-top: 30.45333px; } }
+  @media screen and (min-width: 600px) {
+    .navigationBar .inner {
+      padding-top: 32px; } }
+  @media screen and (min-width: 640px) {
+    .navigationBar .inner {
+      padding-top: 34.13333px; } }
+  @media screen and (min-width: 750px) {
+    .navigationBar .inner {
+      padding-top: 40px; } }
+
+.navigationBar button {
+  border-radius: 50%; }
+  @media screen and (min-width: 320px) {
+    .navigationBar button {
+      width: 18.77333px; } }
+  @media screen and (min-width: 360px) {
+    .navigationBar button {
+      width: 21.12px; } }
+  @media screen and (min-width: 375px) {
+    .navigationBar button {
+      width: 22px; } }
+  @media screen and (min-width: 384px) {
+    .navigationBar button {
+      width: 22.528px; } }
+  @media screen and (min-width: 412px) {
+    .navigationBar button {
+      width: 24.17067px; } }
+  @media screen and (min-width: 414px) {
+    .navigationBar button {
+      width: 24.288px; } }
+  @media screen and (min-width: 571px) {
+    .navigationBar button {
+      width: 33.49867px; } }
+  @media screen and (min-width: 600px) {
+    .navigationBar button {
+      width: 35.2px; } }
+  @media screen and (min-width: 640px) {
+    .navigationBar button {
+      width: 37.54667px; } }
+  @media screen and (min-width: 750px) {
+    .navigationBar button {
+      width: 44px; } }
+  @media screen and (min-width: 320px) {
+    .navigationBar button {
+      height: 18.77333px; } }
+  @media screen and (min-width: 360px) {
+    .navigationBar button {
+      height: 21.12px; } }
+  @media screen and (min-width: 375px) {
+    .navigationBar button {
+      height: 22px; } }
+  @media screen and (min-width: 384px) {
+    .navigationBar button {
+      height: 22.528px; } }
+  @media screen and (min-width: 412px) {
+    .navigationBar button {
+      height: 24.17067px; } }
+  @media screen and (min-width: 414px) {
+    .navigationBar button {
+      height: 24.288px; } }
+  @media screen and (min-width: 571px) {
+    .navigationBar button {
+      height: 33.49867px; } }
+  @media screen and (min-width: 600px) {
+    .navigationBar button {
+      height: 35.2px; } }
+  @media screen and (min-width: 640px) {
+    .navigationBar button {
+      height: 37.54667px; } }
+  @media screen and (min-width: 750px) {
+    .navigationBar button {
+      height: 44px; } }
+  .navigationBar button.goBack.goBack {
+    top: 0;
+    bottom: 0;
+    background: url("../images/btn_1.png") no-repeat center center;
+    background-size: 100%; }
+  .navigationBar button.bookMark {
+    position: absolute;
+    background: url("../images/btn_2.png") no-repeat center center;
+    background-size: 100%; }
+    @media screen and (min-width: 320px) {
+      .navigationBar button.bookMark {
+        right: 32.85333px; } }
+    @media screen and (min-width: 360px) {
+      .navigationBar button.bookMark {
+        right: 36.96px; } }
+    @media screen and (min-width: 375px) {
+      .navigationBar button.bookMark {
+        right: 38.5px; } }
+    @media screen and (min-width: 384px) {
+      .navigationBar button.bookMark {
+        right: 39.424px; } }
+    @media screen and (min-width: 412px) {
+      .navigationBar button.bookMark {
+        right: 42.29867px; } }
+    @media screen and (min-width: 414px) {
+      .navigationBar button.bookMark {
+        right: 42.504px; } }
+    @media screen and (min-width: 571px) {
+      .navigationBar button.bookMark {
+        right: 58.62267px; } }
+    @media screen and (min-width: 600px) {
+      .navigationBar button.bookMark {
+        right: 61.6px; } }
+    @media screen and (min-width: 640px) {
+      .navigationBar button.bookMark {
+        right: 65.70667px; } }
+    @media screen and (min-width: 750px) {
+      .navigationBar button.bookMark {
+        right: 77px; } }
+  .navigationBar button.Down {
+    background: url("../images/btn_3.png") no-repeat center center;
+    background-size: 100%; }
+
 /*正文*/
 .mainBody {
   width: 100%;
@@ -942,6 +1126,36 @@ body {
     @media screen and (min-width: 750px) {
       .mainBody .Body h2 {
         line-height: 34px; } }
+    @media screen and (min-width: 320px) {
+      .mainBody .Body h2 {
+        margin-bottom: 4.26667px; } }
+    @media screen and (min-width: 360px) {
+      .mainBody .Body h2 {
+        margin-bottom: 4.8px; } }
+    @media screen and (min-width: 375px) {
+      .mainBody .Body h2 {
+        margin-bottom: 5px; } }
+    @media screen and (min-width: 384px) {
+      .mainBody .Body h2 {
+        margin-bottom: 5.12px; } }
+    @media screen and (min-width: 412px) {
+      .mainBody .Body h2 {
+        margin-bottom: 5.49333px; } }
+    @media screen and (min-width: 414px) {
+      .mainBody .Body h2 {
+        margin-bottom: 5.52px; } }
+    @media screen and (min-width: 571px) {
+      .mainBody .Body h2 {
+        margin-bottom: 7.61333px; } }
+    @media screen and (min-width: 600px) {
+      .mainBody .Body h2 {
+        margin-bottom: 8px; } }
+    @media screen and (min-width: 640px) {
+      .mainBody .Body h2 {
+        margin-bottom: 8.53333px; } }
+    @media screen and (min-width: 750px) {
+      .mainBody .Body h2 {
+        margin-bottom: 10px; } }
   .mainBody .Body p {
     text-indent: 2em;
     text-align: justify; }
@@ -1005,12 +1219,80 @@ body {
     @media screen and (min-width: 750px) {
       .mainBody .Body p {
         font-size: 24px; } }
+    @media screen and (min-width: 320px) {
+      .mainBody .Body p {
+        margin-bottom: 9.38667px; } }
+    @media screen and (min-width: 360px) {
+      .mainBody .Body p {
+        margin-bottom: 10.56px; } }
+    @media screen and (min-width: 375px) {
+      .mainBody .Body p {
+        margin-bottom: 11px; } }
+    @media screen and (min-width: 384px) {
+      .mainBody .Body p {
+        margin-bottom: 11.264px; } }
+    @media screen and (min-width: 412px) {
+      .mainBody .Body p {
+        margin-bottom: 12.08533px; } }
+    @media screen and (min-width: 414px) {
+      .mainBody .Body p {
+        margin-bottom: 12.144px; } }
+    @media screen and (min-width: 571px) {
+      .mainBody .Body p {
+        margin-bottom: 16.74933px; } }
+    @media screen and (min-width: 600px) {
+      .mainBody .Body p {
+        margin-bottom: 17.6px; } }
+    @media screen and (min-width: 640px) {
+      .mainBody .Body p {
+        margin-bottom: 18.77333px; } }
+    @media screen and (min-width: 750px) {
+      .mainBody .Body p {
+        margin-bottom: 22px; } }
+
+/*标签栏*/
+.tabBar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #151c2b; }
+  @media screen and (min-width: 320px) {
+    .tabBar {
+      height: 96.42667px; } }
+  @media screen and (min-width: 360px) {
+    .tabBar {
+      height: 108.48px; } }
+  @media screen and (min-width: 375px) {
+    .tabBar {
+      height: 113px; } }
+  @media screen and (min-width: 384px) {
+    .tabBar {
+      height: 115.712px; } }
+  @media screen and (min-width: 412px) {
+    .tabBar {
+      height: 124.14933px; } }
+  @media screen and (min-width: 414px) {
+    .tabBar {
+      height: 124.752px; } }
+  @media screen and (min-width: 571px) {
+    .tabBar {
+      height: 172.06133px; } }
+  @media screen and (min-width: 600px) {
+    .tabBar {
+      height: 180.8px; } }
+  @media screen and (min-width: 640px) {
+    .tabBar {
+      height: 192.85333px; } }
+  @media screen and (min-width: 750px) {
+    .tabBar {
+      height: 226px; } }
 
 /*脚标*/
 .cornerMark {
   width: 100%;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  display: none; }
 
 @media screen and (min-width: 320px) {
   .cornerMark .inner {

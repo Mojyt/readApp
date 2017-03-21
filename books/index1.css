@@ -1,6 +1,8 @@
+@charset "UTF-8";
 @import url(base.css);
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "微软雅黑"; }
 
 @media screen and (min-width: 320px) {
   html {
@@ -112,13 +114,14 @@
     width: 100%;
     height: 100%;
     background: #747577;
-    opacity: 0.3;
+    opacity: 0.5;
     position: absolute; }
   .bao .zi .zii {
     width: 94%;
     height: 100%;
     display: flex;
-    text-align: center; }
+    text-align: center;
+    position: absolute; }
     .bao .zi .zii .zi1 {
       color: #fff;
       display: flex;
@@ -134,11 +137,11 @@
         background: url(img/shu.png);
         background-size: cover; }
       .bao .zi .zii .zi1 h2 {
-        font-size: 0.3rem; }
+        font-size: 0.28rem; }
       .bao .zi .zii .zi1 .p2 {
         font-size: 0.12rem; }
       .bao .zi .zii .zi1 .p3, .bao .zi .zii .zi1 .p4 {
-        font-size: 0.14rem; }
+        font-size: 0.2rem; }
     .bao .zi .zii .zi2 {
       display: flex;
       flex-direction: column;
@@ -151,8 +154,8 @@
         font-size: 0.22rem;
         margin: 0.1rem 0; }
         .bao .zi .zii .zi2 li span {
-          font-size: 0.14rem;
-          color: #fff; }
+          font-size: 0.22rem;
+          color: #dfdfdf; }
       .bao .zi .zii .zi2 li div {
         width: 0.79rem;
         margin-right: 0.15rem; }
@@ -186,7 +189,7 @@
     width: 100%;
     height: 100%;
     background: #747577;
-    opacity: 0.3;
+    opacity: 0.5;
     position: absolute; }
   .bao .zi .zii {
     width: 94%;
@@ -225,8 +228,8 @@
         font-size: 0.22rem;
         margin: 0.1rem 0; }
         .bao .zi .zii .zi2 li span {
-          font-size: 0.14rem;
-          color: #fff; }
+          font-size: 0.22rem;
+          color: #efefef; }
       .bao .zi .zii .zi2 li div {
         width: 0.79rem;
         margin-right: 0.15rem; }

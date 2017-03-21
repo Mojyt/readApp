@@ -39,13 +39,21 @@ $device-list: 320px, 360px, 375px, 384px, 412px, 414px, 571px, 600px, 640px, 750
   }
 }
 
-
 /*border-width*/
 
-@mixin border-width($width){
+@mixin border-width($width) {
   @each $device in $device-list {
     @media screen and (min-width: #{$device}) {
       border-width: $device * ($width/750);
+    }
+  }
+}
+
+/*right*/
+@mixin right($right) {
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      right: $device * ($right/750);
     }
   }
 }
