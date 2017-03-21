@@ -1,0 +1,536 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: "微软雅黑";
+  text-decoration: none; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+.book .top {
+  width: 100%;
+  height: 1.4rem;
+  background: #29A6DC; }
+  .book .top .statusbar {
+    width: 100%;
+    height: 0.4rem;
+    background: url(img/tit.png);
+    background-size: 100%; }
+  .book .top .shujia {
+    width: 94%;
+    height: 1rem;
+    margin: 0 auto;
+    background: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between; }
+    .book .top .shujia .wode {
+      width: 25%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .book .top .shujia .wode h3 {
+        color: #fff;
+        font-size: 0.35rem;
+        font-weight: normal; }
+      .book .top .shujia .wode p {
+        color: #dfdfdf;
+        font-size: 0.22rem; }
+    .book .top .shujia .youq {
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      border: 0.02rem solid #1175B6;
+      background: #fff url(img/ssssssssss.png) center no-repeat;
+      background-size: 50%; }
+    .book .top .shujia .zuoq {
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%; }
+
+.book .banner {
+  width: 100%;
+  height: 4.04rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  .book .banner a {
+    width: 94%;
+    height: 79%;
+    margin: 0 auto;
+    background: 0;
+    border-radius: 0.05rem;
+    background: url(img/2017-03-17_134129.jpg) no-repeat;
+    background-size: 100%;
+    display: block; }
+  .book .banner ul {
+    width: 0.5rem;
+    height: 0.1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0.20rem;
+    left: 50%;
+    margin-left: -0.25rem; }
+    .book .banner ul li {
+      width: 0.1rem;
+      height: 0.1rem;
+      border-radius: 50%;
+      border: 1px solid #29A6DC; }
+    .book .banner ul .dian {
+      background: #29A6DC; }
+
+.book .zuixin {
+  width: 100%;
+  height: 4.6rem; }
+  .book .zuixin .shangjia {
+    width: 94%;
+    height: 20%;
+    margin: 0 auto;
+    background: 0; }
+    .book .zuixin .shangjia .caidan {
+      width: 35%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between; }
+      .book .zuixin .shangjia .caidan .yuan {
+        width: 0.3rem;
+        height: 0.3rem;
+        border-radius: 50%;
+        background: #FFC63E url(img/dsdfdg.png) center no-repeat;
+        margin-top: 0.05rem; }
+      .book .zuixin .shangjia .caidan .zi {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column; }
+        .book .zuixin .shangjia .caidan .zi h3 {
+          color: #333;
+          font-size: 0.30rem;
+          font-weight: normal; }
+        .book .zuixin .shangjia .caidan .zi p {
+          color: #dfdfdf;
+          font-size: 0.22rem; }
+  .book .zuixin .shangjiatu {
+    width: 94%;
+    height: 80%;
+    margin: 0 auto;
+    background: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .book .zuixin .shangjiatu div {
+      width: 30%;
+      height: 90%;
+      box-shadow: 0px  0px 15px 0px #d8d8d8;
+      background: url(img/2017-03-17_162014.jpg) center no-repeat; }
+
+.book .zuijin {
+  width: 100%;
+  height: 5.8rem; }
+  .book .zuijin .yuedu {
+    width: 94%;
+    height: 16%;
+    margin: 0 auto;
+    background: 0; }
+    .book .zuijin .yuedu .caidan {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between; }
+      .book .zuijin .yuedu .caidan .yuan {
+        width: 0.3rem;
+        height: 0.3rem;
+        border-radius: 50%;
+        background: #FFC63E url(img/dsdfdg.png) center no-repeat;
+        margin-top: 0.05rem; }
+      .book .zuijin .yuedu .caidan .zi {
+        width: 84%;
+        height: 100%;
+        display: flex;
+        flex-direction: column; }
+        .book .zuijin .yuedu .caidan .zi h3 {
+          color: #333;
+          font-size: 0.30rem;
+          font-weight: normal; }
+        .book .zuijin .yuedu .caidan .zi p {
+          color: #dfdfdf;
+          font-size: 0.22rem; }
+  .book .zuijin .yuedu1 {
+    width: 94%;
+    height: 80%;
+    margin: 0 auto;
+    background: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .book .zuijin .yuedu1 .yuedu2 {
+      width: 100%;
+      height: 47.5%;
+      box-shadow: 0px  0px 15px 0px #d8d8d8;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      .book .zuijin .yuedu1 .yuedu2 .xiao {
+        width: 20%;
+        height: 90%;
+        background: url(img/jbj.png);
+        background-size: 100%; }
+      .book .zuijin .yuedu1 .yuedu2 .da {
+        width: 75%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .book .zuijin .yuedu1 .yuedu2 .da h3 {
+          width: 98%;
+          height: auto;
+          color: #393939;
+          font-size: 0.25rem;
+          font-weight: normal; }
+        .book .zuijin .yuedu1 .yuedu2 .da span {
+          width: 98%;
+          height: auto;
+          display: block;
+          color: #ABABAB;
+          font-size: 0.14rem; }
+        .book .zuijin .yuedu1 .yuedu2 .da .xuxian {
+          width: 70%;
+          height: 0.01rem;
+          border: 0.01rem dotted #ABABAB; }
+        .book .zuijin .yuedu1 .yuedu2 .da h4 {
+          width: 98%;
+          height: auto;
+          color: #6E6E6E;
+          font-size: 0.2rem;
+          font-weight: normal; }
+        .book .zuijin .yuedu1 .yuedu2 .da p {
+          width: 98%;
+          height: auto;
+          color: #ABABAB;
+          font-size: 0.16rem; }
+        .book .zuijin .yuedu1 .yuedu2 .da .yiyue {
+          width: 100%;
+          height: 0.44rem;
+          display: flex;
+          align-items: center;
+          position: relative; }
+          .book .zuijin .yuedu1 .yuedu2 .da .yiyue span {
+            width: auto;
+            height: auto;
+            display: block;
+            color: #ABABAB;
+            font-size: 0.16rem; }
+            .book .zuijin .yuedu1 .yuedu2 .da .yiyue span i {
+              color: #76CCEF;
+              font: 0.16rem;
+              padding-right: 0.05rem; }
+          .book .zuijin .yuedu1 .yuedu2 .da .yiyue ul {
+            width: 40%;
+            height: auto;
+            background: #D4D4D4; }
+            .book .zuijin .yuedu1 .yuedu2 .da .yiyue ul li {
+              width: 40%;
+              height: 0.1rem;
+              background: #76CCEF; }
+          .book .zuijin .yuedu1 .yuedu2 .da .yiyue a {
+            width: 1.51rem;
+            height: 0.44rem;
+            color: #fff;
+            font-size: 0.22rem;
+            text-align: center;
+            line-height: 0.44rem;
+            background: #29A6DC;
+            border-radius: 1rem;
+            position: absolute;
+            bottom: 0px;
+            right: 0px; }
+
+.book .shujia1 {
+  background: #151C2B url("img/shujia.png") no-repeat;
+  background-size: cover; }
+
+.book .shucheng {
+  background: #151C2B url("img/shu.png") no-repeat;
+  background-size: cover; }
+
+.book .geren {
+  background: #151C2B url("img/wode.png") no-repeat;
+  background-size: cover; }
+
+.book .tabe {
+  width: 100%;
+  height: 1rem;
+  background: #151C2B;
+  margin-top: 0.15rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+  .book .tabe .lg-1 {
+    width: 8.33333%;
+    height: 95%;
+    border-right: 1px solid #717171;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around; }
+    .book .tabe .lg-1 a {
+      width: 0.45rem;
+      height: 0.45rem;
+      display: block; }
+    .book .tabe .lg-1 span {
+      width: 0.45rem;
+      height: auto;
+      display: block;
+      color: #ABABAB;
+      font-size: 0.20rem; }
+  .book .tabe .lg-2 {
+    width: 16.66667%;
+    height: 95%;
+    border-right: 1px solid #717171;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around; }
+    .book .tabe .lg-2 a {
+      width: 0.45rem;
+      height: 0.45rem;
+      display: block; }
+    .book .tabe .lg-2 span {
+      width: 0.45rem;
+      height: auto;
+      display: block;
+      color: #ABABAB;
+      font-size: 0.20rem; }
+  .book .tabe .lg-3 {
+    width: 25%;
+    height: 95%;
+    border-right: 1px solid #717171;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around; }
+    .book .tabe .lg-3 a {
+      width: 0.45rem;
+      height: 0.45rem;
+      display: block; }
+    .book .tabe .lg-3 span {
+      width: 0.45rem;
+      height: auto;
+      display: block;
+      color: #ABABAB;
+      font-size: 0.20rem; }
+  .book .tabe .lg-4 {
+    width: 33.33333%;
+    height: 95%;
+    border-right: 1px solid #717171;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around; }
+    .book .tabe .lg-4 a {
+      width: 0.45rem;
+      height: 0.45rem;
+      display: block; }
+    .book .tabe .lg-4 span {
+      width: 0.45rem;
+      height: auto;
+      display: block;
+      color: #ABABAB;
+      font-size: 0.20rem; }
+  .book .tabe .lg-5 {
+    width: 41.66667%;
+    height: 95%;
+    border-right: 1px solid #717171;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around; }
+    .book .tabe .lg-5 a {
+      width: 0.45rem;
+      height: 0.45rem;
+      display: block; }
+    .book .tabe .lg-5 span {
+      width: 0.45rem;
+      height: auto;
+      display: block;
+      color: #ABABAB;
+      font-size: 0.20rem; }
+  .book .tabe .lg-6 {
+    width: 50%;
+    height: 95%;
+    border-right: 1px solid #717171;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around; }
+    .book .tabe .lg-6 a {
+      width: 0.45rem;
+      height: 0.45rem;
+      display: block; }
+    .book .tabe .lg-6 span {
+      width: 0.45rem;
+      height: auto;
+      display: block;
+      color: #ABABAB;
+      font-size: 0.20rem; }
+  .book .tabe .lg-7 {
+    width: 58.33333%;
+    height: 95%;
+    border-right: 1px solid #717171;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around; }
+    .book .tabe .lg-7 a {
+      width: 0.45rem;
+      height: 0.45rem;
+      display: block; }
+    .book .tabe .lg-7 span {
+      width: 0.45rem;
+      height: auto;
+      display: block;
+      color: #ABABAB;
+      font-size: 0.20rem; }
+  .book .tabe .lg-8 {
+    width: 66.66667%;
+    height: 95%;
+    border-right: 1px solid #717171;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around; }
+    .book .tabe .lg-8 a {
+      width: 0.45rem;
+      height: 0.45rem;
+      display: block; }
+    .book .tabe .lg-8 span {
+      width: 0.45rem;
+      height: auto;
+      display: block;
+      color: #ABABAB;
+      font-size: 0.20rem; }
+  .book .tabe .lg-9 {
+    width: 75%;
+    height: 95%;
+    border-right: 1px solid #717171;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around; }
+    .book .tabe .lg-9 a {
+      width: 0.45rem;
+      height: 0.45rem;
+      display: block; }
+    .book .tabe .lg-9 span {
+      width: 0.45rem;
+      height: auto;
+      display: block;
+      color: #ABABAB;
+      font-size: 0.20rem; }
+  .book .tabe .lg-10 {
+    width: 83.33333%;
+    height: 95%;
+    border-right: 1px solid #717171;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around; }
+    .book .tabe .lg-10 a {
+      width: 0.45rem;
+      height: 0.45rem;
+      display: block; }
+    .book .tabe .lg-10 span {
+      width: 0.45rem;
+      height: auto;
+      display: block;
+      color: #ABABAB;
+      font-size: 0.20rem; }
+  .book .tabe .lg-11 {
+    width: 91.66667%;
+    height: 95%;
+    border-right: 1px solid #717171;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around; }
+    .book .tabe .lg-11 a {
+      width: 0.45rem;
+      height: 0.45rem;
+      display: block; }
+    .book .tabe .lg-11 span {
+      width: 0.45rem;
+      height: auto;
+      display: block;
+      color: #ABABAB;
+      font-size: 0.20rem; }
+  .book .tabe .lg-12 {
+    width: 100%;
+    height: 95%;
+    border-right: 1px solid #717171;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around; }
+    .book .tabe .lg-12 a {
+      width: 0.45rem;
+      height: 0.45rem;
+      display: block; }
+    .book .tabe .lg-12 span {
+      width: 0.45rem;
+      height: auto;
+      display: block;
+      color: #ABABAB;
+      font-size: 0.20rem; }

@@ -1,0 +1,160 @@
+@import"base";
+html{
+    $widths : (
+        320px,360px,375px,412px,414px,750px
+    );
+    @each $name in $widths{
+        @media screen and(min-width: #{$name}){
+            font-size: 100*($name/750);
+        }
+    }
+}
+.book{
+    height: 9.00rem;
+    background: #F2F2F2;
+    .top{
+        @include chang(100%,1.40rem);
+        background: #29A6DC;
+        .statusbar{
+            @include chang(100%,0.40rem);
+            background: url(img/tit.png);
+            background-size: 100%;
+        }
+        .shujia{
+            @include center(94%,1.00rem,0);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .shangyiceng{
+                @include yuan(0.50rem);
+                border: 0.02rem solid #1175B6;
+                background:#fff url(img/z.png) center no-repeat;
+                background-size: 30%;
+            }
+            .sousuo{
+                @include chang(5.45rem,0.55rem);
+                border-radius: 1rem;
+                display: flex;
+                background:#F6F6F6; 
+                .sou{
+                    @include chang(0.45rem,100%);
+                    background: url(img/ggggg.png)0.1rem no-repeat;
+                }
+                #suo{
+                    @include chang(5rem,100%);
+                    border: none;
+                    font-size: 0.25rem;
+                    color: #C8C8C8;
+                    padding-left:0.80rem ;
+                    box-sizing: border-box;
+                    background:#F6F6F6;
+                    outline: none;
+                }
+            }
+            .luyin{
+                @include yuan(0.50rem);
+                border: 0.02rem solid #1175B6;
+                background:#fff url(img/fdsfd.png) center no-repeat;
+                background-size: 50%;
+            }
+        }
+    }
+    .shangjia{
+        @include center(94%,1.05rem,0);
+        display: flex;
+        align-items: center;
+        .caidan{
+            @include chang(40%,55%);
+            display: flex;
+            justify-content: space-between;
+            .yuan{
+                @include yuan(0.30rem);
+                background:#FFC63E url(img/dsdfdg.png) center no-repeat;
+                margin-top: 0.05rem;
+            }
+            .zi{
+                @include chang(80%,100%);
+                display: flex;
+                flex-direction: column;
+                h3{
+                color: #333;
+                font-size:0.30rem ;
+                font-weight: normal;
+                }
+                p{
+                    color: #dfdfdf;
+                    font-size: 0.22rem;
+                }
+            }
+        }
+    }
+    .remen{
+        @include center(94%,1.68rem,#fff);
+        border-radius: 0.05rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 0.15rem ;
+        .tu{
+            @include chang(30%,94%);
+            background: url(img/dfdf.png);
+            background-size: 115%;
+            border-radius: 0.05rem;
+        }
+        .xuxian{
+            @include chang(0,94%);
+            border-left: 2px dotted #D2D2D2;
+        }
+        .souzi{
+            @include chang(65%,94%);
+            display: flex;
+            flex-wrap: wrap;
+            h3{
+                @include chang(90%,auto);
+                color: #393939;
+                font-size:0.25rem ;
+                font-weight: normal;
+            }
+            p{
+                @include chang(90%,auto);
+                color: #686868;
+                font-size: 0.20rem;
+            }
+            .lianxi{
+                @include chang(90%,15%);
+                display: flex;
+                justify-content: space-between;
+                .huazhong{
+                    display: flex;
+                    .keji{
+                        @include chang(0.18rem,0.25rem);
+                        background: url(img/hjhjh.png);
+                        background-size: 100%;
+                        margin-right: 0.10rem;
+                    }
+                    span{
+                        @include chang(auto,auto);
+                        display: block;
+                        color: #ABABAB;
+                        font-size: 0.16rem;
+                    }
+                }
+               .bei{
+                   display: flex;
+                    .dizhi{
+                        @include chang(0.18rem,0.25rem);
+                        background: url(img/gfgf1.png);
+                        background-size: 100%;
+                        margin-right: 0.10rem;
+                    }
+                    span{
+                        @include chang(auto,auto);
+                        display: block;
+                        color: #ABABAB;
+                        font-size: 0.16rem;
+                    }
+               }
+            }
+        }
+    }
+}

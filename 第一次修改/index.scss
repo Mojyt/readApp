@@ -1,0 +1,285 @@
+@import"base";
+html{
+$widths : (
+    320px,360px,375px,412px,414px,750px
+);  
+    @each $name in $widths{
+        @media screen and(min-width: #{$name}){
+                font-size: 100*($name/750);
+        }
+    }
+}
+.book{  
+    .top{
+        @include chang(100%,1.40rem);
+        background: #29A6DC;
+        .statusbar{
+            @include chang(100%,0.40rem);
+            background: url(img/tit.png);
+            background-size: 100%;
+        }
+        .shujia{
+            @include center(94%,1.00rem,0);
+            display: flex;
+             justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            .wode{
+                @include chang(25%,100%);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+               justify-content: center;
+                h3{
+                    color: #fff;
+                    font-size:0.35rem ;
+                    font-weight: normal;
+                }
+                p{
+                    color: #dfdfdf;
+                    font-size: 0.22rem;
+                }
+            }
+            .youq{
+                @include yuan(0.50rem);
+                border: 0.02rem solid #1175B6;
+                background:#fff url(img/ssssssssss.png) center no-repeat;
+                background-size: 50%;
+            }
+            .zuoq{
+                 @include yuan(0.50rem);
+            }
+        }
+    }
+    .banner{
+        @include chang(100%,4.04rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        a{
+            @include center(94%,79%,0);
+            border-radius: 0.05rem;
+            background: url(img/2017-03-17_134129.jpg) no-repeat;
+            background-size: 100%;
+            display: block;
+        }
+        ul{
+            @include chang(0.50rem,0.10rem);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            position: absolute;
+            bottom: 0.20rem;
+            left: 50%;
+            margin-left: -0.25rem;
+            li{
+                @include yuan(0.10rem);
+                border: 1px solid #29A6DC;
+            }
+            .dian{
+                background: #29A6DC;
+            }
+        }
+    }
+    .zuixin{
+        @include chang(100%,4.60rem);
+        .shangjia{
+            @include center(94%,20%,0);
+            .caidan{
+                @include chang(35%,100%);
+                display: flex;
+                justify-content: space-between;
+                .yuan{
+                    @include yuan(0.30rem);
+                    background:#FFC63E url(img/dsdfdg.png) center no-repeat;
+                    margin-top: 0.05rem;
+                }
+                .zi{
+                    @include chang(80%,100%);
+                    display: flex;
+                    flex-direction: column;
+                    h3{
+                        color: #333;
+                        font-size:0.30rem ;
+                        font-weight: normal;
+                    }
+                    p{
+                        color: #dfdfdf;
+                        font-size: 0.22rem;
+                    }
+                }
+            }
+        }
+        .shangjiatu{
+            @include center(94%,80%,0);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            div{
+                @include chang(30%,90%);
+                box-shadow: 0px  0px 15px 0px #d8d8d8;
+                background: url(img/2017-03-17_162014.jpg)center no-repeat;
+            }
+        }
+    }
+    .zuijin{
+        @include chang(100%,5.80rem);
+        .yuedu{
+            @include center(94%,16%,0);
+            .caidan{
+                @include chang(40%,100%);
+                display: flex;
+                justify-content: space-between;
+                .yuan{
+                    @include yuan(0.30rem);
+                    background:#FFC63E url(img/dsdfdg.png) center no-repeat;
+                    margin-top: 0.05rem;
+                }
+                .zi{
+                    @include chang(84%,100%);
+                    display: flex;
+                    flex-direction: column;
+                    h3{
+                        color: #333;
+                        font-size:0.30rem ;
+                        font-weight: normal;
+                    }
+                    p{
+                        color: #dfdfdf;
+                        font-size: 0.22rem;
+                    }
+                }
+            }
+        }
+        .yuedu1{
+            @include center(94%,80%,0);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            .yuedu2{
+                @include chang(100%,47.5%);
+                box-shadow: 0px  0px 15px 0px #d8d8d8;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .xiao{
+                    @include chang(20%,90%);
+                    background: url(img/jbj.png);
+                    background-size: 100%;
+                }
+                .da{
+                    @include chang(75%,90%);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    h3{
+                        @include chang(98%,auto);
+                        color: #393939;
+                        font-size:0.25rem ;
+                        font-weight: normal;
+                    }
+                    span{
+                        @include chang(98%,auto);
+                        display: block;
+                        color: #ABABAB;
+                        font-size: 0.14rem;
+                    }
+                    .xuxian{
+                        @include chang(70%,0.01rem);
+                        border: 0.01rem dotted #ABABAB;
+                    }
+                    h4{
+                        @include chang(98%,auto);
+                        color: #6E6E6E;
+                        font-size:0.2rem ;
+                        font-weight: normal;
+                    }
+                    p{
+                        @include chang(98%,auto);
+                        color: #ABABAB;
+                        font-size: 0.16rem;
+                    }
+                   .yiyue{
+                       @include chang(100%,0.44rem);
+                       display: flex;
+                       align-items: center;
+                       position: relative;
+                       span{
+                           @include chang(auto,auto);
+                           display: block;
+                           color: #ABABAB;
+                           font-size: 0.16rem;
+                           i{
+                               color: #76CCEF;
+                               font: 0.16rem;
+                               padding-right: 0.05rem;
+                           }
+                       }
+                           
+                        ul{
+                            @include chang(40%,auto);
+                            background: #D4D4D4;
+                            li{
+                                @include chang(40%,0.10rem);
+                                background: #76CCEF;
+                            }
+                        }
+                        a{
+                            @include chang(1.51rem,0.44rem);
+                            @include zi(#fff,0.22rem,0.44rem,center)
+                            background: #29A6DC;
+                            border-radius: 1rem;
+                           position: absolute;
+                           bottom: 0px;
+                           right: 0px;        
+                        } 
+                   }
+                }
+            }
+        }
+    }
+    $test : (
+        shujia1 : "img/shujia.png",
+        shucheng : "img/shu.png",
+        geren : "img/wode.png"
+    );
+    @each $name in map_keys($test){
+        .#{$name}{
+            background: #151C2B url(map_get($test,$name)) no-repeat;
+            background-size: cover;
+        }
+    }
+    .tabe{
+        @include chang(100%,1.00rem);
+        background: #151C2B;
+        margin-top: 0.15rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        @for $i from 1 through 12{
+        .lg-#{$i}{
+            width: percentage($i/12);
+            height: 95%;
+            border-right: 1px solid #717171;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            a{
+                @include fang(0.45rem);
+                display: block;
+            }
+            span{
+                @include chang(0.45rem,auto);
+                display: block;
+                color: #ABABAB;
+                font-size: 0.20rem;
+            }
+        }
+    }
+    }
+
+}
