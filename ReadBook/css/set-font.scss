@@ -204,15 +204,17 @@ $inner: 95%;
   background: #151c2b;
 }
 
-.tabBar .inner{
+.tabBar .inner {
   @include cenH;
   display: flex;
   flex-direction: column;
+  //opacity: 0;
 }
 
-.page-skip{
-
+.page-skip {
+  opacity: 0;
 }
+
 .page-skip .Skip {
   flex: 1;
   display: flex;
@@ -290,6 +292,110 @@ $inner: 95%;
     span {
       text-align: center;
       color: #e6e6e6;
+    }
+  }
+}
+
+.font {
+  s {
+    display: block;
+    @include height(40);
+    @include width(40);
+    @include margin4(0, 30, 0, 0);
+    &.size-img {
+      background: url("../images/font_bg_03.png") no-repeat center center;
+    }
+    &.dis-img {
+      background: url("../images/font_bg_05.png") no-repeat center center;
+    }
+  }
+}
+
+.font .Skip {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //@include padding2(0, 19);
+  span {
+    @include margin2(0, 30);
+    @include font-size(24);
+    font-family: Bold;
+    @include line-height(27);
+    color: #c6c6c6;
+  }
+  .line {
+    flex: 1;
+    @include height(12);
+    background: #d5d5d5;
+    border-radius: 6px;
+    .pro {
+      height: 100%;
+      width: 20%;
+      border-radius: 6px;
+      background: #1db34b;
+      .area {
+        @include height(24);
+        @include width(24);
+        border-radius: 50%;
+        @include cenW;
+        @include right(-12);
+        background: url("../images/area_bg_03.png") no-repeat center center;
+      }
+    }
+  }
+  .size-img + .line {
+    .pro {
+      width: 30%;
+    }
+  }
+  .dis-img + .line {
+    .pro {
+      width: 10%;
+    }
+  }
+}
+
+.font .bg-color {
+  span {
+    margin-right: 0;
+  }
+  $item-color: (one, '#fcf3db'),
+          (two, '#ffe9b0'),
+          (three, '#d8a764'),
+          (four, '#3876ac'),
+          (five, '#21858e'),
+          (six, '#f4c5d4'),
+          (seven, '#79d143'),
+          (eight, '#ffffff');
+  .item {
+    @include width(55);
+    @include height(55);
+    text-align: center;
+    @include line-height(46);
+    @include bg;
+    @each $name, $color in $item-color {
+      &.color-#{$name} {
+        background: #{$color};
+      }
+    }
+    &.color-eight{
+      .line{
+        display: inline-block;
+        height: 1px;
+        @include width(17);
+        background: #313131;
+        position: relative;
+        &::after{
+          content: '';
+          display: inline-block;
+          height: 100%;
+          width: 100%;
+          background: #313131;
+          transform: rotate(90deg);
+          @include cenH;
+        }
+      }
     }
   }
 }

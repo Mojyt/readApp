@@ -1326,6 +1326,9 @@ body {
   display: flex;
   flex-direction: column; }
 
+.page-skip {
+  opacity: 0; }
+
 .page-skip .Skip {
   flex: 1;
   display: flex;
@@ -1772,6 +1775,681 @@ body {
     .page-skip .Fun .item span {
       text-align: center;
       color: #e6e6e6; }
+
+.font s {
+  display: block; }
+  @media screen and (min-width: 320px) {
+    .font s {
+      height: 17.06667px; } }
+  @media screen and (min-width: 360px) {
+    .font s {
+      height: 19.2px; } }
+  @media screen and (min-width: 375px) {
+    .font s {
+      height: 20px; } }
+  @media screen and (min-width: 384px) {
+    .font s {
+      height: 20.48px; } }
+  @media screen and (min-width: 412px) {
+    .font s {
+      height: 21.97333px; } }
+  @media screen and (min-width: 414px) {
+    .font s {
+      height: 22.08px; } }
+  @media screen and (min-width: 571px) {
+    .font s {
+      height: 30.45333px; } }
+  @media screen and (min-width: 600px) {
+    .font s {
+      height: 32px; } }
+  @media screen and (min-width: 640px) {
+    .font s {
+      height: 34.13333px; } }
+  @media screen and (min-width: 750px) {
+    .font s {
+      height: 40px; } }
+  @media screen and (min-width: 320px) {
+    .font s {
+      width: 17.06667px; } }
+  @media screen and (min-width: 360px) {
+    .font s {
+      width: 19.2px; } }
+  @media screen and (min-width: 375px) {
+    .font s {
+      width: 20px; } }
+  @media screen and (min-width: 384px) {
+    .font s {
+      width: 20.48px; } }
+  @media screen and (min-width: 412px) {
+    .font s {
+      width: 21.97333px; } }
+  @media screen and (min-width: 414px) {
+    .font s {
+      width: 22.08px; } }
+  @media screen and (min-width: 571px) {
+    .font s {
+      width: 30.45333px; } }
+  @media screen and (min-width: 600px) {
+    .font s {
+      width: 32px; } }
+  @media screen and (min-width: 640px) {
+    .font s {
+      width: 34.13333px; } }
+  @media screen and (min-width: 750px) {
+    .font s {
+      width: 40px; } }
+  @media screen and (min-width: 320px) {
+    .font s {
+      margin-top: 0px; } }
+  @media screen and (min-width: 360px) {
+    .font s {
+      margin-top: 0px; } }
+  @media screen and (min-width: 375px) {
+    .font s {
+      margin-top: 0px; } }
+  @media screen and (min-width: 384px) {
+    .font s {
+      margin-top: 0px; } }
+  @media screen and (min-width: 412px) {
+    .font s {
+      margin-top: 0px; } }
+  @media screen and (min-width: 414px) {
+    .font s {
+      margin-top: 0px; } }
+  @media screen and (min-width: 571px) {
+    .font s {
+      margin-top: 0px; } }
+  @media screen and (min-width: 600px) {
+    .font s {
+      margin-top: 0px; } }
+  @media screen and (min-width: 640px) {
+    .font s {
+      margin-top: 0px; } }
+  @media screen and (min-width: 750px) {
+    .font s {
+      margin-top: 0px; } }
+  @media screen and (min-width: 320px) {
+    .font s {
+      margin-right: 12.8px; } }
+  @media screen and (min-width: 360px) {
+    .font s {
+      margin-right: 14.4px; } }
+  @media screen and (min-width: 375px) {
+    .font s {
+      margin-right: 15px; } }
+  @media screen and (min-width: 384px) {
+    .font s {
+      margin-right: 15.36px; } }
+  @media screen and (min-width: 412px) {
+    .font s {
+      margin-right: 16.48px; } }
+  @media screen and (min-width: 414px) {
+    .font s {
+      margin-right: 16.56px; } }
+  @media screen and (min-width: 571px) {
+    .font s {
+      margin-right: 22.84px; } }
+  @media screen and (min-width: 600px) {
+    .font s {
+      margin-right: 24px; } }
+  @media screen and (min-width: 640px) {
+    .font s {
+      margin-right: 25.6px; } }
+  @media screen and (min-width: 750px) {
+    .font s {
+      margin-right: 30px; } }
+  @media screen and (min-width: 320px) {
+    .font s {
+      margin-bottom: 0px; } }
+  @media screen and (min-width: 360px) {
+    .font s {
+      margin-bottom: 0px; } }
+  @media screen and (min-width: 375px) {
+    .font s {
+      margin-bottom: 0px; } }
+  @media screen and (min-width: 384px) {
+    .font s {
+      margin-bottom: 0px; } }
+  @media screen and (min-width: 412px) {
+    .font s {
+      margin-bottom: 0px; } }
+  @media screen and (min-width: 414px) {
+    .font s {
+      margin-bottom: 0px; } }
+  @media screen and (min-width: 571px) {
+    .font s {
+      margin-bottom: 0px; } }
+  @media screen and (min-width: 600px) {
+    .font s {
+      margin-bottom: 0px; } }
+  @media screen and (min-width: 640px) {
+    .font s {
+      margin-bottom: 0px; } }
+  @media screen and (min-width: 750px) {
+    .font s {
+      margin-bottom: 0px; } }
+  @media screen and (min-width: 320px) {
+    .font s {
+      margin-left: 0px; } }
+  @media screen and (min-width: 360px) {
+    .font s {
+      margin-left: 0px; } }
+  @media screen and (min-width: 375px) {
+    .font s {
+      margin-left: 0px; } }
+  @media screen and (min-width: 384px) {
+    .font s {
+      margin-left: 0px; } }
+  @media screen and (min-width: 412px) {
+    .font s {
+      margin-left: 0px; } }
+  @media screen and (min-width: 414px) {
+    .font s {
+      margin-left: 0px; } }
+  @media screen and (min-width: 571px) {
+    .font s {
+      margin-left: 0px; } }
+  @media screen and (min-width: 600px) {
+    .font s {
+      margin-left: 0px; } }
+  @media screen and (min-width: 640px) {
+    .font s {
+      margin-left: 0px; } }
+  @media screen and (min-width: 750px) {
+    .font s {
+      margin-left: 0px; } }
+  .font s.size-img {
+    background: url("../images/font_bg_03.png") no-repeat center center; }
+  .font s.dis-img {
+    background: url("../images/font_bg_05.png") no-repeat center center; }
+
+.font .Skip {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .font .Skip span {
+    font-family: Bold;
+    color: #c6c6c6; }
+    @media screen and (min-width: 320px) {
+      .font .Skip span {
+        margin-top: 0px; } }
+    @media screen and (min-width: 360px) {
+      .font .Skip span {
+        margin-top: 0px; } }
+    @media screen and (min-width: 375px) {
+      .font .Skip span {
+        margin-top: 0px; } }
+    @media screen and (min-width: 384px) {
+      .font .Skip span {
+        margin-top: 0px; } }
+    @media screen and (min-width: 412px) {
+      .font .Skip span {
+        margin-top: 0px; } }
+    @media screen and (min-width: 414px) {
+      .font .Skip span {
+        margin-top: 0px; } }
+    @media screen and (min-width: 571px) {
+      .font .Skip span {
+        margin-top: 0px; } }
+    @media screen and (min-width: 600px) {
+      .font .Skip span {
+        margin-top: 0px; } }
+    @media screen and (min-width: 640px) {
+      .font .Skip span {
+        margin-top: 0px; } }
+    @media screen and (min-width: 750px) {
+      .font .Skip span {
+        margin-top: 0px; } }
+    @media screen and (min-width: 320px) {
+      .font .Skip span {
+        margin-right: 12.8px; } }
+    @media screen and (min-width: 360px) {
+      .font .Skip span {
+        margin-right: 14.4px; } }
+    @media screen and (min-width: 375px) {
+      .font .Skip span {
+        margin-right: 15px; } }
+    @media screen and (min-width: 384px) {
+      .font .Skip span {
+        margin-right: 15.36px; } }
+    @media screen and (min-width: 412px) {
+      .font .Skip span {
+        margin-right: 16.48px; } }
+    @media screen and (min-width: 414px) {
+      .font .Skip span {
+        margin-right: 16.56px; } }
+    @media screen and (min-width: 571px) {
+      .font .Skip span {
+        margin-right: 22.84px; } }
+    @media screen and (min-width: 600px) {
+      .font .Skip span {
+        margin-right: 24px; } }
+    @media screen and (min-width: 640px) {
+      .font .Skip span {
+        margin-right: 25.6px; } }
+    @media screen and (min-width: 750px) {
+      .font .Skip span {
+        margin-right: 30px; } }
+    @media screen and (min-width: 320px) {
+      .font .Skip span {
+        margin-bottom: 0px; } }
+    @media screen and (min-width: 360px) {
+      .font .Skip span {
+        margin-bottom: 0px; } }
+    @media screen and (min-width: 375px) {
+      .font .Skip span {
+        margin-bottom: 0px; } }
+    @media screen and (min-width: 384px) {
+      .font .Skip span {
+        margin-bottom: 0px; } }
+    @media screen and (min-width: 412px) {
+      .font .Skip span {
+        margin-bottom: 0px; } }
+    @media screen and (min-width: 414px) {
+      .font .Skip span {
+        margin-bottom: 0px; } }
+    @media screen and (min-width: 571px) {
+      .font .Skip span {
+        margin-bottom: 0px; } }
+    @media screen and (min-width: 600px) {
+      .font .Skip span {
+        margin-bottom: 0px; } }
+    @media screen and (min-width: 640px) {
+      .font .Skip span {
+        margin-bottom: 0px; } }
+    @media screen and (min-width: 750px) {
+      .font .Skip span {
+        margin-bottom: 0px; } }
+    @media screen and (min-width: 320px) {
+      .font .Skip span {
+        margin-left: 12.8px; } }
+    @media screen and (min-width: 360px) {
+      .font .Skip span {
+        margin-left: 14.4px; } }
+    @media screen and (min-width: 375px) {
+      .font .Skip span {
+        margin-left: 15px; } }
+    @media screen and (min-width: 384px) {
+      .font .Skip span {
+        margin-left: 15.36px; } }
+    @media screen and (min-width: 412px) {
+      .font .Skip span {
+        margin-left: 16.48px; } }
+    @media screen and (min-width: 414px) {
+      .font .Skip span {
+        margin-left: 16.56px; } }
+    @media screen and (min-width: 571px) {
+      .font .Skip span {
+        margin-left: 22.84px; } }
+    @media screen and (min-width: 600px) {
+      .font .Skip span {
+        margin-left: 24px; } }
+    @media screen and (min-width: 640px) {
+      .font .Skip span {
+        margin-left: 25.6px; } }
+    @media screen and (min-width: 750px) {
+      .font .Skip span {
+        margin-left: 30px; } }
+    @media screen and (min-width: 320px) {
+      .font .Skip span {
+        font-size: 10.24px; } }
+    @media screen and (min-width: 360px) {
+      .font .Skip span {
+        font-size: 11.52px; } }
+    @media screen and (min-width: 375px) {
+      .font .Skip span {
+        font-size: 12px; } }
+    @media screen and (min-width: 384px) {
+      .font .Skip span {
+        font-size: 12.288px; } }
+    @media screen and (min-width: 412px) {
+      .font .Skip span {
+        font-size: 13.184px; } }
+    @media screen and (min-width: 414px) {
+      .font .Skip span {
+        font-size: 13.248px; } }
+    @media screen and (min-width: 571px) {
+      .font .Skip span {
+        font-size: 18.272px; } }
+    @media screen and (min-width: 600px) {
+      .font .Skip span {
+        font-size: 19.2px; } }
+    @media screen and (min-width: 640px) {
+      .font .Skip span {
+        font-size: 20.48px; } }
+    @media screen and (min-width: 750px) {
+      .font .Skip span {
+        font-size: 24px; } }
+    @media screen and (min-width: 320px) {
+      .font .Skip span {
+        line-height: 11.52px; } }
+    @media screen and (min-width: 360px) {
+      .font .Skip span {
+        line-height: 12.96px; } }
+    @media screen and (min-width: 375px) {
+      .font .Skip span {
+        line-height: 13.5px; } }
+    @media screen and (min-width: 384px) {
+      .font .Skip span {
+        line-height: 13.824px; } }
+    @media screen and (min-width: 412px) {
+      .font .Skip span {
+        line-height: 14.832px; } }
+    @media screen and (min-width: 414px) {
+      .font .Skip span {
+        line-height: 14.904px; } }
+    @media screen and (min-width: 571px) {
+      .font .Skip span {
+        line-height: 20.556px; } }
+    @media screen and (min-width: 600px) {
+      .font .Skip span {
+        line-height: 21.6px; } }
+    @media screen and (min-width: 640px) {
+      .font .Skip span {
+        line-height: 23.04px; } }
+    @media screen and (min-width: 750px) {
+      .font .Skip span {
+        line-height: 27px; } }
+  .font .Skip .line {
+    flex: 1;
+    background: #d5d5d5;
+    border-radius: 6px; }
+    @media screen and (min-width: 320px) {
+      .font .Skip .line {
+        height: 5.12px; } }
+    @media screen and (min-width: 360px) {
+      .font .Skip .line {
+        height: 5.76px; } }
+    @media screen and (min-width: 375px) {
+      .font .Skip .line {
+        height: 6px; } }
+    @media screen and (min-width: 384px) {
+      .font .Skip .line {
+        height: 6.144px; } }
+    @media screen and (min-width: 412px) {
+      .font .Skip .line {
+        height: 6.592px; } }
+    @media screen and (min-width: 414px) {
+      .font .Skip .line {
+        height: 6.624px; } }
+    @media screen and (min-width: 571px) {
+      .font .Skip .line {
+        height: 9.136px; } }
+    @media screen and (min-width: 600px) {
+      .font .Skip .line {
+        height: 9.6px; } }
+    @media screen and (min-width: 640px) {
+      .font .Skip .line {
+        height: 10.24px; } }
+    @media screen and (min-width: 750px) {
+      .font .Skip .line {
+        height: 12px; } }
+    .font .Skip .line .pro {
+      height: 100%;
+      width: 20%;
+      border-radius: 6px;
+      background: #1db34b; }
+      .font .Skip .line .pro .area {
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: url("../images/area_bg_03.png") no-repeat center center; }
+        @media screen and (min-width: 320px) {
+          .font .Skip .line .pro .area {
+            height: 10.24px; } }
+        @media screen and (min-width: 360px) {
+          .font .Skip .line .pro .area {
+            height: 11.52px; } }
+        @media screen and (min-width: 375px) {
+          .font .Skip .line .pro .area {
+            height: 12px; } }
+        @media screen and (min-width: 384px) {
+          .font .Skip .line .pro .area {
+            height: 12.288px; } }
+        @media screen and (min-width: 412px) {
+          .font .Skip .line .pro .area {
+            height: 13.184px; } }
+        @media screen and (min-width: 414px) {
+          .font .Skip .line .pro .area {
+            height: 13.248px; } }
+        @media screen and (min-width: 571px) {
+          .font .Skip .line .pro .area {
+            height: 18.272px; } }
+        @media screen and (min-width: 600px) {
+          .font .Skip .line .pro .area {
+            height: 19.2px; } }
+        @media screen and (min-width: 640px) {
+          .font .Skip .line .pro .area {
+            height: 20.48px; } }
+        @media screen and (min-width: 750px) {
+          .font .Skip .line .pro .area {
+            height: 24px; } }
+        @media screen and (min-width: 320px) {
+          .font .Skip .line .pro .area {
+            width: 10.24px; } }
+        @media screen and (min-width: 360px) {
+          .font .Skip .line .pro .area {
+            width: 11.52px; } }
+        @media screen and (min-width: 375px) {
+          .font .Skip .line .pro .area {
+            width: 12px; } }
+        @media screen and (min-width: 384px) {
+          .font .Skip .line .pro .area {
+            width: 12.288px; } }
+        @media screen and (min-width: 412px) {
+          .font .Skip .line .pro .area {
+            width: 13.184px; } }
+        @media screen and (min-width: 414px) {
+          .font .Skip .line .pro .area {
+            width: 13.248px; } }
+        @media screen and (min-width: 571px) {
+          .font .Skip .line .pro .area {
+            width: 18.272px; } }
+        @media screen and (min-width: 600px) {
+          .font .Skip .line .pro .area {
+            width: 19.2px; } }
+        @media screen and (min-width: 640px) {
+          .font .Skip .line .pro .area {
+            width: 20.48px; } }
+        @media screen and (min-width: 750px) {
+          .font .Skip .line .pro .area {
+            width: 24px; } }
+        @media screen and (min-width: 320px) {
+          .font .Skip .line .pro .area {
+            right: -5.12px; } }
+        @media screen and (min-width: 360px) {
+          .font .Skip .line .pro .area {
+            right: -5.76px; } }
+        @media screen and (min-width: 375px) {
+          .font .Skip .line .pro .area {
+            right: -6px; } }
+        @media screen and (min-width: 384px) {
+          .font .Skip .line .pro .area {
+            right: -6.144px; } }
+        @media screen and (min-width: 412px) {
+          .font .Skip .line .pro .area {
+            right: -6.592px; } }
+        @media screen and (min-width: 414px) {
+          .font .Skip .line .pro .area {
+            right: -6.624px; } }
+        @media screen and (min-width: 571px) {
+          .font .Skip .line .pro .area {
+            right: -9.136px; } }
+        @media screen and (min-width: 600px) {
+          .font .Skip .line .pro .area {
+            right: -9.6px; } }
+        @media screen and (min-width: 640px) {
+          .font .Skip .line .pro .area {
+            right: -10.24px; } }
+        @media screen and (min-width: 750px) {
+          .font .Skip .line .pro .area {
+            right: -12px; } }
+  .font .Skip .size-img + .line .pro {
+    width: 30%; }
+  .font .Skip .dis-img + .line .pro {
+    width: 10%; }
+
+.font .bg-color span {
+  margin-right: 0; }
+
+.font .bg-color .item {
+  text-align: center;
+  background: rgba(27, 88, 77, 0.4); }
+  @media screen and (min-width: 320px) {
+    .font .bg-color .item {
+      width: 23.46667px; } }
+  @media screen and (min-width: 360px) {
+    .font .bg-color .item {
+      width: 26.4px; } }
+  @media screen and (min-width: 375px) {
+    .font .bg-color .item {
+      width: 27.5px; } }
+  @media screen and (min-width: 384px) {
+    .font .bg-color .item {
+      width: 28.16px; } }
+  @media screen and (min-width: 412px) {
+    .font .bg-color .item {
+      width: 30.21333px; } }
+  @media screen and (min-width: 414px) {
+    .font .bg-color .item {
+      width: 30.36px; } }
+  @media screen and (min-width: 571px) {
+    .font .bg-color .item {
+      width: 41.87333px; } }
+  @media screen and (min-width: 600px) {
+    .font .bg-color .item {
+      width: 44px; } }
+  @media screen and (min-width: 640px) {
+    .font .bg-color .item {
+      width: 46.93333px; } }
+  @media screen and (min-width: 750px) {
+    .font .bg-color .item {
+      width: 55px; } }
+  @media screen and (min-width: 320px) {
+    .font .bg-color .item {
+      height: 23.46667px; } }
+  @media screen and (min-width: 360px) {
+    .font .bg-color .item {
+      height: 26.4px; } }
+  @media screen and (min-width: 375px) {
+    .font .bg-color .item {
+      height: 27.5px; } }
+  @media screen and (min-width: 384px) {
+    .font .bg-color .item {
+      height: 28.16px; } }
+  @media screen and (min-width: 412px) {
+    .font .bg-color .item {
+      height: 30.21333px; } }
+  @media screen and (min-width: 414px) {
+    .font .bg-color .item {
+      height: 30.36px; } }
+  @media screen and (min-width: 571px) {
+    .font .bg-color .item {
+      height: 41.87333px; } }
+  @media screen and (min-width: 600px) {
+    .font .bg-color .item {
+      height: 44px; } }
+  @media screen and (min-width: 640px) {
+    .font .bg-color .item {
+      height: 46.93333px; } }
+  @media screen and (min-width: 750px) {
+    .font .bg-color .item {
+      height: 55px; } }
+  @media screen and (min-width: 320px) {
+    .font .bg-color .item {
+      line-height: 19.62667px; } }
+  @media screen and (min-width: 360px) {
+    .font .bg-color .item {
+      line-height: 22.08px; } }
+  @media screen and (min-width: 375px) {
+    .font .bg-color .item {
+      line-height: 23px; } }
+  @media screen and (min-width: 384px) {
+    .font .bg-color .item {
+      line-height: 23.552px; } }
+  @media screen and (min-width: 412px) {
+    .font .bg-color .item {
+      line-height: 25.26933px; } }
+  @media screen and (min-width: 414px) {
+    .font .bg-color .item {
+      line-height: 25.392px; } }
+  @media screen and (min-width: 571px) {
+    .font .bg-color .item {
+      line-height: 35.02133px; } }
+  @media screen and (min-width: 600px) {
+    .font .bg-color .item {
+      line-height: 36.8px; } }
+  @media screen and (min-width: 640px) {
+    .font .bg-color .item {
+      line-height: 39.25333px; } }
+  @media screen and (min-width: 750px) {
+    .font .bg-color .item {
+      line-height: 46px; } }
+  .font .bg-color .item.color-one {
+    background: #fcf3db; }
+  .font .bg-color .item.color-two {
+    background: #ffe9b0; }
+  .font .bg-color .item.color-three {
+    background: #d8a764; }
+  .font .bg-color .item.color-four {
+    background: #3876ac; }
+  .font .bg-color .item.color-five {
+    background: #21858e; }
+  .font .bg-color .item.color-six {
+    background: #f4c5d4; }
+  .font .bg-color .item.color-seven {
+    background: #79d143; }
+  .font .bg-color .item.color-eight {
+    background: #ffffff; }
+  .font .bg-color .item.color-eight .line {
+    display: inline-block;
+    height: 1px;
+    background: #313131;
+    position: relative; }
+    @media screen and (min-width: 320px) {
+      .font .bg-color .item.color-eight .line {
+        width: 7.25333px; } }
+    @media screen and (min-width: 360px) {
+      .font .bg-color .item.color-eight .line {
+        width: 8.16px; } }
+    @media screen and (min-width: 375px) {
+      .font .bg-color .item.color-eight .line {
+        width: 8.5px; } }
+    @media screen and (min-width: 384px) {
+      .font .bg-color .item.color-eight .line {
+        width: 8.704px; } }
+    @media screen and (min-width: 412px) {
+      .font .bg-color .item.color-eight .line {
+        width: 9.33867px; } }
+    @media screen and (min-width: 414px) {
+      .font .bg-color .item.color-eight .line {
+        width: 9.384px; } }
+    @media screen and (min-width: 571px) {
+      .font .bg-color .item.color-eight .line {
+        width: 12.94267px; } }
+    @media screen and (min-width: 600px) {
+      .font .bg-color .item.color-eight .line {
+        width: 13.6px; } }
+    @media screen and (min-width: 640px) {
+      .font .bg-color .item.color-eight .line {
+        width: 14.50667px; } }
+    @media screen and (min-width: 750px) {
+      .font .bg-color .item.color-eight .line {
+        width: 17px; } }
+    .font .bg-color .item.color-eight .line::after {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      background: #313131;
+      transform: rotate(90deg);
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto; }
 
 /*脚标*/
 .cornerMark {
