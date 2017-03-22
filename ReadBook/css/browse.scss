@@ -2,6 +2,10 @@
 @import "adapter";
 @import "base";
 
+* {
+  position: relative;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -16,12 +20,12 @@ $inner: 95%;
   max-width: 750px;
   background: url("../images/browse_bg_03.png") no-repeat center center;
   @include height(1334);
+  overflow: hidden;
 }
 
 .inner {
   width: 95%;
   height: 100%;
-  @include bg;
   overflow: hidden;
 
 }
@@ -39,7 +43,6 @@ $inner: 95%;
     @include line-height(40);
     @include margin-left(23);
   }
-  display: none;
 }
 
 .statusBar .inner {
@@ -78,7 +81,6 @@ $inner: 95%;
   @include height(28);
   display: flex;
   justify-content: center;
-  display: none;
 }
 
 .bookName .inner {
@@ -111,50 +113,6 @@ $inner: 95%;
   @include padding2(0, 8);
 }
 
-///////////////////////////////////////////////////////////////////////////
-
-/*导航栏*/
-
-.navigationBar {
-  @include height(140);
-  width: 100%;
-  background: url("../images/bg_03.png") -80px -142px no-repeat;
-  display: flex;
-  justify-content: center;
-}
-
-.navigationBar .inner {
-  box-sizing: border-box;
-  @include padding-top(40);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
-.navigationBar button {
-  @include width(44);
-  @include height(44);
-  border-radius: 50%;
-  &.goBack {
-    &.goBack{
-      top: 0;
-      bottom: 0;
-      background: url("../images/btn_1.png") no-repeat center center;
-      background-size: 100%;
-    }
-  }
-  &.bookMark {
-    position: absolute;
-    @include right(77);
-    background: url("../images/btn_2.png")no-repeat center center;
-    background-size: 100%;
-  }
-  &.Down {
-    background: url("../images/btn_3.png")no-repeat center center;
-    background-size: 100%;
-  }
-}
 
 /////////////////////////////////////////////////////////////////////////
 
@@ -192,17 +150,7 @@ $inner: 95%;
 }
 
 ////////////////////////////////////////////////////////////////////////
-/*标签栏*/
 
-.tabBar {
-  @include height(226);
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background: #151c2b;
-}
-
-//////////////////////////////////////////////////////////////////////
 
 /*脚标*/
 

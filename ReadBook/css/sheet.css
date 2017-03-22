@@ -42,6 +42,9 @@
 /*宽度适配*/
 /*字体*/
 /*border-width*/
+/*right*/
+/*left*/
+/*top*/
 /*各种margin值适配*/
 /*各种padding值适配*/
 /*初始化*/
@@ -109,6 +112,9 @@ h1, h2, h3, h4, h5, h6 {
 img {
   border: none; }
 
+* {
+  position: relative; }
+
 body {
   display: flex;
   justify-content: center; }
@@ -118,7 +124,8 @@ body {
   flex-direction: column;
   width: 100%;
   max-width: 750px;
-  background: url("../images/browse_bg_03.png") no-repeat center center; }
+  background: url("../images/browse_bg_03.png") no-repeat center center;
+  overflow: hidden; }
   @media screen and (min-width: 320px) {
     .bg {
       height: 569.17333px; } }
@@ -152,7 +159,600 @@ body {
 
 .inner {
   width: 95%;
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
+
+/*状态栏*/
+.statusBar {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  @media screen and (min-width: 320px) {
+    .statusBar {
+      font-size: 8.10667px; } }
+  @media screen and (min-width: 360px) {
+    .statusBar {
+      font-size: 9.12px; } }
+  @media screen and (min-width: 375px) {
+    .statusBar {
+      font-size: 9.5px; } }
+  @media screen and (min-width: 384px) {
+    .statusBar {
+      font-size: 9.728px; } }
+  @media screen and (min-width: 412px) {
+    .statusBar {
+      font-size: 10.43733px; } }
+  @media screen and (min-width: 414px) {
+    .statusBar {
+      font-size: 10.488px; } }
+  @media screen and (min-width: 571px) {
+    .statusBar {
+      font-size: 14.46533px; } }
+  @media screen and (min-width: 600px) {
+    .statusBar {
+      font-size: 15.2px; } }
+  @media screen and (min-width: 640px) {
+    .statusBar {
+      font-size: 16.21333px; } }
+  @media screen and (min-width: 750px) {
+    .statusBar {
+      font-size: 19px; } }
+  @media screen and (min-width: 320px) {
+    .statusBar .system {
+      line-height: 17.06667px; } }
+  @media screen and (min-width: 360px) {
+    .statusBar .system {
+      line-height: 19.2px; } }
+  @media screen and (min-width: 375px) {
+    .statusBar .system {
+      line-height: 20px; } }
+  @media screen and (min-width: 384px) {
+    .statusBar .system {
+      line-height: 20.48px; } }
+  @media screen and (min-width: 412px) {
+    .statusBar .system {
+      line-height: 21.97333px; } }
+  @media screen and (min-width: 414px) {
+    .statusBar .system {
+      line-height: 22.08px; } }
+  @media screen and (min-width: 571px) {
+    .statusBar .system {
+      line-height: 30.45333px; } }
+  @media screen and (min-width: 600px) {
+    .statusBar .system {
+      line-height: 32px; } }
+  @media screen and (min-width: 640px) {
+    .statusBar .system {
+      line-height: 34.13333px; } }
+  @media screen and (min-width: 750px) {
+    .statusBar .system {
+      line-height: 40px; } }
+  @media screen and (min-width: 320px) {
+    .statusBar .system {
+      margin-left: 9.81333px; } }
+  @media screen and (min-width: 360px) {
+    .statusBar .system {
+      margin-left: 11.04px; } }
+  @media screen and (min-width: 375px) {
+    .statusBar .system {
+      margin-left: 11.5px; } }
+  @media screen and (min-width: 384px) {
+    .statusBar .system {
+      margin-left: 11.776px; } }
+  @media screen and (min-width: 412px) {
+    .statusBar .system {
+      margin-left: 12.63467px; } }
+  @media screen and (min-width: 414px) {
+    .statusBar .system {
+      margin-left: 12.696px; } }
+  @media screen and (min-width: 571px) {
+    .statusBar .system {
+      margin-left: 17.51067px; } }
+  @media screen and (min-width: 600px) {
+    .statusBar .system {
+      margin-left: 18.4px; } }
+  @media screen and (min-width: 640px) {
+    .statusBar .system {
+      margin-left: 19.62667px; } }
+  @media screen and (min-width: 750px) {
+    .statusBar .system {
+      margin-left: 23px; } }
+
+.statusBar .inner {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end; }
+  @media screen and (min-width: 320px) {
+    .statusBar .inner {
+      padding-top: 0px; } }
+  @media screen and (min-width: 360px) {
+    .statusBar .inner {
+      padding-top: 0px; } }
+  @media screen and (min-width: 375px) {
+    .statusBar .inner {
+      padding-top: 0px; } }
+  @media screen and (min-width: 384px) {
+    .statusBar .inner {
+      padding-top: 0px; } }
+  @media screen and (min-width: 412px) {
+    .statusBar .inner {
+      padding-top: 0px; } }
+  @media screen and (min-width: 414px) {
+    .statusBar .inner {
+      padding-top: 0px; } }
+  @media screen and (min-width: 571px) {
+    .statusBar .inner {
+      padding-top: 0px; } }
+  @media screen and (min-width: 600px) {
+    .statusBar .inner {
+      padding-top: 0px; } }
+  @media screen and (min-width: 640px) {
+    .statusBar .inner {
+      padding-top: 0px; } }
+  @media screen and (min-width: 750px) {
+    .statusBar .inner {
+      padding-top: 0px; } }
+  @media screen and (min-width: 320px) {
+    .statusBar .inner {
+      padding-right: 3.84px; } }
+  @media screen and (min-width: 360px) {
+    .statusBar .inner {
+      padding-right: 4.32px; } }
+  @media screen and (min-width: 375px) {
+    .statusBar .inner {
+      padding-right: 4.5px; } }
+  @media screen and (min-width: 384px) {
+    .statusBar .inner {
+      padding-right: 4.608px; } }
+  @media screen and (min-width: 412px) {
+    .statusBar .inner {
+      padding-right: 4.944px; } }
+  @media screen and (min-width: 414px) {
+    .statusBar .inner {
+      padding-right: 4.968px; } }
+  @media screen and (min-width: 571px) {
+    .statusBar .inner {
+      padding-right: 6.852px; } }
+  @media screen and (min-width: 600px) {
+    .statusBar .inner {
+      padding-right: 7.2px; } }
+  @media screen and (min-width: 640px) {
+    .statusBar .inner {
+      padding-right: 7.68px; } }
+  @media screen and (min-width: 750px) {
+    .statusBar .inner {
+      padding-right: 9px; } }
+  @media screen and (min-width: 320px) {
+    .statusBar .inner {
+      padding-bottom: 0px; } }
+  @media screen and (min-width: 360px) {
+    .statusBar .inner {
+      padding-bottom: 0px; } }
+  @media screen and (min-width: 375px) {
+    .statusBar .inner {
+      padding-bottom: 0px; } }
+  @media screen and (min-width: 384px) {
+    .statusBar .inner {
+      padding-bottom: 0px; } }
+  @media screen and (min-width: 412px) {
+    .statusBar .inner {
+      padding-bottom: 0px; } }
+  @media screen and (min-width: 414px) {
+    .statusBar .inner {
+      padding-bottom: 0px; } }
+  @media screen and (min-width: 571px) {
+    .statusBar .inner {
+      padding-bottom: 0px; } }
+  @media screen and (min-width: 600px) {
+    .statusBar .inner {
+      padding-bottom: 0px; } }
+  @media screen and (min-width: 640px) {
+    .statusBar .inner {
+      padding-bottom: 0px; } }
+  @media screen and (min-width: 750px) {
+    .statusBar .inner {
+      padding-bottom: 0px; } }
+  @media screen and (min-width: 320px) {
+    .statusBar .inner {
+      padding-left: 3.84px; } }
+  @media screen and (min-width: 360px) {
+    .statusBar .inner {
+      padding-left: 4.32px; } }
+  @media screen and (min-width: 375px) {
+    .statusBar .inner {
+      padding-left: 4.5px; } }
+  @media screen and (min-width: 384px) {
+    .statusBar .inner {
+      padding-left: 4.608px; } }
+  @media screen and (min-width: 412px) {
+    .statusBar .inner {
+      padding-left: 4.944px; } }
+  @media screen and (min-width: 414px) {
+    .statusBar .inner {
+      padding-left: 4.968px; } }
+  @media screen and (min-width: 571px) {
+    .statusBar .inner {
+      padding-left: 6.852px; } }
+  @media screen and (min-width: 600px) {
+    .statusBar .inner {
+      padding-left: 7.2px; } }
+  @media screen and (min-width: 640px) {
+    .statusBar .inner {
+      padding-left: 7.68px; } }
+  @media screen and (min-width: 750px) {
+    .statusBar .inner {
+      padding-left: 9px; } }
+
+.statusBar .time {
+  font-weight: bolder; }
+
+.statusBar .battery {
+  font-size: 0;
+  display: flex;
+  align-items: center; }
+  .statusBar .battery::after {
+    content: '';
+    display: block;
+    top: 0;
+    bottom: 0;
+    background: url("../images/bg_03.png") no-repeat;
+    background-position: -772px -82px; }
+    @media screen and (min-width: 320px) {
+      .statusBar .battery::after {
+        width: 20.90667px; } }
+    @media screen and (min-width: 360px) {
+      .statusBar .battery::after {
+        width: 23.52px; } }
+    @media screen and (min-width: 375px) {
+      .statusBar .battery::after {
+        width: 24.5px; } }
+    @media screen and (min-width: 384px) {
+      .statusBar .battery::after {
+        width: 25.088px; } }
+    @media screen and (min-width: 412px) {
+      .statusBar .battery::after {
+        width: 26.91733px; } }
+    @media screen and (min-width: 414px) {
+      .statusBar .battery::after {
+        width: 27.048px; } }
+    @media screen and (min-width: 571px) {
+      .statusBar .battery::after {
+        width: 37.30533px; } }
+    @media screen and (min-width: 600px) {
+      .statusBar .battery::after {
+        width: 39.2px; } }
+    @media screen and (min-width: 640px) {
+      .statusBar .battery::after {
+        width: 41.81333px; } }
+    @media screen and (min-width: 750px) {
+      .statusBar .battery::after {
+        width: 49px; } }
+    @media screen and (min-width: 320px) {
+      .statusBar .battery::after {
+        height: 8.10667px; } }
+    @media screen and (min-width: 360px) {
+      .statusBar .battery::after {
+        height: 9.12px; } }
+    @media screen and (min-width: 375px) {
+      .statusBar .battery::after {
+        height: 9.5px; } }
+    @media screen and (min-width: 384px) {
+      .statusBar .battery::after {
+        height: 9.728px; } }
+    @media screen and (min-width: 412px) {
+      .statusBar .battery::after {
+        height: 10.43733px; } }
+    @media screen and (min-width: 414px) {
+      .statusBar .battery::after {
+        height: 10.488px; } }
+    @media screen and (min-width: 571px) {
+      .statusBar .battery::after {
+        height: 14.46533px; } }
+    @media screen and (min-width: 600px) {
+      .statusBar .battery::after {
+        height: 15.2px; } }
+    @media screen and (min-width: 640px) {
+      .statusBar .battery::after {
+        height: 16.21333px; } }
+    @media screen and (min-width: 750px) {
+      .statusBar .battery::after {
+        height: 19px; } }
+
+/*书名*/
+.bookName {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  @media screen and (min-width: 320px) {
+    .bookName {
+      height: 11.94667px; } }
+  @media screen and (min-width: 360px) {
+    .bookName {
+      height: 13.44px; } }
+  @media screen and (min-width: 375px) {
+    .bookName {
+      height: 14px; } }
+  @media screen and (min-width: 384px) {
+    .bookName {
+      height: 14.336px; } }
+  @media screen and (min-width: 412px) {
+    .bookName {
+      height: 15.38133px; } }
+  @media screen and (min-width: 414px) {
+    .bookName {
+      height: 15.456px; } }
+  @media screen and (min-width: 571px) {
+    .bookName {
+      height: 21.31733px; } }
+  @media screen and (min-width: 600px) {
+    .bookName {
+      height: 22.4px; } }
+  @media screen and (min-width: 640px) {
+    .bookName {
+      height: 23.89333px; } }
+  @media screen and (min-width: 750px) {
+    .bookName {
+      height: 28px; } }
+
+.bookName .inner {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box; }
+  @media screen and (min-width: 320px) {
+    .bookName .inner {
+      padding-top: 5.97333px; } }
+  @media screen and (min-width: 360px) {
+    .bookName .inner {
+      padding-top: 6.72px; } }
+  @media screen and (min-width: 375px) {
+    .bookName .inner {
+      padding-top: 7px; } }
+  @media screen and (min-width: 384px) {
+    .bookName .inner {
+      padding-top: 7.168px; } }
+  @media screen and (min-width: 412px) {
+    .bookName .inner {
+      padding-top: 7.69067px; } }
+  @media screen and (min-width: 414px) {
+    .bookName .inner {
+      padding-top: 7.728px; } }
+  @media screen and (min-width: 571px) {
+    .bookName .inner {
+      padding-top: 10.65867px; } }
+  @media screen and (min-width: 600px) {
+    .bookName .inner {
+      padding-top: 11.2px; } }
+  @media screen and (min-width: 640px) {
+    .bookName .inner {
+      padding-top: 11.94667px; } }
+  @media screen and (min-width: 750px) {
+    .bookName .inner {
+      padding-top: 14px; } }
+
+.bookName .line:first-child {
+  display: flex;
+  height: 1px;
+  background: black; }
+  @media screen and (min-width: 320px) {
+    .bookName .line:first-child {
+      width: 9.81333px; } }
+  @media screen and (min-width: 360px) {
+    .bookName .line:first-child {
+      width: 11.04px; } }
+  @media screen and (min-width: 375px) {
+    .bookName .line:first-child {
+      width: 11.5px; } }
+  @media screen and (min-width: 384px) {
+    .bookName .line:first-child {
+      width: 11.776px; } }
+  @media screen and (min-width: 412px) {
+    .bookName .line:first-child {
+      width: 12.63467px; } }
+  @media screen and (min-width: 414px) {
+    .bookName .line:first-child {
+      width: 12.696px; } }
+  @media screen and (min-width: 571px) {
+    .bookName .line:first-child {
+      width: 17.51067px; } }
+  @media screen and (min-width: 600px) {
+    .bookName .line:first-child {
+      width: 18.4px; } }
+  @media screen and (min-width: 640px) {
+    .bookName .line:first-child {
+      width: 19.62667px; } }
+  @media screen and (min-width: 750px) {
+    .bookName .line:first-child {
+      width: 23px; } }
+
+.bookName .line:last-child {
+  display: flex;
+  flex: 1;
+  height: 1px;
+  background: black; }
+
+.bookName .Name {
+  display: flex;
+  width: auto; }
+  @media screen and (min-width: 320px) {
+    .bookName .Name {
+      line-height: 8.53333px; } }
+  @media screen and (min-width: 360px) {
+    .bookName .Name {
+      line-height: 9.6px; } }
+  @media screen and (min-width: 375px) {
+    .bookName .Name {
+      line-height: 10px; } }
+  @media screen and (min-width: 384px) {
+    .bookName .Name {
+      line-height: 10.24px; } }
+  @media screen and (min-width: 412px) {
+    .bookName .Name {
+      line-height: 10.98667px; } }
+  @media screen and (min-width: 414px) {
+    .bookName .Name {
+      line-height: 11.04px; } }
+  @media screen and (min-width: 571px) {
+    .bookName .Name {
+      line-height: 15.22667px; } }
+  @media screen and (min-width: 600px) {
+    .bookName .Name {
+      line-height: 16px; } }
+  @media screen and (min-width: 640px) {
+    .bookName .Name {
+      line-height: 17.06667px; } }
+  @media screen and (min-width: 750px) {
+    .bookName .Name {
+      line-height: 20px; } }
+  @media screen and (min-width: 320px) {
+    .bookName .Name {
+      font-size: 7.68px; } }
+  @media screen and (min-width: 360px) {
+    .bookName .Name {
+      font-size: 8.64px; } }
+  @media screen and (min-width: 375px) {
+    .bookName .Name {
+      font-size: 9px; } }
+  @media screen and (min-width: 384px) {
+    .bookName .Name {
+      font-size: 9.216px; } }
+  @media screen and (min-width: 412px) {
+    .bookName .Name {
+      font-size: 9.888px; } }
+  @media screen and (min-width: 414px) {
+    .bookName .Name {
+      font-size: 9.936px; } }
+  @media screen and (min-width: 571px) {
+    .bookName .Name {
+      font-size: 13.704px; } }
+  @media screen and (min-width: 600px) {
+    .bookName .Name {
+      font-size: 14.4px; } }
+  @media screen and (min-width: 640px) {
+    .bookName .Name {
+      font-size: 15.36px; } }
+  @media screen and (min-width: 750px) {
+    .bookName .Name {
+      font-size: 18px; } }
+  @media screen and (min-width: 320px) {
+    .bookName .Name {
+      padding-top: 0px; } }
+  @media screen and (min-width: 360px) {
+    .bookName .Name {
+      padding-top: 0px; } }
+  @media screen and (min-width: 375px) {
+    .bookName .Name {
+      padding-top: 0px; } }
+  @media screen and (min-width: 384px) {
+    .bookName .Name {
+      padding-top: 0px; } }
+  @media screen and (min-width: 412px) {
+    .bookName .Name {
+      padding-top: 0px; } }
+  @media screen and (min-width: 414px) {
+    .bookName .Name {
+      padding-top: 0px; } }
+  @media screen and (min-width: 571px) {
+    .bookName .Name {
+      padding-top: 0px; } }
+  @media screen and (min-width: 600px) {
+    .bookName .Name {
+      padding-top: 0px; } }
+  @media screen and (min-width: 640px) {
+    .bookName .Name {
+      padding-top: 0px; } }
+  @media screen and (min-width: 750px) {
+    .bookName .Name {
+      padding-top: 0px; } }
+  @media screen and (min-width: 320px) {
+    .bookName .Name {
+      padding-right: 3.41333px; } }
+  @media screen and (min-width: 360px) {
+    .bookName .Name {
+      padding-right: 3.84px; } }
+  @media screen and (min-width: 375px) {
+    .bookName .Name {
+      padding-right: 4px; } }
+  @media screen and (min-width: 384px) {
+    .bookName .Name {
+      padding-right: 4.096px; } }
+  @media screen and (min-width: 412px) {
+    .bookName .Name {
+      padding-right: 4.39467px; } }
+  @media screen and (min-width: 414px) {
+    .bookName .Name {
+      padding-right: 4.416px; } }
+  @media screen and (min-width: 571px) {
+    .bookName .Name {
+      padding-right: 6.09067px; } }
+  @media screen and (min-width: 600px) {
+    .bookName .Name {
+      padding-right: 6.4px; } }
+  @media screen and (min-width: 640px) {
+    .bookName .Name {
+      padding-right: 6.82667px; } }
+  @media screen and (min-width: 750px) {
+    .bookName .Name {
+      padding-right: 8px; } }
+  @media screen and (min-width: 320px) {
+    .bookName .Name {
+      padding-bottom: 0px; } }
+  @media screen and (min-width: 360px) {
+    .bookName .Name {
+      padding-bottom: 0px; } }
+  @media screen and (min-width: 375px) {
+    .bookName .Name {
+      padding-bottom: 0px; } }
+  @media screen and (min-width: 384px) {
+    .bookName .Name {
+      padding-bottom: 0px; } }
+  @media screen and (min-width: 412px) {
+    .bookName .Name {
+      padding-bottom: 0px; } }
+  @media screen and (min-width: 414px) {
+    .bookName .Name {
+      padding-bottom: 0px; } }
+  @media screen and (min-width: 571px) {
+    .bookName .Name {
+      padding-bottom: 0px; } }
+  @media screen and (min-width: 600px) {
+    .bookName .Name {
+      padding-bottom: 0px; } }
+  @media screen and (min-width: 640px) {
+    .bookName .Name {
+      padding-bottom: 0px; } }
+  @media screen and (min-width: 750px) {
+    .bookName .Name {
+      padding-bottom: 0px; } }
+  @media screen and (min-width: 320px) {
+    .bookName .Name {
+      padding-left: 3.41333px; } }
+  @media screen and (min-width: 360px) {
+    .bookName .Name {
+      padding-left: 3.84px; } }
+  @media screen and (min-width: 375px) {
+    .bookName .Name {
+      padding-left: 4px; } }
+  @media screen and (min-width: 384px) {
+    .bookName .Name {
+      padding-left: 4.096px; } }
+  @media screen and (min-width: 412px) {
+    .bookName .Name {
+      padding-left: 4.39467px; } }
+  @media screen and (min-width: 414px) {
+    .bookName .Name {
+      padding-left: 4.416px; } }
+  @media screen and (min-width: 571px) {
+    .bookName .Name {
+      padding-left: 6.09067px; } }
+  @media screen and (min-width: 600px) {
+    .bookName .Name {
+      padding-left: 6.4px; } }
+  @media screen and (min-width: 640px) {
+    .bookName .Name {
+      padding-left: 6.82667px; } }
+  @media screen and (min-width: 750px) {
+    .bookName .Name {
+      padding-left: 8px; } }
 
 /*导航栏*/
 .navigationBar {
@@ -190,14 +790,500 @@ body {
   @media screen and (min-width: 750px) {
     .navigationBar {
       height: 140px; } }
+  @media screen and (min-width: 320px) {
+    .navigationBar {
+      top: -29.01333px; } }
+  @media screen and (min-width: 360px) {
+    .navigationBar {
+      top: -32.64px; } }
+  @media screen and (min-width: 375px) {
+    .navigationBar {
+      top: -34px; } }
+  @media screen and (min-width: 384px) {
+    .navigationBar {
+      top: -34.816px; } }
+  @media screen and (min-width: 412px) {
+    .navigationBar {
+      top: -37.35467px; } }
+  @media screen and (min-width: 414px) {
+    .navigationBar {
+      top: -37.536px; } }
+  @media screen and (min-width: 571px) {
+    .navigationBar {
+      top: -51.77067px; } }
+  @media screen and (min-width: 600px) {
+    .navigationBar {
+      top: -54.4px; } }
+  @media screen and (min-width: 640px) {
+    .navigationBar {
+      top: -58.02667px; } }
+  @media screen and (min-width: 750px) {
+    .navigationBar {
+      top: -68px; } }
 
+.navigationBar .inner {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; }
+  @media screen and (min-width: 320px) {
+    .navigationBar .inner {
+      padding-top: 17.06667px; } }
+  @media screen and (min-width: 360px) {
+    .navigationBar .inner {
+      padding-top: 19.2px; } }
+  @media screen and (min-width: 375px) {
+    .navigationBar .inner {
+      padding-top: 20px; } }
+  @media screen and (min-width: 384px) {
+    .navigationBar .inner {
+      padding-top: 20.48px; } }
+  @media screen and (min-width: 412px) {
+    .navigationBar .inner {
+      padding-top: 21.97333px; } }
+  @media screen and (min-width: 414px) {
+    .navigationBar .inner {
+      padding-top: 22.08px; } }
+  @media screen and (min-width: 571px) {
+    .navigationBar .inner {
+      padding-top: 30.45333px; } }
+  @media screen and (min-width: 600px) {
+    .navigationBar .inner {
+      padding-top: 32px; } }
+  @media screen and (min-width: 640px) {
+    .navigationBar .inner {
+      padding-top: 34.13333px; } }
+  @media screen and (min-width: 750px) {
+    .navigationBar .inner {
+      padding-top: 40px; } }
+
+.navigationBar button {
+  border-radius: 50%; }
+  @media screen and (min-width: 320px) {
+    .navigationBar button {
+      width: 18.77333px; } }
+  @media screen and (min-width: 360px) {
+    .navigationBar button {
+      width: 21.12px; } }
+  @media screen and (min-width: 375px) {
+    .navigationBar button {
+      width: 22px; } }
+  @media screen and (min-width: 384px) {
+    .navigationBar button {
+      width: 22.528px; } }
+  @media screen and (min-width: 412px) {
+    .navigationBar button {
+      width: 24.17067px; } }
+  @media screen and (min-width: 414px) {
+    .navigationBar button {
+      width: 24.288px; } }
+  @media screen and (min-width: 571px) {
+    .navigationBar button {
+      width: 33.49867px; } }
+  @media screen and (min-width: 600px) {
+    .navigationBar button {
+      width: 35.2px; } }
+  @media screen and (min-width: 640px) {
+    .navigationBar button {
+      width: 37.54667px; } }
+  @media screen and (min-width: 750px) {
+    .navigationBar button {
+      width: 44px; } }
+  @media screen and (min-width: 320px) {
+    .navigationBar button {
+      height: 18.77333px; } }
+  @media screen and (min-width: 360px) {
+    .navigationBar button {
+      height: 21.12px; } }
+  @media screen and (min-width: 375px) {
+    .navigationBar button {
+      height: 22px; } }
+  @media screen and (min-width: 384px) {
+    .navigationBar button {
+      height: 22.528px; } }
+  @media screen and (min-width: 412px) {
+    .navigationBar button {
+      height: 24.17067px; } }
+  @media screen and (min-width: 414px) {
+    .navigationBar button {
+      height: 24.288px; } }
+  @media screen and (min-width: 571px) {
+    .navigationBar button {
+      height: 33.49867px; } }
+  @media screen and (min-width: 600px) {
+    .navigationBar button {
+      height: 35.2px; } }
+  @media screen and (min-width: 640px) {
+    .navigationBar button {
+      height: 37.54667px; } }
+  @media screen and (min-width: 750px) {
+    .navigationBar button {
+      height: 44px; } }
+  .navigationBar button.goBack.goBack {
+    top: 0;
+    bottom: 0;
+    background: url("../images/btn_1.png") no-repeat center center;
+    background-size: 100%; }
+  .navigationBar button.bookMark {
+    position: absolute;
+    background: url("../images/btn_2.png") no-repeat center center;
+    background-size: 100%; }
+    @media screen and (min-width: 320px) {
+      .navigationBar button.bookMark {
+        right: 32.85333px; } }
+    @media screen and (min-width: 360px) {
+      .navigationBar button.bookMark {
+        right: 36.96px; } }
+    @media screen and (min-width: 375px) {
+      .navigationBar button.bookMark {
+        right: 38.5px; } }
+    @media screen and (min-width: 384px) {
+      .navigationBar button.bookMark {
+        right: 39.424px; } }
+    @media screen and (min-width: 412px) {
+      .navigationBar button.bookMark {
+        right: 42.29867px; } }
+    @media screen and (min-width: 414px) {
+      .navigationBar button.bookMark {
+        right: 42.504px; } }
+    @media screen and (min-width: 571px) {
+      .navigationBar button.bookMark {
+        right: 58.62267px; } }
+    @media screen and (min-width: 600px) {
+      .navigationBar button.bookMark {
+        right: 61.6px; } }
+    @media screen and (min-width: 640px) {
+      .navigationBar button.bookMark {
+        right: 65.70667px; } }
+    @media screen and (min-width: 750px) {
+      .navigationBar button.bookMark {
+        right: 77px; } }
+  .navigationBar button.Down {
+    background: url("../images/btn_3.png") no-repeat center center;
+    background-size: 100%; }
+
+/*正文*/
 .mainBody {
   width: 100%;
   flex: 1;
-  background: rgba(152, 82, 60, 0.5);
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  box-sizing: border-box; }
+  @media screen and (min-width: 320px) {
+    .mainBody {
+      padding-top: 11.94667px; } }
+  @media screen and (min-width: 360px) {
+    .mainBody {
+      padding-top: 13.44px; } }
+  @media screen and (min-width: 375px) {
+    .mainBody {
+      padding-top: 14px; } }
+  @media screen and (min-width: 384px) {
+    .mainBody {
+      padding-top: 14.336px; } }
+  @media screen and (min-width: 412px) {
+    .mainBody {
+      padding-top: 15.38133px; } }
+  @media screen and (min-width: 414px) {
+    .mainBody {
+      padding-top: 15.456px; } }
+  @media screen and (min-width: 571px) {
+    .mainBody {
+      padding-top: 21.31733px; } }
+  @media screen and (min-width: 600px) {
+    .mainBody {
+      padding-top: 22.4px; } }
+  @media screen and (min-width: 640px) {
+    .mainBody {
+      padding-top: 23.89333px; } }
+  @media screen and (min-width: 750px) {
+    .mainBody {
+      padding-top: 28px; } }
+  @media screen and (min-width: 320px) {
+    .mainBody {
+      padding-right: 20.05333px; } }
+  @media screen and (min-width: 360px) {
+    .mainBody {
+      padding-right: 22.56px; } }
+  @media screen and (min-width: 375px) {
+    .mainBody {
+      padding-right: 23.5px; } }
+  @media screen and (min-width: 384px) {
+    .mainBody {
+      padding-right: 24.064px; } }
+  @media screen and (min-width: 412px) {
+    .mainBody {
+      padding-right: 25.81867px; } }
+  @media screen and (min-width: 414px) {
+    .mainBody {
+      padding-right: 25.944px; } }
+  @media screen and (min-width: 571px) {
+    .mainBody {
+      padding-right: 35.78267px; } }
+  @media screen and (min-width: 600px) {
+    .mainBody {
+      padding-right: 37.6px; } }
+  @media screen and (min-width: 640px) {
+    .mainBody {
+      padding-right: 40.10667px; } }
+  @media screen and (min-width: 750px) {
+    .mainBody {
+      padding-right: 47px; } }
+  @media screen and (min-width: 320px) {
+    .mainBody {
+      padding-bottom: 20.05333px; } }
+  @media screen and (min-width: 360px) {
+    .mainBody {
+      padding-bottom: 22.56px; } }
+  @media screen and (min-width: 375px) {
+    .mainBody {
+      padding-bottom: 23.5px; } }
+  @media screen and (min-width: 384px) {
+    .mainBody {
+      padding-bottom: 24.064px; } }
+  @media screen and (min-width: 412px) {
+    .mainBody {
+      padding-bottom: 25.81867px; } }
+  @media screen and (min-width: 414px) {
+    .mainBody {
+      padding-bottom: 25.944px; } }
+  @media screen and (min-width: 571px) {
+    .mainBody {
+      padding-bottom: 35.78267px; } }
+  @media screen and (min-width: 600px) {
+    .mainBody {
+      padding-bottom: 37.6px; } }
+  @media screen and (min-width: 640px) {
+    .mainBody {
+      padding-bottom: 40.10667px; } }
+  @media screen and (min-width: 750px) {
+    .mainBody {
+      padding-bottom: 47px; } }
+  @media screen and (min-width: 320px) {
+    .mainBody {
+      padding-left: 13.22667px; } }
+  @media screen and (min-width: 360px) {
+    .mainBody {
+      padding-left: 14.88px; } }
+  @media screen and (min-width: 375px) {
+    .mainBody {
+      padding-left: 15.5px; } }
+  @media screen and (min-width: 384px) {
+    .mainBody {
+      padding-left: 15.872px; } }
+  @media screen and (min-width: 412px) {
+    .mainBody {
+      padding-left: 17.02933px; } }
+  @media screen and (min-width: 414px) {
+    .mainBody {
+      padding-left: 17.112px; } }
+  @media screen and (min-width: 571px) {
+    .mainBody {
+      padding-left: 23.60133px; } }
+  @media screen and (min-width: 600px) {
+    .mainBody {
+      padding-left: 24.8px; } }
+  @media screen and (min-width: 640px) {
+    .mainBody {
+      padding-left: 26.45333px; } }
+  @media screen and (min-width: 750px) {
+    .mainBody {
+      padding-left: 31px; } }
 
+.mainBody .Body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .mainBody .Body h2 {
+    font-family: Bold, sans-serif; }
+    @media screen and (min-width: 320px) {
+      .mainBody .Body h2 {
+        font-size: 12.8px; } }
+    @media screen and (min-width: 360px) {
+      .mainBody .Body h2 {
+        font-size: 14.4px; } }
+    @media screen and (min-width: 375px) {
+      .mainBody .Body h2 {
+        font-size: 15px; } }
+    @media screen and (min-width: 384px) {
+      .mainBody .Body h2 {
+        font-size: 15.36px; } }
+    @media screen and (min-width: 412px) {
+      .mainBody .Body h2 {
+        font-size: 16.48px; } }
+    @media screen and (min-width: 414px) {
+      .mainBody .Body h2 {
+        font-size: 16.56px; } }
+    @media screen and (min-width: 571px) {
+      .mainBody .Body h2 {
+        font-size: 22.84px; } }
+    @media screen and (min-width: 600px) {
+      .mainBody .Body h2 {
+        font-size: 24px; } }
+    @media screen and (min-width: 640px) {
+      .mainBody .Body h2 {
+        font-size: 25.6px; } }
+    @media screen and (min-width: 750px) {
+      .mainBody .Body h2 {
+        font-size: 30px; } }
+    @media screen and (min-width: 320px) {
+      .mainBody .Body h2 {
+        line-height: 14.50667px; } }
+    @media screen and (min-width: 360px) {
+      .mainBody .Body h2 {
+        line-height: 16.32px; } }
+    @media screen and (min-width: 375px) {
+      .mainBody .Body h2 {
+        line-height: 17px; } }
+    @media screen and (min-width: 384px) {
+      .mainBody .Body h2 {
+        line-height: 17.408px; } }
+    @media screen and (min-width: 412px) {
+      .mainBody .Body h2 {
+        line-height: 18.67733px; } }
+    @media screen and (min-width: 414px) {
+      .mainBody .Body h2 {
+        line-height: 18.768px; } }
+    @media screen and (min-width: 571px) {
+      .mainBody .Body h2 {
+        line-height: 25.88533px; } }
+    @media screen and (min-width: 600px) {
+      .mainBody .Body h2 {
+        line-height: 27.2px; } }
+    @media screen and (min-width: 640px) {
+      .mainBody .Body h2 {
+        line-height: 29.01333px; } }
+    @media screen and (min-width: 750px) {
+      .mainBody .Body h2 {
+        line-height: 34px; } }
+    @media screen and (min-width: 320px) {
+      .mainBody .Body h2 {
+        margin-bottom: 4.26667px; } }
+    @media screen and (min-width: 360px) {
+      .mainBody .Body h2 {
+        margin-bottom: 4.8px; } }
+    @media screen and (min-width: 375px) {
+      .mainBody .Body h2 {
+        margin-bottom: 5px; } }
+    @media screen and (min-width: 384px) {
+      .mainBody .Body h2 {
+        margin-bottom: 5.12px; } }
+    @media screen and (min-width: 412px) {
+      .mainBody .Body h2 {
+        margin-bottom: 5.49333px; } }
+    @media screen and (min-width: 414px) {
+      .mainBody .Body h2 {
+        margin-bottom: 5.52px; } }
+    @media screen and (min-width: 571px) {
+      .mainBody .Body h2 {
+        margin-bottom: 7.61333px; } }
+    @media screen and (min-width: 600px) {
+      .mainBody .Body h2 {
+        margin-bottom: 8px; } }
+    @media screen and (min-width: 640px) {
+      .mainBody .Body h2 {
+        margin-bottom: 8.53333px; } }
+    @media screen and (min-width: 750px) {
+      .mainBody .Body h2 {
+        margin-bottom: 10px; } }
+  .mainBody .Body p {
+    text-indent: 2em;
+    text-align: justify; }
+    @media screen and (min-width: 320px) {
+      .mainBody .Body p {
+        margin-left: 7.68px; } }
+    @media screen and (min-width: 360px) {
+      .mainBody .Body p {
+        margin-left: 8.64px; } }
+    @media screen and (min-width: 375px) {
+      .mainBody .Body p {
+        margin-left: 9px; } }
+    @media screen and (min-width: 384px) {
+      .mainBody .Body p {
+        margin-left: 9.216px; } }
+    @media screen and (min-width: 412px) {
+      .mainBody .Body p {
+        margin-left: 9.888px; } }
+    @media screen and (min-width: 414px) {
+      .mainBody .Body p {
+        margin-left: 9.936px; } }
+    @media screen and (min-width: 571px) {
+      .mainBody .Body p {
+        margin-left: 13.704px; } }
+    @media screen and (min-width: 600px) {
+      .mainBody .Body p {
+        margin-left: 14.4px; } }
+    @media screen and (min-width: 640px) {
+      .mainBody .Body p {
+        margin-left: 15.36px; } }
+    @media screen and (min-width: 750px) {
+      .mainBody .Body p {
+        margin-left: 18px; } }
+    @media screen and (min-width: 320px) {
+      .mainBody .Body p {
+        font-size: 10.24px; } }
+    @media screen and (min-width: 360px) {
+      .mainBody .Body p {
+        font-size: 11.52px; } }
+    @media screen and (min-width: 375px) {
+      .mainBody .Body p {
+        font-size: 12px; } }
+    @media screen and (min-width: 384px) {
+      .mainBody .Body p {
+        font-size: 12.288px; } }
+    @media screen and (min-width: 412px) {
+      .mainBody .Body p {
+        font-size: 13.184px; } }
+    @media screen and (min-width: 414px) {
+      .mainBody .Body p {
+        font-size: 13.248px; } }
+    @media screen and (min-width: 571px) {
+      .mainBody .Body p {
+        font-size: 18.272px; } }
+    @media screen and (min-width: 600px) {
+      .mainBody .Body p {
+        font-size: 19.2px; } }
+    @media screen and (min-width: 640px) {
+      .mainBody .Body p {
+        font-size: 20.48px; } }
+    @media screen and (min-width: 750px) {
+      .mainBody .Body p {
+        font-size: 24px; } }
+    @media screen and (min-width: 320px) {
+      .mainBody .Body p {
+        margin-bottom: 9.38667px; } }
+    @media screen and (min-width: 360px) {
+      .mainBody .Body p {
+        margin-bottom: 10.56px; } }
+    @media screen and (min-width: 375px) {
+      .mainBody .Body p {
+        margin-bottom: 11px; } }
+    @media screen and (min-width: 384px) {
+      .mainBody .Body p {
+        margin-bottom: 11.264px; } }
+    @media screen and (min-width: 412px) {
+      .mainBody .Body p {
+        margin-bottom: 12.08533px; } }
+    @media screen and (min-width: 414px) {
+      .mainBody .Body p {
+        margin-bottom: 12.144px; } }
+    @media screen and (min-width: 571px) {
+      .mainBody .Body p {
+        margin-bottom: 16.74933px; } }
+    @media screen and (min-width: 600px) {
+      .mainBody .Body p {
+        margin-bottom: 17.6px; } }
+    @media screen and (min-width: 640px) {
+      .mainBody .Body p {
+        margin-bottom: 18.77333px; } }
+    @media screen and (min-width: 750px) {
+      .mainBody .Body p {
+        margin-bottom: 22px; } }
+
+/*标签栏*/
 .tabBar {
   width: 100%;
   display: flex;
@@ -233,3 +1319,946 @@ body {
   @media screen and (min-width: 750px) {
     .tabBar {
       height: 226px; } }
+
+.tabBar .inner {
+  display: flex;
+  flex-direction: column; }
+
+.tabBar .Skip {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .tabBar .Skip span {
+    font-family: Bold;
+    color: #c6c6c6; }
+    @media screen and (min-width: 320px) {
+      .tabBar .Skip span {
+        margin-top: 0px; } }
+    @media screen and (min-width: 360px) {
+      .tabBar .Skip span {
+        margin-top: 0px; } }
+    @media screen and (min-width: 375px) {
+      .tabBar .Skip span {
+        margin-top: 0px; } }
+    @media screen and (min-width: 384px) {
+      .tabBar .Skip span {
+        margin-top: 0px; } }
+    @media screen and (min-width: 412px) {
+      .tabBar .Skip span {
+        margin-top: 0px; } }
+    @media screen and (min-width: 414px) {
+      .tabBar .Skip span {
+        margin-top: 0px; } }
+    @media screen and (min-width: 571px) {
+      .tabBar .Skip span {
+        margin-top: 0px; } }
+    @media screen and (min-width: 600px) {
+      .tabBar .Skip span {
+        margin-top: 0px; } }
+    @media screen and (min-width: 640px) {
+      .tabBar .Skip span {
+        margin-top: 0px; } }
+    @media screen and (min-width: 750px) {
+      .tabBar .Skip span {
+        margin-top: 0px; } }
+    @media screen and (min-width: 320px) {
+      .tabBar .Skip span {
+        margin-right: 12.8px; } }
+    @media screen and (min-width: 360px) {
+      .tabBar .Skip span {
+        margin-right: 14.4px; } }
+    @media screen and (min-width: 375px) {
+      .tabBar .Skip span {
+        margin-right: 15px; } }
+    @media screen and (min-width: 384px) {
+      .tabBar .Skip span {
+        margin-right: 15.36px; } }
+    @media screen and (min-width: 412px) {
+      .tabBar .Skip span {
+        margin-right: 16.48px; } }
+    @media screen and (min-width: 414px) {
+      .tabBar .Skip span {
+        margin-right: 16.56px; } }
+    @media screen and (min-width: 571px) {
+      .tabBar .Skip span {
+        margin-right: 22.84px; } }
+    @media screen and (min-width: 600px) {
+      .tabBar .Skip span {
+        margin-right: 24px; } }
+    @media screen and (min-width: 640px) {
+      .tabBar .Skip span {
+        margin-right: 25.6px; } }
+    @media screen and (min-width: 750px) {
+      .tabBar .Skip span {
+        margin-right: 30px; } }
+    @media screen and (min-width: 320px) {
+      .tabBar .Skip span {
+        margin-bottom: 0px; } }
+    @media screen and (min-width: 360px) {
+      .tabBar .Skip span {
+        margin-bottom: 0px; } }
+    @media screen and (min-width: 375px) {
+      .tabBar .Skip span {
+        margin-bottom: 0px; } }
+    @media screen and (min-width: 384px) {
+      .tabBar .Skip span {
+        margin-bottom: 0px; } }
+    @media screen and (min-width: 412px) {
+      .tabBar .Skip span {
+        margin-bottom: 0px; } }
+    @media screen and (min-width: 414px) {
+      .tabBar .Skip span {
+        margin-bottom: 0px; } }
+    @media screen and (min-width: 571px) {
+      .tabBar .Skip span {
+        margin-bottom: 0px; } }
+    @media screen and (min-width: 600px) {
+      .tabBar .Skip span {
+        margin-bottom: 0px; } }
+    @media screen and (min-width: 640px) {
+      .tabBar .Skip span {
+        margin-bottom: 0px; } }
+    @media screen and (min-width: 750px) {
+      .tabBar .Skip span {
+        margin-bottom: 0px; } }
+    @media screen and (min-width: 320px) {
+      .tabBar .Skip span {
+        margin-left: 12.8px; } }
+    @media screen and (min-width: 360px) {
+      .tabBar .Skip span {
+        margin-left: 14.4px; } }
+    @media screen and (min-width: 375px) {
+      .tabBar .Skip span {
+        margin-left: 15px; } }
+    @media screen and (min-width: 384px) {
+      .tabBar .Skip span {
+        margin-left: 15.36px; } }
+    @media screen and (min-width: 412px) {
+      .tabBar .Skip span {
+        margin-left: 16.48px; } }
+    @media screen and (min-width: 414px) {
+      .tabBar .Skip span {
+        margin-left: 16.56px; } }
+    @media screen and (min-width: 571px) {
+      .tabBar .Skip span {
+        margin-left: 22.84px; } }
+    @media screen and (min-width: 600px) {
+      .tabBar .Skip span {
+        margin-left: 24px; } }
+    @media screen and (min-width: 640px) {
+      .tabBar .Skip span {
+        margin-left: 25.6px; } }
+    @media screen and (min-width: 750px) {
+      .tabBar .Skip span {
+        margin-left: 30px; } }
+    @media screen and (min-width: 320px) {
+      .tabBar .Skip span {
+        font-size: 10.24px; } }
+    @media screen and (min-width: 360px) {
+      .tabBar .Skip span {
+        font-size: 11.52px; } }
+    @media screen and (min-width: 375px) {
+      .tabBar .Skip span {
+        font-size: 12px; } }
+    @media screen and (min-width: 384px) {
+      .tabBar .Skip span {
+        font-size: 12.288px; } }
+    @media screen and (min-width: 412px) {
+      .tabBar .Skip span {
+        font-size: 13.184px; } }
+    @media screen and (min-width: 414px) {
+      .tabBar .Skip span {
+        font-size: 13.248px; } }
+    @media screen and (min-width: 571px) {
+      .tabBar .Skip span {
+        font-size: 18.272px; } }
+    @media screen and (min-width: 600px) {
+      .tabBar .Skip span {
+        font-size: 19.2px; } }
+    @media screen and (min-width: 640px) {
+      .tabBar .Skip span {
+        font-size: 20.48px; } }
+    @media screen and (min-width: 750px) {
+      .tabBar .Skip span {
+        font-size: 24px; } }
+    @media screen and (min-width: 320px) {
+      .tabBar .Skip span {
+        line-height: 11.52px; } }
+    @media screen and (min-width: 360px) {
+      .tabBar .Skip span {
+        line-height: 12.96px; } }
+    @media screen and (min-width: 375px) {
+      .tabBar .Skip span {
+        line-height: 13.5px; } }
+    @media screen and (min-width: 384px) {
+      .tabBar .Skip span {
+        line-height: 13.824px; } }
+    @media screen and (min-width: 412px) {
+      .tabBar .Skip span {
+        line-height: 14.832px; } }
+    @media screen and (min-width: 414px) {
+      .tabBar .Skip span {
+        line-height: 14.904px; } }
+    @media screen and (min-width: 571px) {
+      .tabBar .Skip span {
+        line-height: 20.556px; } }
+    @media screen and (min-width: 600px) {
+      .tabBar .Skip span {
+        line-height: 21.6px; } }
+    @media screen and (min-width: 640px) {
+      .tabBar .Skip span {
+        line-height: 23.04px; } }
+    @media screen and (min-width: 750px) {
+      .tabBar .Skip span {
+        line-height: 27px; } }
+  .tabBar .Skip .line {
+    flex: 1;
+    background: #d5d5d5;
+    border-radius: 6px; }
+    @media screen and (min-width: 320px) {
+      .tabBar .Skip .line {
+        height: 5.12px; } }
+    @media screen and (min-width: 360px) {
+      .tabBar .Skip .line {
+        height: 5.76px; } }
+    @media screen and (min-width: 375px) {
+      .tabBar .Skip .line {
+        height: 6px; } }
+    @media screen and (min-width: 384px) {
+      .tabBar .Skip .line {
+        height: 6.144px; } }
+    @media screen and (min-width: 412px) {
+      .tabBar .Skip .line {
+        height: 6.592px; } }
+    @media screen and (min-width: 414px) {
+      .tabBar .Skip .line {
+        height: 6.624px; } }
+    @media screen and (min-width: 571px) {
+      .tabBar .Skip .line {
+        height: 9.136px; } }
+    @media screen and (min-width: 600px) {
+      .tabBar .Skip .line {
+        height: 9.6px; } }
+    @media screen and (min-width: 640px) {
+      .tabBar .Skip .line {
+        height: 10.24px; } }
+    @media screen and (min-width: 750px) {
+      .tabBar .Skip .line {
+        height: 12px; } }
+    .tabBar .Skip .line .pro {
+      height: 100%;
+      width: 20%;
+      border-radius: 6px;
+      background: #1db34b; }
+      .tabBar .Skip .line .pro .area {
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: url("../images/area_bg_03.png") no-repeat center center; }
+        @media screen and (min-width: 320px) {
+          .tabBar .Skip .line .pro .area {
+            height: 10.24px; } }
+        @media screen and (min-width: 360px) {
+          .tabBar .Skip .line .pro .area {
+            height: 11.52px; } }
+        @media screen and (min-width: 375px) {
+          .tabBar .Skip .line .pro .area {
+            height: 12px; } }
+        @media screen and (min-width: 384px) {
+          .tabBar .Skip .line .pro .area {
+            height: 12.288px; } }
+        @media screen and (min-width: 412px) {
+          .tabBar .Skip .line .pro .area {
+            height: 13.184px; } }
+        @media screen and (min-width: 414px) {
+          .tabBar .Skip .line .pro .area {
+            height: 13.248px; } }
+        @media screen and (min-width: 571px) {
+          .tabBar .Skip .line .pro .area {
+            height: 18.272px; } }
+        @media screen and (min-width: 600px) {
+          .tabBar .Skip .line .pro .area {
+            height: 19.2px; } }
+        @media screen and (min-width: 640px) {
+          .tabBar .Skip .line .pro .area {
+            height: 20.48px; } }
+        @media screen and (min-width: 750px) {
+          .tabBar .Skip .line .pro .area {
+            height: 24px; } }
+        @media screen and (min-width: 320px) {
+          .tabBar .Skip .line .pro .area {
+            width: 10.24px; } }
+        @media screen and (min-width: 360px) {
+          .tabBar .Skip .line .pro .area {
+            width: 11.52px; } }
+        @media screen and (min-width: 375px) {
+          .tabBar .Skip .line .pro .area {
+            width: 12px; } }
+        @media screen and (min-width: 384px) {
+          .tabBar .Skip .line .pro .area {
+            width: 12.288px; } }
+        @media screen and (min-width: 412px) {
+          .tabBar .Skip .line .pro .area {
+            width: 13.184px; } }
+        @media screen and (min-width: 414px) {
+          .tabBar .Skip .line .pro .area {
+            width: 13.248px; } }
+        @media screen and (min-width: 571px) {
+          .tabBar .Skip .line .pro .area {
+            width: 18.272px; } }
+        @media screen and (min-width: 600px) {
+          .tabBar .Skip .line .pro .area {
+            width: 19.2px; } }
+        @media screen and (min-width: 640px) {
+          .tabBar .Skip .line .pro .area {
+            width: 20.48px; } }
+        @media screen and (min-width: 750px) {
+          .tabBar .Skip .line .pro .area {
+            width: 24px; } }
+        @media screen and (min-width: 320px) {
+          .tabBar .Skip .line .pro .area {
+            right: -5.12px; } }
+        @media screen and (min-width: 360px) {
+          .tabBar .Skip .line .pro .area {
+            right: -5.76px; } }
+        @media screen and (min-width: 375px) {
+          .tabBar .Skip .line .pro .area {
+            right: -6px; } }
+        @media screen and (min-width: 384px) {
+          .tabBar .Skip .line .pro .area {
+            right: -6.144px; } }
+        @media screen and (min-width: 412px) {
+          .tabBar .Skip .line .pro .area {
+            right: -6.592px; } }
+        @media screen and (min-width: 414px) {
+          .tabBar .Skip .line .pro .area {
+            right: -6.624px; } }
+        @media screen and (min-width: 571px) {
+          .tabBar .Skip .line .pro .area {
+            right: -9.136px; } }
+        @media screen and (min-width: 600px) {
+          .tabBar .Skip .line .pro .area {
+            right: -9.6px; } }
+        @media screen and (min-width: 640px) {
+          .tabBar .Skip .line .pro .area {
+            right: -10.24px; } }
+        @media screen and (min-width: 750px) {
+          .tabBar .Skip .line .pro .area {
+            right: -12px; } }
+
+.tabBar .Fun {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .tabBar .Fun .item {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center; }
+    @media screen and (min-width: 320px) {
+      .tabBar .Fun .item {
+        height: 37.12px; } }
+    @media screen and (min-width: 360px) {
+      .tabBar .Fun .item {
+        height: 41.76px; } }
+    @media screen and (min-width: 375px) {
+      .tabBar .Fun .item {
+        height: 43.5px; } }
+    @media screen and (min-width: 384px) {
+      .tabBar .Fun .item {
+        height: 44.544px; } }
+    @media screen and (min-width: 412px) {
+      .tabBar .Fun .item {
+        height: 47.792px; } }
+    @media screen and (min-width: 414px) {
+      .tabBar .Fun .item {
+        height: 48.024px; } }
+    @media screen and (min-width: 571px) {
+      .tabBar .Fun .item {
+        height: 66.236px; } }
+    @media screen and (min-width: 600px) {
+      .tabBar .Fun .item {
+        height: 69.6px; } }
+    @media screen and (min-width: 640px) {
+      .tabBar .Fun .item {
+        height: 74.24px; } }
+    @media screen and (min-width: 750px) {
+      .tabBar .Fun .item {
+        height: 87px; } }
+    .tabBar .Fun .item .img {
+      display: block;
+      background: #29a6dc;
+      border-radius: 50%; }
+      @media screen and (min-width: 320px) {
+        .tabBar .Fun .item .img {
+          width: 24.32px; } }
+      @media screen and (min-width: 360px) {
+        .tabBar .Fun .item .img {
+          width: 27.36px; } }
+      @media screen and (min-width: 375px) {
+        .tabBar .Fun .item .img {
+          width: 28.5px; } }
+      @media screen and (min-width: 384px) {
+        .tabBar .Fun .item .img {
+          width: 29.184px; } }
+      @media screen and (min-width: 412px) {
+        .tabBar .Fun .item .img {
+          width: 31.312px; } }
+      @media screen and (min-width: 414px) {
+        .tabBar .Fun .item .img {
+          width: 31.464px; } }
+      @media screen and (min-width: 571px) {
+        .tabBar .Fun .item .img {
+          width: 43.396px; } }
+      @media screen and (min-width: 600px) {
+        .tabBar .Fun .item .img {
+          width: 45.6px; } }
+      @media screen and (min-width: 640px) {
+        .tabBar .Fun .item .img {
+          width: 48.64px; } }
+      @media screen and (min-width: 750px) {
+        .tabBar .Fun .item .img {
+          width: 57px; } }
+      @media screen and (min-width: 320px) {
+        .tabBar .Fun .item .img {
+          height: 24.32px; } }
+      @media screen and (min-width: 360px) {
+        .tabBar .Fun .item .img {
+          height: 27.36px; } }
+      @media screen and (min-width: 375px) {
+        .tabBar .Fun .item .img {
+          height: 28.5px; } }
+      @media screen and (min-width: 384px) {
+        .tabBar .Fun .item .img {
+          height: 29.184px; } }
+      @media screen and (min-width: 412px) {
+        .tabBar .Fun .item .img {
+          height: 31.312px; } }
+      @media screen and (min-width: 414px) {
+        .tabBar .Fun .item .img {
+          height: 31.464px; } }
+      @media screen and (min-width: 571px) {
+        .tabBar .Fun .item .img {
+          height: 43.396px; } }
+      @media screen and (min-width: 600px) {
+        .tabBar .Fun .item .img {
+          height: 45.6px; } }
+      @media screen and (min-width: 640px) {
+        .tabBar .Fun .item .img {
+          height: 48.64px; } }
+      @media screen and (min-width: 750px) {
+        .tabBar .Fun .item .img {
+          height: 57px; } }
+      .tabBar .Fun .item .img::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: url("../images/Fun_img_bg_02.png") no-repeat center;
+        background-size: 100%; }
+    .tabBar .Fun .item.list .img::after {
+      background: url("../images/Fun_img_bg_01.png") no-repeat center center;
+      background-size: 100%; }
+    .tabBar .Fun .item.light .img::after {
+      background: url("../images/Fun_img_bg_03.png") no-repeat center center;
+      background-size: 100%; }
+    .tabBar .Fun .item span {
+      color: #e6e6e6; }
+
+/*脚标*/
+.cornerMark {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  display: none; }
+
+@media screen and (min-width: 320px) {
+  .cornerMark .inner {
+    height: 23.89333px; } }
+
+@media screen and (min-width: 360px) {
+  .cornerMark .inner {
+    height: 26.88px; } }
+
+@media screen and (min-width: 375px) {
+  .cornerMark .inner {
+    height: 28px; } }
+
+@media screen and (min-width: 384px) {
+  .cornerMark .inner {
+    height: 28.672px; } }
+
+@media screen and (min-width: 412px) {
+  .cornerMark .inner {
+    height: 30.76267px; } }
+
+@media screen and (min-width: 414px) {
+  .cornerMark .inner {
+    height: 30.912px; } }
+
+@media screen and (min-width: 571px) {
+  .cornerMark .inner {
+    height: 42.63467px; } }
+
+@media screen and (min-width: 600px) {
+  .cornerMark .inner {
+    height: 44.8px; } }
+
+@media screen and (min-width: 640px) {
+  .cornerMark .inner {
+    height: 47.78667px; } }
+
+@media screen and (min-width: 750px) {
+  .cornerMark .inner {
+    height: 56px; } }
+
+@media screen and (min-width: 320px) {
+  .cornerMark .inner {
+    padding-left: 11.52px; } }
+
+@media screen and (min-width: 360px) {
+  .cornerMark .inner {
+    padding-left: 12.96px; } }
+
+@media screen and (min-width: 375px) {
+  .cornerMark .inner {
+    padding-left: 13.5px; } }
+
+@media screen and (min-width: 384px) {
+  .cornerMark .inner {
+    padding-left: 13.824px; } }
+
+@media screen and (min-width: 412px) {
+  .cornerMark .inner {
+    padding-left: 14.832px; } }
+
+@media screen and (min-width: 414px) {
+  .cornerMark .inner {
+    padding-left: 14.904px; } }
+
+@media screen and (min-width: 571px) {
+  .cornerMark .inner {
+    padding-left: 20.556px; } }
+
+@media screen and (min-width: 600px) {
+  .cornerMark .inner {
+    padding-left: 21.6px; } }
+
+@media screen and (min-width: 640px) {
+  .cornerMark .inner {
+    padding-left: 23.04px; } }
+
+@media screen and (min-width: 750px) {
+  .cornerMark .inner {
+    padding-left: 27px; } }
+
+@media screen and (min-width: 320px) {
+  .cornerMark .inner {
+    padding-right: 10.24px; } }
+
+@media screen and (min-width: 360px) {
+  .cornerMark .inner {
+    padding-right: 11.52px; } }
+
+@media screen and (min-width: 375px) {
+  .cornerMark .inner {
+    padding-right: 12px; } }
+
+@media screen and (min-width: 384px) {
+  .cornerMark .inner {
+    padding-right: 12.288px; } }
+
+@media screen and (min-width: 412px) {
+  .cornerMark .inner {
+    padding-right: 13.184px; } }
+
+@media screen and (min-width: 414px) {
+  .cornerMark .inner {
+    padding-right: 13.248px; } }
+
+@media screen and (min-width: 571px) {
+  .cornerMark .inner {
+    padding-right: 18.272px; } }
+
+@media screen and (min-width: 600px) {
+  .cornerMark .inner {
+    padding-right: 19.2px; } }
+
+@media screen and (min-width: 640px) {
+  .cornerMark .inner {
+    padding-right: 20.48px; } }
+
+@media screen and (min-width: 750px) {
+  .cornerMark .inner {
+    padding-right: 24px; } }
+
+.cornerMark .Mark {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+  @media screen and (min-width: 320px) {
+    .cornerMark .Mark {
+      font-size: 9.81333px; } }
+  @media screen and (min-width: 360px) {
+    .cornerMark .Mark {
+      font-size: 11.04px; } }
+  @media screen and (min-width: 375px) {
+    .cornerMark .Mark {
+      font-size: 11.5px; } }
+  @media screen and (min-width: 384px) {
+    .cornerMark .Mark {
+      font-size: 11.776px; } }
+  @media screen and (min-width: 412px) {
+    .cornerMark .Mark {
+      font-size: 12.63467px; } }
+  @media screen and (min-width: 414px) {
+    .cornerMark .Mark {
+      font-size: 12.696px; } }
+  @media screen and (min-width: 571px) {
+    .cornerMark .Mark {
+      font-size: 17.51067px; } }
+  @media screen and (min-width: 600px) {
+    .cornerMark .Mark {
+      font-size: 18.4px; } }
+  @media screen and (min-width: 640px) {
+    .cornerMark .Mark {
+      font-size: 19.62667px; } }
+  @media screen and (min-width: 750px) {
+    .cornerMark .Mark {
+      font-size: 23px; } }
+  @media screen and (min-width: 320px) {
+    .cornerMark .Mark {
+      line-height: 11.09333px; } }
+  @media screen and (min-width: 360px) {
+    .cornerMark .Mark {
+      line-height: 12.48px; } }
+  @media screen and (min-width: 375px) {
+    .cornerMark .Mark {
+      line-height: 13px; } }
+  @media screen and (min-width: 384px) {
+    .cornerMark .Mark {
+      line-height: 13.312px; } }
+  @media screen and (min-width: 412px) {
+    .cornerMark .Mark {
+      line-height: 14.28267px; } }
+  @media screen and (min-width: 414px) {
+    .cornerMark .Mark {
+      line-height: 14.352px; } }
+  @media screen and (min-width: 571px) {
+    .cornerMark .Mark {
+      line-height: 19.79467px; } }
+  @media screen and (min-width: 600px) {
+    .cornerMark .Mark {
+      line-height: 20.8px; } }
+  @media screen and (min-width: 640px) {
+    .cornerMark .Mark {
+      line-height: 22.18667px; } }
+  @media screen and (min-width: 750px) {
+    .cornerMark .Mark {
+      line-height: 26px; } }
+  .cornerMark .Mark .Mark_plan::after {
+    content: '0%';
+    display: inline-block; }
+  .cornerMark .Mark .page_number::after {
+    content: '/468';
+    display: inline-block; }
+
+.night {
+  border-radius: 50%;
+  background: url("../images/bg_03_03.png") no-repeat center center;
+  background-size: 100%;
+  position: fixed;
+  left: 2.5%;
+  z-index: 99999; }
+  @media screen and (min-width: 320px) {
+    .night {
+      width: 24.74667px; } }
+  @media screen and (min-width: 360px) {
+    .night {
+      width: 27.84px; } }
+  @media screen and (min-width: 375px) {
+    .night {
+      width: 29px; } }
+  @media screen and (min-width: 384px) {
+    .night {
+      width: 29.696px; } }
+  @media screen and (min-width: 412px) {
+    .night {
+      width: 31.86133px; } }
+  @media screen and (min-width: 414px) {
+    .night {
+      width: 32.016px; } }
+  @media screen and (min-width: 571px) {
+    .night {
+      width: 44.15733px; } }
+  @media screen and (min-width: 600px) {
+    .night {
+      width: 46.4px; } }
+  @media screen and (min-width: 640px) {
+    .night {
+      width: 49.49333px; } }
+  @media screen and (min-width: 750px) {
+    .night {
+      width: 58px; } }
+  @media screen and (min-width: 320px) {
+    .night {
+      height: 24.74667px; } }
+  @media screen and (min-width: 360px) {
+    .night {
+      height: 27.84px; } }
+  @media screen and (min-width: 375px) {
+    .night {
+      height: 29px; } }
+  @media screen and (min-width: 384px) {
+    .night {
+      height: 29.696px; } }
+  @media screen and (min-width: 412px) {
+    .night {
+      height: 31.86133px; } }
+  @media screen and (min-width: 414px) {
+    .night {
+      height: 32.016px; } }
+  @media screen and (min-width: 571px) {
+    .night {
+      height: 44.15733px; } }
+  @media screen and (min-width: 600px) {
+    .night {
+      height: 46.4px; } }
+  @media screen and (min-width: 640px) {
+    .night {
+      height: 49.49333px; } }
+  @media screen and (min-width: 750px) {
+    .night {
+      height: 58px; } }
+  @media screen and (min-width: 320px) {
+    .night {
+      top: 409.17333px; } }
+  @media screen and (min-width: 360px) {
+    .night {
+      top: 460.32px; } }
+  @media screen and (min-width: 375px) {
+    .night {
+      top: 479.5px; } }
+  @media screen and (min-width: 384px) {
+    .night {
+      top: 491.008px; } }
+  @media screen and (min-width: 412px) {
+    .night {
+      top: 526.81067px; } }
+  @media screen and (min-width: 414px) {
+    .night {
+      top: 529.368px; } }
+  @media screen and (min-width: 571px) {
+    .night {
+      top: 730.11867px; } }
+  @media screen and (min-width: 600px) {
+    .night {
+      top: 767.2px; } }
+  @media screen and (min-width: 640px) {
+    .night {
+      top: 818.34667px; } }
+  @media screen and (min-width: 750px) {
+    .night {
+      top: 959px; } }
+
+.bookmark {
+  position: fixed;
+  right: 0;
+  background: #fff;
+  border-radius: 50px 0 0 50px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  z-index: 999; }
+  @media screen and (min-width: 320px) {
+    .bookmark {
+      top: 209.06667px; } }
+  @media screen and (min-width: 360px) {
+    .bookmark {
+      top: 235.2px; } }
+  @media screen and (min-width: 375px) {
+    .bookmark {
+      top: 245px; } }
+  @media screen and (min-width: 384px) {
+    .bookmark {
+      top: 250.88px; } }
+  @media screen and (min-width: 412px) {
+    .bookmark {
+      top: 269.17333px; } }
+  @media screen and (min-width: 414px) {
+    .bookmark {
+      top: 270.48px; } }
+  @media screen and (min-width: 571px) {
+    .bookmark {
+      top: 373.05333px; } }
+  @media screen and (min-width: 600px) {
+    .bookmark {
+      top: 392px; } }
+  @media screen and (min-width: 640px) {
+    .bookmark {
+      top: 418.13333px; } }
+  @media screen and (min-width: 750px) {
+    .bookmark {
+      top: 490px; } }
+  @media screen and (min-width: 320px) {
+    .bookmark {
+      width: 40.53333px; } }
+  @media screen and (min-width: 360px) {
+    .bookmark {
+      width: 45.6px; } }
+  @media screen and (min-width: 375px) {
+    .bookmark {
+      width: 47.5px; } }
+  @media screen and (min-width: 384px) {
+    .bookmark {
+      width: 48.64px; } }
+  @media screen and (min-width: 412px) {
+    .bookmark {
+      width: 52.18667px; } }
+  @media screen and (min-width: 414px) {
+    .bookmark {
+      width: 52.44px; } }
+  @media screen and (min-width: 571px) {
+    .bookmark {
+      width: 72.32667px; } }
+  @media screen and (min-width: 600px) {
+    .bookmark {
+      width: 76px; } }
+  @media screen and (min-width: 640px) {
+    .bookmark {
+      width: 81.06667px; } }
+  @media screen and (min-width: 750px) {
+    .bookmark {
+      width: 95px; } }
+  @media screen and (min-width: 320px) {
+    .bookmark {
+      height: 32.85333px; } }
+  @media screen and (min-width: 360px) {
+    .bookmark {
+      height: 36.96px; } }
+  @media screen and (min-width: 375px) {
+    .bookmark {
+      height: 38.5px; } }
+  @media screen and (min-width: 384px) {
+    .bookmark {
+      height: 39.424px; } }
+  @media screen and (min-width: 412px) {
+    .bookmark {
+      height: 42.29867px; } }
+  @media screen and (min-width: 414px) {
+    .bookmark {
+      height: 42.504px; } }
+  @media screen and (min-width: 571px) {
+    .bookmark {
+      height: 58.62267px; } }
+  @media screen and (min-width: 600px) {
+    .bookmark {
+      height: 61.6px; } }
+  @media screen and (min-width: 640px) {
+    .bookmark {
+      height: 65.70667px; } }
+  @media screen and (min-width: 750px) {
+    .bookmark {
+      height: 77px; } }
+  @media screen and (min-width: 320px) {
+    .bookmark {
+      padding-left: 14.08px; } }
+  @media screen and (min-width: 360px) {
+    .bookmark {
+      padding-left: 15.84px; } }
+  @media screen and (min-width: 375px) {
+    .bookmark {
+      padding-left: 16.5px; } }
+  @media screen and (min-width: 384px) {
+    .bookmark {
+      padding-left: 16.896px; } }
+  @media screen and (min-width: 412px) {
+    .bookmark {
+      padding-left: 18.128px; } }
+  @media screen and (min-width: 414px) {
+    .bookmark {
+      padding-left: 18.216px; } }
+  @media screen and (min-width: 571px) {
+    .bookmark {
+      padding-left: 25.124px; } }
+  @media screen and (min-width: 600px) {
+    .bookmark {
+      padding-left: 26.4px; } }
+  @media screen and (min-width: 640px) {
+    .bookmark {
+      padding-left: 28.16px; } }
+  @media screen and (min-width: 750px) {
+    .bookmark {
+      padding-left: 33px; } }
+  .bookmark::after {
+    content: '';
+    display: block;
+    background: url("../images/bookmark_bg_03.png") no-repeat center center;
+    background-size: 100%; }
+    @media screen and (min-width: 320px) {
+      .bookmark::after {
+        width: 15.78667px; } }
+    @media screen and (min-width: 360px) {
+      .bookmark::after {
+        width: 17.76px; } }
+    @media screen and (min-width: 375px) {
+      .bookmark::after {
+        width: 18.5px; } }
+    @media screen and (min-width: 384px) {
+      .bookmark::after {
+        width: 18.944px; } }
+    @media screen and (min-width: 412px) {
+      .bookmark::after {
+        width: 20.32533px; } }
+    @media screen and (min-width: 414px) {
+      .bookmark::after {
+        width: 20.424px; } }
+    @media screen and (min-width: 571px) {
+      .bookmark::after {
+        width: 28.16933px; } }
+    @media screen and (min-width: 600px) {
+      .bookmark::after {
+        width: 29.6px; } }
+    @media screen and (min-width: 640px) {
+      .bookmark::after {
+        width: 31.57333px; } }
+    @media screen and (min-width: 750px) {
+      .bookmark::after {
+        width: 37px; } }
+    @media screen and (min-width: 320px) {
+      .bookmark::after {
+        height: 19.2px; } }
+    @media screen and (min-width: 360px) {
+      .bookmark::after {
+        height: 21.6px; } }
+    @media screen and (min-width: 375px) {
+      .bookmark::after {
+        height: 22.5px; } }
+    @media screen and (min-width: 384px) {
+      .bookmark::after {
+        height: 23.04px; } }
+    @media screen and (min-width: 412px) {
+      .bookmark::after {
+        height: 24.72px; } }
+    @media screen and (min-width: 414px) {
+      .bookmark::after {
+        height: 24.84px; } }
+    @media screen and (min-width: 571px) {
+      .bookmark::after {
+        height: 34.26px; } }
+    @media screen and (min-width: 600px) {
+      .bookmark::after {
+        height: 36px; } }
+    @media screen and (min-width: 640px) {
+      .bookmark::after {
+        height: 38.4px; } }
+    @media screen and (min-width: 750px) {
+      .bookmark::after {
+        height: 45px; } }

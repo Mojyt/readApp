@@ -2,6 +2,10 @@
 @import "adapter";
 @import "base";
 
+* {
+  position: relative;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -12,38 +16,347 @@ $inner: 95%;
 .bg {
   display: flex;
   flex-direction: column;
-  //@include width(750);
   width: 100%;
   max-width: 750px;
   background: url("../images/browse_bg_03.png") no-repeat center center;
   @include height(1334);
+  overflow: hidden;
 }
 
 .inner {
   width: 95%;
   height: 100%;
+  overflow: hidden;
+
 }
+
+//////////////////////////////////////////////////////////////////////////
+
+/*状态栏*/
+
+.statusBar {
+  width: 100%;
+  @include font-size(19);
+  display: flex;
+  justify-content: center;
+  .system {
+    @include line-height(40);
+    @include margin-left(23);
+  }
+}
+
+.statusBar .inner {
+  box-sizing: border-box;
+  @include padding2(0, 9);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.statusBar .time {
+  font-weight: bolder;
+}
+
+.statusBar .battery {
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  &::after {
+    content: '';
+    display: block;
+    @include width(49);
+    @include height(19);
+    top: 0;
+    bottom: 0;
+    background: url("../images/bg_03.png") no-repeat;
+    background-position: -772px -82px;
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////
+
+/*书名*/
+
+.bookName {
+  width: 100%;
+  @include height(28);
+  display: flex;
+  justify-content: center;
+}
+
+.bookName .inner {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  @include padding-top(14);
+}
+
+.bookName .line {
+  &:first-child {
+    display: flex;
+    @include width(23);
+    height: 1px;
+    background: black;
+  }
+  &:last-child {
+    display: flex;
+    flex: 1;
+    height: 1px;
+    background: black;
+  }
+}
+
+.bookName .Name {
+  display: flex;
+  width: auto;
+  @include line-height(20);
+  @include font-size(18);
+  @include padding2(0, 8);
+}
+
+///////////////////////////////////////////////////////////////////////////
 
 /*导航栏*/
 
-.navigationBar{
+.navigationBar {
   @include height(140);
   width: 100%;
   background: url("../images/bg_03.png") -80px -142px no-repeat;
   display: flex;
   justify-content: center;
+  @include top(-68);
+  //display: none;
 }
-.mainBody{
+
+.navigationBar .inner {
+  box-sizing: border-box;
+  @include padding-top(40);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.navigationBar button {
+  @include width(44);
+  @include height(44);
+  border-radius: 50%;
+  &.goBack {
+    &.goBack {
+      top: 0;
+      bottom: 0;
+      background: url("../images/btn_1.png") no-repeat center center;
+      background-size: 100%;
+    }
+  }
+  &.bookMark {
+    position: absolute;
+    @include right(77);
+    background: url("../images/btn_2.png") no-repeat center center;
+    background-size: 100%;
+  }
+  &.Down {
+    background: url("../images/btn_3.png") no-repeat center center;
+    background-size: 100%;
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////
+
+/*正文*/
+
+.mainBody {
   width: 100%;
   flex: 1;
-  @include bg;
   display: flex;
   justify-content: center;
+  @include padding4(28, 47, 47, 31);
+  box-sizing: border-box;
 }
-.tabBar{
+
+.mainBody .Body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  h2 {
+    font-family: Bold, sans-serif;
+    @include font-size(30);
+    @include line-height(34);
+    @include margin-bottom(10);
+  }
+  p {
+    @include margin-left(18);
+    @include font-size(24);
+    text-indent: 2em;
+    text-align: justify;
+    @include margin-bottom(22);
+    //letter-spacing: 0.25em;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////
+/*标签栏*/
+
+.tabBar {
   @include height(226);
   width: 100%;
   display: flex;
   justify-content: center;
   background: #151c2b;
+}
+
+.tabBar .inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabBar .Skip {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //@include padding2(0, 19);
+  span {
+    @include margin2(0, 30);
+    @include font-size(24);
+    font-family: Bold;
+    @include line-height(27);
+    color: #c6c6c6;
+  }
+  .line {
+    flex: 1;
+    @include height(12);
+    background: #d5d5d5;
+    border-radius: 6px;
+    .pro {
+      height: 100%;
+      width: 20%;
+      border-radius: 6px;
+      background: #1db34b;
+      .area {
+        @include height(24);
+        @include width(24);
+        border-radius: 50%;
+        @include cenW;
+        @include right(-12);
+        background: url("../images/area_bg_03.png") no-repeat center center;
+      }
+    }
+  }
+}
+
+.tabBar .Fun {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .item {
+    @include height(87);
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    .img {
+      display: block;
+      @include width(57);
+      @include height(57);
+      background: #29a6dc;
+      border-radius: 50%;
+      &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: url("../images/Fun_img_bg_02.png") no-repeat center;
+        background-size: 100%;
+      }
+    }
+    &.list {
+      .img::after {
+        background: url("../images/Fun_img_bg_01.png") no-repeat center center;
+        background-size: 100%;
+      }
+    }
+    &.light {
+      .img::after {
+        background: url("../images/Fun_img_bg_03.png") no-repeat center center;
+        background-size: 100%;
+      }
+    }
+    span {
+      color: #e6e6e6;
+    }
+  }
+}
+
+//////////////////////////////////////////////////////////////////////
+
+/*脚标*/
+
+.cornerMark {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  display: none;
+}
+
+.cornerMark .inner {
+  @include height(56);
+  @include padding-left(27);
+  @include padding-right(24);
+}
+
+.cornerMark .Mark {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  @include font-size(23);
+  @include line-height(26);
+  & .Mark_plan::after {
+    content: '0%';
+    display: inline-block;
+  }
+  & .page_number::after {
+    content: '/468';
+    display: inline-block;
+  }
+}
+
+.night{
+  @include width(58);
+  @include height(58);
+  border-radius: 50%;
+  background: url("../images/bg_03_03.png") no-repeat center center;
+  background-size: 100%;
+  position: fixed;
+  @include top(959);
+  left: 2.5%;
+  z-index: 99999;
+}
+
+.bookmark{
+  position: fixed;
+  @include top(490);
+  right: 0;
+  @include width(95);
+  @include height(77);
+  background: #fff;
+  border-radius: 50px 0 0 50px;
+  @include padding-left(33);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  &::after{
+    content: '';
+    display: block;
+    @include width(37);
+    @include height(45);
+    background: url("../images/bookmark_bg_03.png") no-repeat center center;
+    background-size: 100%;
+  }
 }

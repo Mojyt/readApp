@@ -58,6 +58,24 @@ $device-list: 320px, 360px, 375px, 384px, 412px, 414px, 571px, 600px, 640px, 750
   }
 }
 
+/*left*/
+@mixin left($left) {
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      left: $device * ($left/750);
+    }
+  }
+}
+
+/*top*/
+@mixin top($top) {
+  @each $device in $device-list {
+    @media screen and (min-width: #{$device}) {
+      top: $device * ($top/750);
+    }
+  }
+}
+
 /*各种margin值适配*/
 
 @mixin margin4($top,$right,$bottom,$left) {
